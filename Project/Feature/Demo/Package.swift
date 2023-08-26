@@ -14,10 +14,14 @@ let package = Package(
       targets: ["Demo"]),
   ],
   dependencies: [
+    .package(path: "../../Core/Architecture"),
   ],
   targets: [
     .target(
-      name: "Demo"),
+      name: "Demo",
+      dependencies: [
+        "Architecture",
+      ]),
     .testTarget(
       name: "DemoTests",
       dependencies: ["Demo"]),
