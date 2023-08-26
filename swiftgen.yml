@@ -1,0 +1,9 @@
+xcassets:
+  - inputs: >-
+      Project/Feature/Demo/Sources/Demo/Resource/Assets.xcassets
+    outputs:
+      - templateName: swift5
+        params:
+          forceProvidesNamespaces: true
+        output: >-
+          Project/Feature/Demo/Sources/Demo/Resource/XCAssets+Generated.swift

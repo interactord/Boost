@@ -1,9 +1,9 @@
 import Foundation
 
 public struct LocalHelper {
-    let name: String
+  let name: String
 
-    public init(name: String) {
-        self.name = name
-    }
+  public init(name: String) {
+    self.name = name
+  }
 }

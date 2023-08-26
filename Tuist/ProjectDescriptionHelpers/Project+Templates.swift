@@ -36,7 +36,7 @@ extension Target {
   }
 }
 
-extension Collection where Element == Scheme {
+extension Collection<Scheme> {
 
   public static func testScheme(previewTestTarget: String) -> [Scheme] {
     [
