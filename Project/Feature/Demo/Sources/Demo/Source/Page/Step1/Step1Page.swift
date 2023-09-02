@@ -18,8 +18,8 @@ extension Step1Page: View {
       Button(action: {
         linkNavigator.backOrNext(
           linkItem: .init(
-            path: "Step2",
-            items: Step2Model(name: "승찬", age: 26).encoded()),
+            path: DemoLink.Path.step2.rawValue,
+            items: DemoLink.QueryItem.Demo2(name: "승찬", age: 26).encoded()),
           isAnimated: true)})
       {
         Text("go step2")
