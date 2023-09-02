@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "urlencodedform",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/interactord/URLEncodedForm",
+      "state" : {
+        "revision" : "643c3e3752464b8f5bd44b79a5d1216b632959bb",
+        "version" : "1.0.0"
+      }
+    }
+  ],
+  "version" : 2
+}
