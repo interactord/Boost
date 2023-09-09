@@ -1,9 +1,8 @@
 import Architecture
 import LinkNavigator
-import Demo
+import Movie
 
 final class AppContainer {
-
   private init(
     dependency: AppSideEffect,
     navigator: SingleLinkNavigator<String>)
@@ -14,7 +13,6 @@ final class AppContainer {
 
   let dependency: AppSideEffect
   let navigator: SingleLinkNavigator<String>
-
 }
 
 extension AppContainer {
@@ -23,7 +21,7 @@ extension AppContainer {
     return .init(
       dependency: dependency,
       navigator: .init(
-        routeBuilderItemList: DemoRouterBuildGroup.release,
+        routeBuilderItemList: MovieRouteBuilderGroup.release,
         dependency: dependency))
   }
 }
