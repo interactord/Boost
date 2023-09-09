@@ -1,8 +1,11 @@
-//
-//  File.swift
-//  
-//
-//  Created by Scott Moon on 2023/09/09.
-//
-
 import Foundation
+import LinkNavigator
+
+struct MovieHomeLive {
+
+  let useCaseGroup: MovieSideEffectGroup
+  let navigator: LinkNavigatorURLEncodedItemProtocol
+}
+
+extension MovieHomeLive: MovieHomeEnvType {
+}
