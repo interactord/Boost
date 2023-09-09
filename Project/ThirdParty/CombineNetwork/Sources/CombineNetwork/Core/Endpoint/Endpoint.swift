@@ -9,9 +9,6 @@ public struct Endpoint: Equatable {
   let httpMethod: HTTPMethod
   let header: [String: String]
   let requestData: RequestData
-
-
-
 }
 
 extension Endpoint {

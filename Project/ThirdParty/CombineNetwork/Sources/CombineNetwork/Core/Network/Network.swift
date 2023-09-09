@@ -15,7 +15,6 @@ public struct Network {
 }
 
 extension Network {
-
   func fetch() -> AnyPublisher<Data, NetworkError> {
     guard let request = endpoint.makeRequest() else {
       return Fail(error: NetworkError(data: .none, statusCode: .none, error: .none, debugDescription: "invalidURLRequest"))
@@ -35,6 +34,13 @@ extension Network {
         return data
       }
       .mapError { NetworkError.flat(error: $0) }
+      .eraseToAnyPublisher()
+  }
+
+  func fetch<T: Decodable>() -> AnyPublisher<T, NetworkError> {
+    fetch()
+      .decode(type: T.self, decoder: JSONDecoder())
+      .mapError{ NetworkError.flat(error: $0) }
       .eraseToAnyPublisher()
   }
 }

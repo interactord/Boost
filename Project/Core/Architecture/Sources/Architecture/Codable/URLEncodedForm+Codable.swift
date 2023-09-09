@@ -7,3 +7,11 @@ extension Encodable {
     return .init(data: data, encoding: .utf8) ?? ""
   }
 }
+
+extension URLEncodedForm {
+  public static func decoded<T: Decodable>(data: Data) -> T? {
+    try? URLEncodedFormDecoder().decode(T.self, from: data)
+  }
+}
+
+
