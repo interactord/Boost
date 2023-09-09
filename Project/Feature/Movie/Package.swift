@@ -22,6 +22,7 @@ let package = Package(
       name: "Movie",
       dependencies: [
         "Architecture",
+        "DesignSystem",
       ]),
     .testTarget(
       name: "MovieTests",

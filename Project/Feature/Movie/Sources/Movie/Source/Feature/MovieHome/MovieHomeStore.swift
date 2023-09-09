@@ -14,6 +14,15 @@ public struct MovieHomeStore {
 
 extension MovieHomeStore {
   public struct State: Equatable {
+    @BindingState var keyword = ""
+    @BindingState var searchFocus: SearchType = .movies
+  }
+}
+
+extension MovieHomeStore.State {
+  public enum SearchType: Int, Equatable {
+    case movies
+    case people
   }
 }
 
@@ -22,6 +31,8 @@ extension MovieHomeStore {
     case binding(BindingAction<State>)
     case teardown
 
+    case onUpdateKeyword
+    case onClearKeyword
   }
 }
 
@@ -35,6 +46,14 @@ extension MovieHomeStore: Reducer {
         return .none
 
       case .teardown:
+        return .none
+
+      case .onUpdateKeyword:
+        print(state.keyword)
+        return .none
+
+      case .onClearKeyword:
+        print("onClearKeyword")
         return .none
       }
     }
