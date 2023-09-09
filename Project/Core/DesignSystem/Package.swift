@@ -4,26 +4,23 @@
 import PackageDescription
 
 let package = Package(
-  name: "Movie",
+  name: "DesignSystem",
   platforms: [
     .iOS(.v16),
   ],
   products: [
     .library(
-      name: "Movie",
-      targets: ["Movie"]),
+      name: "DesignSystem",
+      targets: ["DesignSystem"]),
   ],
   dependencies: [
-    .package(path: "../../Core/Architecture"),
-    .package(path: "../../Core/DesignSystem"),
   ],
   targets: [
     .target(
-      name: "Movie",
-      dependencies: [
-        "Architecture",
-      ]),
+      name: "DesignSystem",
+      dependencies: []),
     .testTarget(
-      name: "MovieTests",
-      dependencies: ["Movie"]),
-  ])
+      name: "DesignSystemTests",
+      dependencies: ["DesignSystem"]),
+  ]
+)

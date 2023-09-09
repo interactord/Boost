@@ -15,3 +15,11 @@ xcassets:
           forceProvidesNamespaces: true
         output: >-
           Project/Feature/Movie/Sources/Movie/Resource/XCAssets+Generated.swift
+  - inputs: >-
+      Project/Core/DesignSystem/Sources/DesignSystem/Resource/Assets.xcassets
+    outputs:
+      - templateName: swift5
+        params:
+          forceProvidesNamespaces: true
+        output: >-
+          Project/Core/DesignSystem/Sources/DesignSystem/Resource/XCAssets+Generated.swift
