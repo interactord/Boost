@@ -1,5 +1,6 @@
 import Foundation
 import SwiftUI
+import Domain
 
 // MARK: - MovieHomePage.SearchResultMoviesComponenet
 
@@ -24,10 +25,10 @@ extension MovieHomePage.SearchResultMoviesComponent: View {
           .foregroundColor(Color.gray)
       }) {
         if !viewState.keywordList.isEmpty {
-          ForEach(viewState.keywordList, id: \.self) { keyword in
+          ForEach(viewState.keywordList, id: \.id) { item in
             Divider()
             HStack {
-              Text(keyword)
+              Text(item.name)
                 .font(.subheadline)
 
               Spacer()
@@ -135,7 +136,15 @@ extension MovieHomePage.SearchResultMoviesComponent: View {
 extension MovieHomePage.SearchResultMoviesComponent {
   struct ViewState: Equatable {
     let itemList: [MovieItem]
-    let keywordList: [String]
+    let keywordList: [KeywordItem]
+
+    init(
+      fetchSearchMovie: SearchDomain.Response.MovieResult?,
+      fetchSearchKeyword: SearchDomain.Response.KeywordResult?)
+    {
+      itemList = (fetchSearchMovie?.resultList ?? []).map(MovieItem.init(rawValue:))
+      keywordList = (fetchSearchKeyword?.resultList ?? []).map(KeywordItem.init(rawValue:))
+    }
   }
 }
 
@@ -143,10 +152,28 @@ extension MovieHomePage.SearchResultMoviesComponent {
 
 extension MovieHomePage.SearchResultMoviesComponent.ViewState {
   struct MovieItem: Equatable, Identifiable {
-    let id = UUID()
+    let id: Int
     let title: String
     let voteAverage: Double
     let releaseDate: String
     let overView: String
+
+    init(rawValue: SearchDomain.Response.MovieResultItem) {
+      id = rawValue.id
+      title = rawValue.title
+      voteAverage = rawValue.voteAverage
+      releaseDate = rawValue.releaseDate
+      overView = rawValue.overview
+    }
+  }
+
+  struct KeywordItem: Equatable, Identifiable {
+    let id: Int
+    let name: String
+
+    init(rawValue: SearchDomain.Response.KeywordResultItem) {
+      id = rawValue.id
+      name = rawValue.name
+    }
   }
 }

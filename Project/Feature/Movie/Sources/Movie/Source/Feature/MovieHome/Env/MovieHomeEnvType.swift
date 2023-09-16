@@ -9,20 +9,68 @@ protocol MovieHomeEnvType {
 
   var nowPlaying: (Int)
     -> Effect<Result<MovieDomain.MovieList.Response.NowPlay, CompositeErrorDomain>> { get }
+  var searchKeyword: (String)
+    -> Effect<Result<SearchDomain.Response.KeywordResult, CompositeErrorDomain>> { get }
+  var searchMovie: (String)
+    -> Effect<Result<SearchDomain.Response.MovieResult, CompositeErrorDomain>> { get }
+  var searchPeople: (String)
+    -> Effect<Result<SearchDomain.Response.PeopleResult, CompositeErrorDomain>> { get }
 }
 
 extension MovieHomeEnvType {
   public var nowPlaying: (Int)
   -> Effect<Result<MovieDomain.MovieList.Response.NowPlay, CompositeErrorDomain>> {
-    { pageID in
+    { pageNumber in
       .publisher {
-        let request = MovieDomain.MovieList.Request.NowPlay(language: "ko-kr", region: "ko", page: pageID)
-        return useCaseGroup
+        useCaseGroup
           .movieUseCase
-          .newPlaying(request)
+          .newPlaying(.init(language: dummyLanguage, region: dummyLanguage, page: pageNumber))
           .mapToResult()
           .receive(on: mainQueue)
       }
     }
   }
+
+  public var searchKeyword: (String)
+    -> Effect<Result<SearchDomain.Response.KeywordResult, CompositeErrorDomain>> {
+      { keyword in
+        .publisher {
+          useCaseGroup
+            .searchUseCase
+            .searchKeyword(.init(language: dummyLanguage, query: keyword))
+            .mapToResult()
+            .receive(on: mainQueue)
+        }
+      }
+    }
+
+  public var searchMovie: (String)
+    -> Effect<Result<SearchDomain.Response.MovieResult, CompositeErrorDomain>> {
+      { keyword in
+        .publisher {
+          useCaseGroup
+            .searchUseCase
+            .searchMovie(.init(language: dummyLanguage, query: keyword, page: 1))
+            .mapToResult()
+            .receive(on: mainQueue)
+        }
+      }
+    }
+
+  public var searchPeople: (String)
+    -> Effect<Result<SearchDomain.Response.PeopleResult, CompositeErrorDomain>> {
+      { keyword in
+        .publisher {
+          useCaseGroup
+            .searchUseCase
+            .searchPeople(.init(language: dummyLanguage, query: keyword, page: 1))
+            .mapToResult()
+            .receive(on: mainQueue)
+        }
+      }
+    }
 }
+
+
+private let dummyLanguage = "ko-kr"
+private let dummyRegion = "ko"

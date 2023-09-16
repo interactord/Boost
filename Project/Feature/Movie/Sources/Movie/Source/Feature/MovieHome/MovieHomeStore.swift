@@ -23,9 +23,15 @@ extension MovieHomeStore {
 
     init() {
       _fetchNowPlaying = .init(.init(isLoading: false, value: .init()))
+      _fetchSearchKeyword = .init(.init(isLoading: false, value: .none))
+      _fetchSearchMovie = .init(.init(isLoading: false, value: .none))
+      _fetchSearchPeople = .init(.init(isLoading: false, value: .none))
     }
 
     @Heap var fetchNowPlaying: FetchState.Data<MovieDomain.MovieList.Response.NowPlay>
+    @Heap var fetchSearchKeyword: FetchState.Data<SearchDomain.Response.KeywordResult?>
+    @Heap var fetchSearchMovie: FetchState.Data<SearchDomain.Response.MovieResult?>
+    @Heap var fetchSearchPeople: FetchState.Data<SearchDomain.Response.PeopleResult?>
   }
 }
 
@@ -51,6 +57,9 @@ extension MovieHomeStore {
     case onClearKeyword
 
     case fetchNowPlay(Result<MovieDomain.MovieList.Response.NowPlay, CompositeErrorDomain>)
+    case fetchSearchKeyword(Result<SearchDomain.Response.KeywordResult, CompositeErrorDomain>)
+    case fetchSearchMovie(Result<SearchDomain.Response.MovieResult, CompositeErrorDomain>)
+    case fetchSearchPeople(Result<SearchDomain.Response.PeopleResult, CompositeErrorDomain>)
     case throwError(CompositeErrorDomain)
   }
 }
@@ -59,6 +68,9 @@ extension MovieHomeStore {
   enum CancelID: Equatable, CaseIterable {
     case teardown
     case requestNowPlay
+    case requestSearchKeyword
+    case requestSearchMovie
+    case reqeustSearchPeople
   }
 }
 
@@ -84,18 +96,62 @@ extension MovieHomeStore: Reducer {
           .cancellable(pageID: pageID, id: CancelID.requestNowPlay, cancelInFlight: true)
 
       case .onUpdateKeyword:
-        print(state.keyword)
-        return .none
+        guard !state.keyword.isEmpty else { return .run { await $0(.onClearKeyword) } }
+        return .concatenate(
+          env.searchKeyword(state.keyword)
+            .map(Action.fetchSearchKeyword)
+            .cancellable(pageID: pageID, id: CancelID.requestSearchKeyword, cancelInFlight: true),
+          env.searchMovie(state.keyword)
+            .map(Action.fetchSearchMovie)
+            .cancellable(pageID: pageID, id: CancelID.requestSearchMovie, cancelInFlight: true),
+          env.searchPeople(state.keyword)
+            .map(Action.fetchSearchPeople)
+            .cancellable(pageID: pageID, id: CancelID.reqeustSearchPeople, cancelInFlight: true))
 
       case .onClearKeyword:
-        print("onClearKeyword")
-        return .none
+        state.fetchSearchKeyword = .init(isLoading: false, value: .none)
+        state.fetchSearchMovie = .init(isLoading: false, value: .none)
+        state.fetchSearchPeople = .init(isLoading: false, value: .none)
+        return .concatenate(
+          .cancel(pageID: pageID, id: CancelID.requestSearchMovie),
+          .cancel(pageID: pageID, id: CancelID.requestSearchKeyword),
+          .cancel(pageID: pageID, id: CancelID.reqeustSearchPeople))
 
       case .fetchNowPlay(let result):
         state.fetchNowPlaying.isLoading = false
         switch result {
         case .success(let content):
           state.fetchNowPlaying.value = state.fetchNowPlaying.value.merge(target: content)
+          return .none
+        case .failure(let error):
+          return .run { await $0(.throwError(error)) }
+        }
+
+      case .fetchSearchKeyword(let result):
+        state.fetchSearchKeyword.isLoading = false
+        switch result {
+        case .success(let content):
+          state.fetchSearchKeyword.value = content
+          return .none
+        case .failure(let error):
+          return .run { await $0(.throwError(error)) }
+        }
+
+      case .fetchSearchMovie(let result):
+        state.fetchSearchMovie.isLoading = false
+        switch result {
+        case .success(let content):
+          state.fetchSearchMovie.value = content
+          return .none
+        case .failure(let error):
+          return .run { await $0(.throwError(error)) }
+        }
+
+      case .fetchSearchPeople(let result):
+        state.fetchSearchPeople.isLoading = false
+        switch result {
+        case .success(let content):
+          state.fetchSearchPeople.value = content
           return .none
         case .failure(let error):
           return .run { await $0(.throwError(error)) }

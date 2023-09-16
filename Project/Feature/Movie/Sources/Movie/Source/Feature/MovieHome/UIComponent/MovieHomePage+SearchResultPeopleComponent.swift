@@ -1,5 +1,6 @@
 import Foundation
 import SwiftUI
+import Domain
 
 // MARK: - MovieHomePage.SearchResultPeopleComponenet
 
@@ -35,7 +36,7 @@ extension MovieHomePage.SearchResultPeopleComponent: View {
 
               Spacer()
 
-              Text(profile.workList.map { $0 }.joined(separator: ","))
+              Text(profile.workList.compactMap { $0 }.joined(separator: ", "))
                 .font(.subheadline)
                 .foregroundColor(Color.gray)
                 .multilineTextAlignment(.leading)
@@ -66,6 +67,10 @@ extension MovieHomePage.SearchResultPeopleComponent: View {
 extension MovieHomePage.SearchResultPeopleComponent {
   struct ViewState: Equatable {
     let profileList: [ProfileItem]
+
+    init(rawValue: SearchDomain.Response.PeopleResult?) {
+      profileList = (rawValue?.resultList ?? []).map(ProfileItem.init(rawValue:))
+    }
   }
 }
 
@@ -73,8 +78,14 @@ extension MovieHomePage.SearchResultPeopleComponent {
 
 extension MovieHomePage.SearchResultPeopleComponent.ViewState {
   struct ProfileItem: Equatable, Identifiable {
-    let id = UUID()
+    let id: Int
     let name: String
-    let workList: [String]
+    let workList: [String?]
+
+    init(rawValue: SearchDomain.Response.PersonResultItem) {
+      id = rawValue.id
+      name = rawValue.name
+      workList = rawValue.appearanceList.map { $0.title ?? $0.originalTitle }
+    }
   }
 }

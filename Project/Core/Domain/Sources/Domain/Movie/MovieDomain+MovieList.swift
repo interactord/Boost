@@ -50,7 +50,7 @@ extension MovieDomain.MovieList.Response {
 
   public struct ResultItem: Equatable, Codable, Identifiable {
     public let id: Int
-    public let posterPath: String
+    public let posterPath: String?
     public let overview: String
     public let title: String
     public let voteAverage: Double
