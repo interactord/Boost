@@ -4,14 +4,14 @@ import SwiftUI
 // MARK: - MovieHomePage.SearchResultPeopleComponenet
 
 extension MovieHomePage {
-  struct SearchResultPeopleComponenet {
+  struct SearchResultPeopleComponent {
     let viewState: ViewState
   }
 }
 
 // MARK: - MovieHomePage.SearchResultPeopleComponenet + View
 
-extension MovieHomePage.SearchResultPeopleComponenet: View {
+extension MovieHomePage.SearchResultPeopleComponent: View {
   var body: some View {
     // 검색 했을때 맞는 키워드가 없으면 keywords에는 header만 나오고, Result 부분은 "No results" 가 나오도록 해야됌 (아직 구현 x)
     ScrollView {
@@ -63,7 +63,7 @@ extension MovieHomePage.SearchResultPeopleComponenet: View {
 
 // MARK: - MovieHomePage.SearchResultPeopleComponenet.ViewState
 
-extension MovieHomePage.SearchResultPeopleComponenet {
+extension MovieHomePage.SearchResultPeopleComponent {
   struct ViewState: Equatable {
     let profileList: [ProfileItem]
   }
@@ -71,7 +71,7 @@ extension MovieHomePage.SearchResultPeopleComponenet {
 
 // MARK: - MovieHomePage.SearchResultPeopleComponenet.ViewState.ProfileItem
 
-extension MovieHomePage.SearchResultPeopleComponenet.ViewState {
+extension MovieHomePage.SearchResultPeopleComponent.ViewState {
   struct ProfileItem: Equatable, Identifiable {
     let id = UUID()
     let name: String

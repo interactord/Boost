@@ -1,3 +1,4 @@
+import Architecture
 import ComposableArchitecture
 import Foundation
 import Domain
@@ -19,6 +20,12 @@ extension MovieHomeStore {
   public struct State: Equatable {
     @BindingState var keyword = ""
     @BindingState var searchFocus: SearchType = .movies
+
+    init() {
+      _fetchNowPlaying = .init(.init(isLoading: false, value: .init()))
+    }
+
+    @Heap var fetchNowPlaying: FetchState.Data<MovieDomain.MovieList.Response.NowPlay>
   }
 }
 
@@ -70,8 +77,11 @@ extension MovieHomeStore: Reducer {
           CancelID.allCases.map{ .cancel(pageID: pageID, id: $0) })
 
       case .getNowPlay:
-        print("getNowPlay")
-        return .none
+        state.fetchNowPlaying.isLoading = true
+        let currentPage = state.fetchNowPlaying.value.resultList.count / 20
+        return env.nowPlaying(currentPage + 1)
+          .map(Action.fetchNowPlay)
+          .cancellable(pageID: pageID, id: CancelID.requestNowPlay, cancelInFlight: true)
 
       case .onUpdateKeyword:
         print(state.keyword)
@@ -82,12 +92,29 @@ extension MovieHomeStore: Reducer {
         return .none
 
       case .fetchNowPlay(let result):
-        return .none
+        state.fetchNowPlaying.isLoading = false
+        switch result {
+        case .success(let content):
+          state.fetchNowPlaying.value = state.fetchNowPlaying.value.merge(target: content)
+          return .none
+        case .failure(let error):
+          return .run { await $0(.throwError(error)) }
+        }
 
       case .throwError(let error):
         print(error)
         return .none
       }
     }
+  }
+}
+
+extension MovieDomain.MovieList.Response.NowPlay {
+  fileprivate func merge(target: Self) -> Self {
+    .init(
+      totalPages: target.totalPages,
+      totalResult: target.totalResult,
+      page: target.page,
+      resultList: resultList + target.resultList)
   }
 }

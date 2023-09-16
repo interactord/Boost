@@ -4,14 +4,14 @@ import SwiftUI
 // MARK: - MovieHomePage.SearchResultMoviesComponenet
 
 extension MovieHomePage {
-  struct SearchResultMoviesComponenet {
+  struct SearchResultMoviesComponent {
     let viewState: ViewState
   }
 }
 
-// MARK: - MovieHomePage.SearchResultMoviesComponenet + View
+// MARK: - MovieHomePage.SearchResultMoviesComponent + View
 
-extension MovieHomePage.SearchResultMoviesComponenet: View {
+extension MovieHomePage.SearchResultMoviesComponent: View {
 
   @ViewBuilder
   var keywordSection: some View {
@@ -130,18 +130,18 @@ extension MovieHomePage.SearchResultMoviesComponenet: View {
   }
 }
 
-// MARK: - MovieHomePage.SearchResultMoviesComponenet.ViewState
+// MARK: - MovieHomePage.SearchResultMoviesComponent.ViewState
 
-extension MovieHomePage.SearchResultMoviesComponenet {
+extension MovieHomePage.SearchResultMoviesComponent {
   struct ViewState: Equatable {
     let itemList: [MovieItem]
     let keywordList: [String]
   }
 }
 
-// MARK: - MovieHomePage.SearchResultMoviesComponenet.ViewState.MovieItem
+// MARK: - MovieHomePage.SearchResultMoviesComponent.ViewState.MovieItem
 
-extension MovieHomePage.SearchResultMoviesComponenet.ViewState {
+extension MovieHomePage.SearchResultMoviesComponent.ViewState {
   struct MovieItem: Equatable, Identifiable {
     let id = UUID()
     let title: String

@@ -34,6 +34,7 @@ extension MovieUseCasePlatformMock: MovieUseCase {
       }
 
       return Just(response)
+        .delay(for: .seconds(3), scheduler: RunLoop.main)
         .setFailureType(to: CompositeErrorDomain.self)
         .eraseToAnyPublisher()
     }
