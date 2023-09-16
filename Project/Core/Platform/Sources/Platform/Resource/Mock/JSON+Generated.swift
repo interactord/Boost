@@ -14,6 +14,12 @@ internal enum Files {
   internal static let nowPlaying1Json = File(name: "now_playing_1", ext: "json", relativePath: "", mimeType: "application/json")
   /// now_playing_2.json
   internal static let nowPlaying2Json = File(name: "now_playing_2", ext: "json", relativePath: "", mimeType: "application/json")
+  /// search_keyword_1.json
+  internal static let searchKeyword1Json = File(name: "search_keyword_1", ext: "json", relativePath: "", mimeType: "application/json")
+  /// search_movie_1.json
+  internal static let searchMovie1Json = File(name: "search_movie_1", ext: "json", relativePath: "", mimeType: "application/json")
+  /// search_person_1.json
+  internal static let searchPerson1Json = File(name: "search_person_1", ext: "json", relativePath: "", mimeType: "application/json")
 }
 // swiftlint:enable explicit_type_interface identifier_name
 // swiftlint:enable nesting type_body_length type_name vertical_whitespace_opening_braces

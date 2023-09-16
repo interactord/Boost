@@ -30,6 +30,8 @@ extension AppContainer {
     let dependency = AppSideEffect(
       configurationDomain: configuration,
       movieUseCase: MovieUseCasePlatformMock(
+        configurationDomain: configuration),
+      searchUseCase: SearchUseCasePlatformMock(
         configurationDomain: configuration))
     return .init(
       dependency: dependency,

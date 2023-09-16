@@ -64,6 +64,5 @@ extension MovieDomain.MovieList.Response {
       case voteAverage = "vote_average"
       case releaseDate = "release_date"
     }
-
   }
 }
