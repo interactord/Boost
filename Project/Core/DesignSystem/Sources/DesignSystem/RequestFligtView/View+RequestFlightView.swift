@@ -4,9 +4,9 @@ extension View {
 
   @ViewBuilder
   public func setRequestFlightView(isLoading: Bool) -> some View {
-    if isLoading {
-      self
-        .overlay(alignment: .center) {
+    self
+      .overlay(alignment: .center) {
+        if isLoading {
           Rectangle()
             .fill(.clear)
             .background(.black.opacity(0.13))
@@ -15,8 +15,6 @@ extension View {
                 .progressViewStyle(CircularProgressViewStyle.circular)
             )
         }
-    } else {
-      self
-    }
+      }
   }
 }
