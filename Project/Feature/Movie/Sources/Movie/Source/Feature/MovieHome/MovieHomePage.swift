@@ -167,5 +167,11 @@ extension MovieHomePage: View {
         }
       }
     }
+    .onAppear {
+      viewStore.send(.getNowPlay)
+    }
+    .onDisappear {
+      viewStore.send(.teardown)
+    }
   }
 }

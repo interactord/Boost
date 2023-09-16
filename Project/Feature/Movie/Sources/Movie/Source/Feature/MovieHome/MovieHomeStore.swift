@@ -1,5 +1,6 @@
 import ComposableArchitecture
 import Foundation
+import Domain
 
 // MARK: - MovieHomeStore
 
@@ -37,8 +38,20 @@ extension MovieHomeStore {
     case binding(BindingAction<State>)
     case teardown
 
+    case getNowPlay
+
     case onUpdateKeyword
     case onClearKeyword
+
+    case fetchNowPlay(Result<MovieDomain.MovieList.Response.NowPlay, CompositeErrorDomain>)
+    case throwError(CompositeErrorDomain)
+  }
+}
+
+extension MovieHomeStore {
+  enum CancelID: Equatable, CaseIterable {
+    case teardown
+    case requestNowPlay
   }
 }
 
@@ -53,6 +66,11 @@ extension MovieHomeStore: Reducer {
         return .none
 
       case .teardown:
+        return .concatenate(
+          CancelID.allCases.map{ .cancel(pageID: pageID, id: $0) })
+
+      case .getNowPlay:
+        print("getNowPlay")
         return .none
 
       case .onUpdateKeyword:
@@ -61,6 +79,13 @@ extension MovieHomeStore: Reducer {
 
       case .onClearKeyword:
         print("onClearKeyword")
+        return .none
+
+      case .fetchNowPlay(let result):
+        return .none
+
+      case .throwError(let error):
+        print(error)
         return .none
       }
     }
