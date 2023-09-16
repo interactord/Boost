@@ -1,11 +1,21 @@
 import Architecture
 import LinkNavigator
 import Movie
+import Domain
 
 // MARK: - AppSideEffect
 
 struct AppSideEffect {
-  public init() { }
+  init(
+    configurationDomain: ConfigurationDomain,
+    movieUseCase: MovieUseCase)
+  {
+    self.configurationDomain = configurationDomain
+    self.movieUseCase = movieUseCase
+  }
+
+  let configurationDomain: ConfigurationDomain
+  let movieUseCase: MovieUseCase
 }
 
 // MARK: MovieSideEffectGroup
