@@ -10,6 +10,7 @@ struct MovieHomePage {
 
   private let store: StoreOf<MovieHomeStore>
   @ObservedObject private var viewStore: ViewStoreOf<MovieHomeStore>
+  @FocusState private var isFocus: Bool?
 
   init(store: StoreOf<MovieHomeStore>) {
     self.store = store
@@ -101,46 +102,55 @@ extension MovieHomePage: View {
       SearchComponent(
         viewState: searchComponentViewState,
         keyword: viewStore.$keyword,
+        isFocus: $isFocus,
         throttleAction: { viewStore.send(.onUpdateKeyword) },
-        clearAction: { viewStore.send(.onClearKeyword)
+        clearAction: {
+          viewStore.send(.onClearKeyword)
+          isFocus = false
         })
         .padding(.trailing, 16)
         .padding(.bottom, 8)
 
       Divider()
 
-      if viewStore.keyword.isEmpty {
         // 아이템 리스트
         ItemListComponent(
           viewState: itemListComponentViewState,
           nextPageAction: { viewStore.send(.getNowPlay) })
-      } else {
-        Group {
-          Picker("", selection: viewStore.$searchFocus) {
-            Text("Movies").tag(MovieHomeStore.State.SearchType.movies)
-            Text("People").tag(MovieHomeStore.State.SearchType.people)
-          }
-          .pickerStyle(SegmentedPickerStyle())
-          .padding(.trailing, 16)
+        .overlay {
+          if (isFocus ?? false) {
+            VStack {
 
-          Divider()
+                Picker("", selection: viewStore.$searchFocus) {
+                  Text("Movies").tag(MovieHomeStore.State.SearchType.movies)
+                  Text("People").tag(MovieHomeStore.State.SearchType.people)
+                }
+                .pickerStyle(SegmentedPickerStyle())
+                .padding(.trailing, 16)
 
-          switch viewStore.searchFocus {
-          case .movies:
-            // 서치 했을때의 무비 리스트
-            SearchResultMoviesComponent(
-              viewState: searchResultMoviesComponentViewState)
+                Divider()
 
-          case .people:
-            // 서치 했을때의 사람 리스트
-            SearchResultPeopleComponent(
-              viewState: searchResultPeopleComponentViewState)
+                switch viewStore.searchFocus {
+                case .movies:
+                  // 서치 했을때의 무비 리스트
+                  SearchResultMoviesComponent(
+                    viewState: searchResultMoviesComponentViewState)
+
+                case .people:
+                  // 서치 했을때의 사람 리스트
+                  SearchResultPeopleComponent(
+                    viewState: searchResultPeopleComponentViewState)
+                }
+
+                Spacer()
+              }
+            .background(.white)
           }
         }
-      }
       Spacer()
     }
     .padding(.leading, 16)
+    .background(.white)
     .navigationTitle("Now Playing")
     .toolbar {
       ToolbarItem(placement: .navigationBarTrailing) {
@@ -149,9 +159,12 @@ extension MovieHomePage: View {
             .resizable()
             .foregroundColor(.customYellowColor)
         }
+        .animation(.none, value: viewStore.state)
       }
     }
+    .animation(.spring(), value: viewStore.state)
     .setRequestFlightView(isLoading: isLoading)
+    .ignoresSafeArea(.keyboard, edges: .bottom)
     .onAppear {
       viewStore.send(.getNowPlay)
     }
