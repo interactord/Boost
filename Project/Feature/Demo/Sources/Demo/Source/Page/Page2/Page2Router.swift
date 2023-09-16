@@ -1,16 +1,18 @@
-import Foundation
 import Architecture
+import Foundation
 import LinkNavigator
 import URLEncodedForm
 
-struct Step2Router<RootNavigator: LinkNavigatorURLEncodedItemProtocol & LinkNavigatorFindLocationUsable> {
+struct Page2Router<RootNavigator: LinkNavigatorURLEncodedItemProtocol & LinkNavigatorFindLocationUsable> {
+
   static func generate() -> RouteBuilderOf<RootNavigator, LinkNavigatorURLEncodedItemProtocol.ItemValue> {
-    let matchPath = DemoLink.Path.step2.rawValue
-    return .init(matchPath: matchPath) { _, items, diContainer -> WrappingController<Step2Page>? in
+    let matchPath = DemoLink.Path.page2.rawValue
+
+    return .init(matchPath: matchPath) { linkNavigator, items, _ -> WrappingController<Page2View>? in
       let query = try? URLEncodedFormDecoder().decode(DemoLink.QueryItem.Demo2.self, from: items)
 
       return WrappingController(matchPath: matchPath) {
-        Step2Page(model: query)
+        Page2View(linkNavigator: linkNavigator, model: query)
       }
     }
   }

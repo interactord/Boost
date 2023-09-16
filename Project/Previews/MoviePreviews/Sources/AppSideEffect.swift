@@ -2,11 +2,12 @@ import Architecture
 import LinkNavigator
 import Movie
 
+// MARK: - AppSideEffect
+
 struct AppSideEffect {
-  public init() {}
+  public init() { }
 }
 
-extension AppSideEffect: MovieSideEffectGroup {
-}
+// MARK: MovieSideEffectGroup
 
-
+extension AppSideEffect: MovieSideEffectGroup { }

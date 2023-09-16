@@ -1,9 +1,12 @@
 import Foundation
 
+// MARK: - MovieHomeMock
+
 struct MovieHomeMock {
 
   let useCaseGroup: MovieSideEffectGroup
 }
 
-extension MovieHomeMock: MovieHomeEnvType {
-}
+// MARK: MovieHomeEnvType
+
+extension MovieHomeMock: MovieHomeEnvType { }

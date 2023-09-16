@@ -1,6 +1,4 @@
 import Architecture
 import LinkNavigator
 
-public protocol MovieSideEffectGroup: DependencyType {
-
-}
+public protocol MovieSideEffectGroup: DependencyType { }

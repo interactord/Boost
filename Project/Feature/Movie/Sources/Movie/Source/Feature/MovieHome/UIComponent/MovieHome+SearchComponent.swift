@@ -1,7 +1,9 @@
 import Architecture
+import Combine
 import Foundation
 import SwiftUI
-import Combine
+
+// MARK: - MovieHomePage.SearchComponent
 
 extension MovieHomePage {
   struct SearchComponent {
@@ -15,6 +17,8 @@ extension MovieHomePage {
   }
 }
 
+// MARK: - MovieHomePage.SearchComponent + View
+
 extension MovieHomePage.SearchComponent: View {
   var body: some View {
     HStack(spacing: 8) {
@@ -25,10 +29,13 @@ extension MovieHomePage.SearchComponent: View {
 
       TextField(viewState.placeHolder, text: keyword)
         .textFieldStyle(RoundedBorderTextFieldStyle())
+        .padding(.trailing, 12)
 
       if !keyword.wrappedValue.isEmpty {
-        Button.init(action: { keyword.wrappedValue = "" }) {
+        Button(action: { keyword.wrappedValue = "" }) {
           Text("Cancel")
+            .font(.body)
+            .foregroundColor(Color(.systemPink))
         }
       }
     }
@@ -41,9 +48,10 @@ extension MovieHomePage.SearchComponent: View {
       textBindingObserver.$value
         .throttle(for: .milliseconds(500), scheduler: RunLoop.main, latest: true))
     { _ in throttleAction() }
-
   }
 }
+
+// MARK: - MovieHomePage.SearchComponent.ViewState
 
 extension MovieHomePage.SearchComponent {
   struct ViewState: Equatable {

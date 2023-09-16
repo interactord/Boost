@@ -1,6 +1,6 @@
 import Architecture
-import SwiftUI
 import LinkNavigator
+import SwiftUI
 
 @main
 struct AppMain: App {
@@ -12,7 +12,7 @@ struct AppMain: App {
       LinkNavigationView(
         linkNavigator: viewModel.linkNavigator,
         item: .init(path: Link.Movie.Path.home.rawValue, items: ""))
-      .ignoresSafeArea()
+        .ignoresSafeArea()
     }
   }
 }

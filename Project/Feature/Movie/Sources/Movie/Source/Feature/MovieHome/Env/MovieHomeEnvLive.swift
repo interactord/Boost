@@ -1,11 +1,14 @@
 import Foundation
 import LinkNavigator
 
+// MARK: - MovieHomeLive
+
 struct MovieHomeLive {
 
   let useCaseGroup: MovieSideEffectGroup
   let navigator: LinkNavigatorURLEncodedItemProtocol
 }
 
-extension MovieHomeLive: MovieHomeEnvType {
-}
+// MARK: MovieHomeEnvType
+
+extension MovieHomeLive: MovieHomeEnvType { }

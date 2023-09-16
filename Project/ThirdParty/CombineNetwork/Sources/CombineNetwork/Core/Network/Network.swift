@@ -1,5 +1,7 @@
-import Foundation
 import Combine
+import Foundation
+
+// MARK: - Network
 
 public struct Network {
   let endpoint: Endpoint
@@ -23,9 +25,13 @@ extension Network {
 
     return session
       .dataTaskPublisher(for: request)
-      .tryMap() { data, response -> Data in
+      .tryMap { data, response -> Data in
         guard let res = response as? HTTPURLResponse else {
-          throw NetworkError(data: data, statusCode: .none, error: .none, debugDescription: "invalid type casting response as? HTTPURLResponse")
+          throw NetworkError(
+            data: data,
+            statusCode: .none,
+            error: .none,
+            debugDescription: "invalid type casting response as? HTTPURLResponse")
         }
         guard (200...299).contains(res.statusCode) else {
           throw NetworkError(data: data, statusCode: res.statusCode, error: .none, debugDescription: "invalide response")
@@ -40,7 +46,7 @@ extension Network {
   func fetch<T: Decodable>() -> AnyPublisher<T, NetworkError> {
     fetch()
       .decode(type: T.self, decoder: JSONDecoder())
-      .mapError{ NetworkError.flat(error: $0) }
+      .mapError { NetworkError.flat(error: $0) }
       .eraseToAnyPublisher()
   }
 }

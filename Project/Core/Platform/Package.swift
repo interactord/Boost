@@ -5,7 +5,7 @@ import PackageDescription
 
 let package = Package(
   name: "Platform",
-  platforms: [ .iOS(.v16) ],
+  platforms: [.iOS(.v16)],
   products: [
     .library(
       name: "Platform",
@@ -23,5 +23,4 @@ let package = Package(
     .testTarget(
       name: "PlatformTests",
       dependencies: ["Platform"]),
-  ]
-)
+  ])

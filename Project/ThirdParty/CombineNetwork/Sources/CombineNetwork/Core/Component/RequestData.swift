@@ -1,6 +1,8 @@
 import Foundation
 import URLEncodedForm
 
+// MARK: - RequestData
+
 public enum RequestData {
   case query(Encodable)
   case json(Encodable)
@@ -20,7 +22,17 @@ extension RequestData {
   }
 }
 
+// MARK: Equatable
+
 extension RequestData: Equatable {
+
+  // MARK: Public
+
+  public static func == (lhs: RequestData, rhs: RequestData) -> Bool {
+    lhs.id == rhs.id
+  }
+
+  // MARK: Private
 
   private var id: String {
     switch self {
@@ -31,7 +43,4 @@ extension RequestData: Equatable {
     }
   }
 
-  public static func == (lhs: RequestData, rhs: RequestData) -> Bool {
-    lhs.id == rhs.id
-  }
 }

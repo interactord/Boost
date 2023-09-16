@@ -1,6 +1,8 @@
 import Architecture
 import LinkNavigator
 
+// MARK: - MovieRouteBuilderGroup
+
 public struct MovieRouteBuilderGroup<RootNavigator: LinkNavigatorURLEncodedItemProtocol & LinkNavigatorFindLocationUsable> {
   public init() { }
 }
@@ -8,7 +10,9 @@ public struct MovieRouteBuilderGroup<RootNavigator: LinkNavigatorURLEncodedItemP
 extension MovieRouteBuilderGroup {
   public static var release: [RouteBuilderOf<RootNavigator, LinkNavigatorURLEncodedItemProtocol.ItemValue>] {
     [
-      MovieHomeRouteBuilder.generate()
+      MovieHomeRouteBuilder.generate(),
+      MyListsRouteBuilder.generate(),
+      MovieDetailRouteBuilder.generate(),
     ]
   }
 }

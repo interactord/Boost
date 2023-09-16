@@ -1,5 +1,7 @@
 import Foundation
 
+// MARK: - NetworkError
+
 public struct NetworkError: Error {
   let data: Data?
   let statusCode: Int?
@@ -22,7 +24,7 @@ public struct NetworkError: Error {
 
 extension NetworkError {
   static func other(error: Error) -> Self {
-    return .init(data: .none, statusCode: .none, error: error, debugDescription: .none)
+    .init(data: .none, statusCode: .none, error: error, debugDescription: .none)
   }
 
   static func flat(error: Error) -> NetworkError {

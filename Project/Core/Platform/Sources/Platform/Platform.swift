@@ -1,6 +1,5 @@
 public struct Platform {
-    public private(set) var text = "Hello, World!"
+  public private(set) var text = "Hello, World!"
 
-    public init() {
-    }
+  public init() { }
 }

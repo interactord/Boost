@@ -35,5 +35,4 @@ let package = Package(
     .testTarget(
       name: "ArchitectureTests",
       dependencies: ["Architecture"]),
-  ]
-)
+  ])
