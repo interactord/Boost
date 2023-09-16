@@ -115,6 +115,14 @@ extension MovieDomain.MovieList.Response.NowPlay {
       totalPages: target.totalPages,
       totalResult: target.totalResult,
       page: target.page,
-      resultList: resultList + target.resultList)
+      resultList: resultList.mergeUnique(target: target.resultList))
+  }
+}
+
+extension [MovieDomain.MovieList.Response.ResultItem] {
+  fileprivate func mergeUnique(target: Self) -> Self {
+    target.reduce(self) { curr, next in
+      curr + (curr.map(\.id).contains(next.id) ? [] : [next])
+    }
   }
 }
