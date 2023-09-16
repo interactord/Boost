@@ -23,3 +23,13 @@ xcassets:
           forceProvidesNamespaces: true
         output: >-
           Project/Core/DesignSystem/Sources/DesignSystem/Resource/XCAssets+Generated.swift
+files:
+  - inputs: >-
+      Project/Core/Platform/Sources/Platform/Resource/Mock
+    filter: .+\.json$
+    outputs:
+      - templateName: structured-swift5
+        params:
+          forceProvidesNamespaces: true
+        output: >-
+          Project/Core/Platform/Sources/Platform/Resource/Mock/JSON+Generated.swift
