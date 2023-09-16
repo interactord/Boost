@@ -9,4 +9,4 @@ struct MovieDetailMock {
 
 // MARK: MovieHomeEnvType
 
-extension MovieDetailMock: MovieHomeEnvType { }
+extension MovieDetailMock: MovieDetailEnvType { }
