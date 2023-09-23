@@ -3,24 +3,24 @@ import LinkNavigator
 import Movie
 import Domain
 
-// MARK: - AppSideEffect
-
 struct AppSideEffect {
   init(
     configurationDomain: ConfigurationDomain,
     movieUseCase: MovieUseCase,
-    searchUseCase: SearchUseCase)
+    searchUseCase: SearchUseCase,
+    movieDetailUseCase: MovieDetailUseCase)
   {
     self.configurationDomain = configurationDomain
     self.movieUseCase = movieUseCase
     self.searchUseCase = searchUseCase
+    self.movieDetailUseCase = movieDetailUseCase
   }
-
+  
   let configurationDomain: ConfigurationDomain
   let movieUseCase: MovieUseCase
   let searchUseCase: SearchUseCase
+  let movieDetailUseCase: MovieDetailUseCase
 }
 
-// MARK: MovieSideEffectGroup
-
-extension AppSideEffect: MovieSideEffectGroup { }
+extension AppSideEffect: MovieSideEffectGroup {
+}

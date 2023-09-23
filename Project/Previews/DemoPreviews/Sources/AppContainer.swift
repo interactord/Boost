@@ -1,13 +1,9 @@
 import Architecture
-import Demo
 import LinkNavigator
-
-// MARK: - AppContainer
+import Demo
 
 final class AppContainer {
-
-  // MARK: Lifecycle
-
+  
   private init(
     dependency: AppSideEffect,
     navigator: SingleLinkNavigator<String>)
@@ -15,12 +11,9 @@ final class AppContainer {
     self.dependency = dependency
     self.navigator = navigator
   }
-
-  // MARK: Internal
-
+  
   let dependency: AppSideEffect
   let navigator: SingleLinkNavigator<String>
-
 }
 
 extension AppContainer {
@@ -29,7 +22,7 @@ extension AppContainer {
     return .init(
       dependency: dependency,
       navigator: .init(
-        routeBuilderItemList: DemoRouterBuildGroup.release,
+        routeBuilderItemList: DemoRouterBuildGroup.realease,
         dependency: dependency))
   }
 }

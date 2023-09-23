@@ -3,228 +3,32 @@
   "results": [
     {
       "adult": false,
-      "gender": 1,
-      "id": 15746,
+      "gender": 0,
+      "id": 2689785,
       "known_for_department": "Acting",
-      "name": "Barbara Babcock",
-      "original_name": "Barbara Babcock",
-      "popularity": 11.492,
-      "profile_path": "/wOB6OSPgFlyI3V1PtCTg7q8vrdW.jpg",
+      "name": "Babi",
+      "original_name": "Babi",
+      "popularity": 0.6,
+      "profile_path": null,
       "known_for": [
         {
           "adult": false,
-          "backdrop_path": "/6gvocf4kU9qJyUVZEDveOtLkaMu.jpg",
-          "id": 12536,
-          "title": "나 홀로 집에 4",
-          "original_language": "en",
-          "original_title": "Home Alone 4",
-          "overview": "부모님이 이혼을 해 엄마와 함께 살게 된 케빈은 크리스마스를 아빠와 함께 아빠의 여자친구 나탈리의 집에서 보내기로 결정한다. 한편 전편들에서 케빈에게 호되게 당했던 도둑 마브는 베라라는 새 파트너와 함께 나탈리의 집을 털기로 하는데...",
-          "poster_path": "/gHj3HFZ3Ut3UNpZHxjjUlE9CppY.jpg",
+          "backdrop_path": "/7dQz3GxMnNEAgL5PYklaNnvlCN2.jpg",
+          "id": 534685,
+          "title": "Sonho de um Carnaval",
+          "original_language": "pt",
+          "original_title": "Sonho de um Carnaval",
+          "overview": "",
+          "poster_path": "/eRoOrkop3EGaeQ6HSsknrdaNdoG.jpg",
           "media_type": "movie",
           "genre_ids": [
-            35,
-            10751,
-            10770
+            99
           ],
-          "popularity": 25.231,
-          "release_date": "2002-11-03",
+          "popularity": 0.6,
+          "release_date": "2003-10-29",
           "video": false,
-          "vote_average": 4.451,
-          "vote_count": 1122
-        },
-        {
-          "adult": false,
-          "backdrop_path": "/1MTBsjWk2nlcRLrAvgpB1uj00TC.jpg",
-          "id": 11259,
-          "title": "파 앤드 어웨이",
-          "original_language": "en",
-          "original_title": "Far and Away",
-          "overview": "아일랜드 한 작은 마을의 소작농인 조셉 도넬리(톰 크루즈)는 억울한 죽음을 당한 아버지의 임종을 지켜보며 분노를 느낀다. 조셉은 아버지의 원수를 갚기 위해 방황하다 우연히 한 마을에 들어선다. 하룻밤 노숙을 위해 대지주의 마굿간에 숨어든 조셉은 지주의 딸 샤논(니콜 키드먼)이 휘두른 삼지창에 찔려 부상을 당한다. 치료를 위해 샤논의 집에 머문 조셉은 샤논과의 대화에서 공감대를 찾게 된다. 그들은 함께 미국으로 탈출하기로 결심한다.  1892년 샤논의 몸종 형식으로 조셉은 보스턴행 이민선에 몸을 싣는다. 미국에서 샤논은 잡일을 하며 자신을 찾아가고, 조셉은 당시 횡행하던 논스톱 복싱경기 선수로 두각을 나타낸다. 하지만 둘은 서로간의 불신과 사고로 헤어지게 되고 몇 년의 세월이 흐른다.  그러던 중 체로키 레이스라는 신종 경주마 대회 경기에 출전한 조셉은 우연히 조우한 샤논의 도움으로 그토록 원하던 땅을 차지하게 되는데...",
-          "poster_path": "/7RJwILNai4mr3REpVaAbuzjzbC8.jpg",
-          "media_type": "movie",
-          "genre_ids": [
-            12,
-            18,
-            10749,
-            37
-          ],
-          "popularity": 21.143,
-          "release_date": "1992-05-22",
-          "video": false,
-          "vote_average": 6.736,
-          "vote_count": 1090
-        },
-        {
-          "adult": false,
-          "backdrop_path": "/tpZgBAB09LzA3u4cGrkcLp3ryVX.jpg",
-          "id": 5551,
-          "title": "스페이스 카우보이",
-          "original_language": "en",
-          "original_title": "Space Cowboys",
-          "overview": "1958년, 미 공군 최고의 정예 조종사 팀인 데덜라스의 멤버인 프랭크 코빈(클린트 이스트우드 분), 호크 호킨스(토미 리 존스 분), 제리 오닐(도날드 서덜랜드 분), 탱크 설리반(제임스 가너 분)은 우주로 날아간 최초의 인류가 되기 위해 훈련에 열심이다. 그러나 새로 발족된 민간기구 NASA에게 우주탐험 프로젝트가 넘어가고 미국 최초로 우주선을 타는 영광은 침팬지에게 돌아간다.  그로부터 42년 뒤인 2000년. 지구궤도를 돌고있던 구 소련의 통신위성 아이콘의 유도체 시스템에 고장이 생긴다. 자칫 궤도를 이탈하기라도 하면 지구와의 충돌까지도 우려되는 위기 상황. 나사는 급히 팀을 구성하지만 50년 전에 만들어진 이 기계를 수리한다는 것은 불가능하다. 아이콘에 장착된 유도체는 미국의 초기위성 스카이랩의 유도체와 동일한 것이었고, 이 스카이랩을 설계한 것이 바로 프랭크 코빈. NASA의 관리인 밥 거슨은 프랭크를 급히 찾아 아이콘 수리를 부탁한다. 그의 제안에 프랭크는 옛 공군 팀인 데덜라스의 동료들과 함께 가는 조건을 내건다. 프랭크가 아니면 이 오래된 기계는 고칠 수 없는 상황.  결국 40년만에 어렵사리 노병들이 다시 뭉친다. 군에서 제대한 후 각자의 길을 가고 있던 이들 4명은 노령으로 인한 한계에 부딪히면서도 NASA의 젊은 우주 비행사들의 강도 높은 훈련을 극복해 낸다. 언론을 통해 데덜라스의 소식은 순식간에 사람들에게 알려지고, 신체검사 때 췌장암에 걸린 것으로 판명된 호크를 탑승명단에 올릴 수 있을 정도로 유명인사가 돼 버린다. 성공적으로 우주궤도에 진입, 위성 아이콘의 수리작업에 들어간 프랭크와 그 동료들. 그러나 아이콘의 내부를 관찰하던 프랭크는 그 안에 핵미사일 탄두 6개가 탑재되어 있는 것을 발견하고 경악을 금치 못하는데.",
-          "poster_path": "/sQ062CdG9tNiifCnR5A2aJeh8Sp.jpg",
-          "media_type": "movie",
-          "genre_ids": [
-            28,
-            12,
-            53
-          ],
-          "popularity": 13.58,
-          "release_date": "2000-08-04",
-          "video": false,
-          "vote_average": 6.371,
-          "vote_count": 1233
-        }
-      ]
-    },
-    {
-      "adult": false,
-      "gender": 2,
-      "id": 1362974,
-      "known_for_department": "Acting",
-      "name": "Babak Tafti",
-      "original_name": "Babak Tafti",
-      "popularity": 25.366,
-      "profile_path": "/ybXVTUHNyyvT30l8TDrh9P6LyxZ.jpg",
-      "known_for": [
-        {
-          "adult": false,
-          "backdrop_path": "/5tKiuZvvV1lic7v65rdoGPmoOvf.jpg",
-          "id": 534,
-          "title": "터미네이터 4: 미래전쟁의 시작",
-          "original_language": "en",
-          "original_title": "Terminator Salvation",
-          "overview": "21세기 초, 군사방위 프로그램으로 제작된 네트워크 스카이넷은 자각력이 생겨 인류가 자신을 파괴할 것을 예상하고 인류에 대한 핵공격을 감행했다. 살아남은 자들은 이를 심판의 날이라 불렀으며, 처참하게 파괴된 2018년 지구에는 기계 군단과 인간 저항군 사이의 악몽 같은 전쟁이 계속되고 있었다. 스카이넷은 인류 말살을 위해 터미네이터 군단을 만들었고, 보다 치명적인 터미네이터를 만들기 위해 인간들을 잡아다 생체 실험에 이용하고 있었다.  인간 저항군의 리더인 존 코너는 기계군단의 비밀을 캐기 위해 저항군 조직과 함께 스카이넷이 만든 실험 기지에 침투하는데...",
-          "poster_path": "/usI4GVUqqsJpnWxjP6ChmTWqoAg.jpg",
-          "media_type": "movie",
-          "genre_ids": [
-            28,
-            878,
-            53
-          ],
-          "popularity": 35.541,
-          "release_date": "2009-05-20",
-          "video": false,
-          "vote_average": 6.04,
-          "vote_count": 5995
-        },
-        {
-          "adult": false,
-          "backdrop_path": "/ieFVFCLd1akOdYNx0MttGmgwCTT.jpg",
-          "id": 586461,
-          "title": "스왈로우",
-          "original_language": "en",
-          "original_title": "Swallow",
-          "overview": "부유한 기업가 마이클의 아들인 리치와 결혼한 헌터는, 강이 내려다 보이는 멋진 저택에서 생활하며 사람들의 부러움을 한 몸에 받는다. 리치는 회사에서 최연소 전무로 승진하고 헌터는 임신하면서 행복한 부부처럼 보이지만, 헌터는 리치와 시부모의 대화 상대가 되지 못하고 무시당한다.그러던 어느 날, 헌터는 시어머니 캐서린에게서 '기쁨의 재능(A Talent for Joy)'이라는 책을 선물 받는다. 그 책에서 매일 예상치 못한 새로운 일을 하라는 문구를 본 헌터는 몸이 거부하는 금속 등을 삼키기 시작한다. 태아 검사를 위해 리치와 함께 산부인과에 간 헌터는, 그곳에서 자신의 몸에 남아 있는 위험한 물질들을 발견하고 제거하는 시술을 받게 된다. 헌터가 이식증에 걸린 것을 알게 된 리치와 리치의 부모는, 헌터에게 정신과 의사 엘리스에게 상담을 받게 하고 시리아 출신의 루에이를 고용하여 헌터의 일거수일투족을 감시하는데...",
-          "poster_path": "/rPNmKbA6EGFLQUnQEA8BWqCU39z.jpg",
-          "media_type": "movie",
-          "genre_ids": [
-            18,
-            53
-          ],
-          "popularity": 11.248,
-          "release_date": "2020-01-15",
-          "video": false,
-          "vote_average": 6.651,
-          "vote_count": 636
-        },
-        {
-          "adult": false,
-          "backdrop_path": "/2etSwBHCTcyFp9XOjZR4yYxqCC9.jpg",
-          "id": 6973,
-          "title": "엘라의 계곡",
-          "original_language": "en",
-          "original_title": "In the Valley of Elah",
-          "overview": "아들 마이크가 명예로운 군인이 되길 바랬던 퇴역 군인 행크 디어필드는 참전 후 귀환한 아들이 외출 후 부대로 돌아오지 않았다는 소식을 접한다. 아들이 귀국했다는 소식도 모르고 있던 헌병 수사관 출신 행크는 탈영 처리될 위기에 처한 아들에게 무슨 일이 있는지 알아보러 직접 군부대로 향한다. 단순한 마약관련 사건으로 아들의 실종을 처리하려는 군수사대를 의심한 행크는 지역 관할 형사인 에밀리 샌더스와 함께 직접 아들을 찾아 나선다. 전직 수사관 출신답게 집요하게 사건을 추적해 가던 중 아들 마이크와 전쟁에서 함께 했던 전우들을 만난 후 결국 그 곳에서 벌어졌던 일을 알게 되고 그럴수록 군 당국과 지역 경찰과의 갈등은 심해져 간다. 마침내 아들의 죽음의 실체를 알게 된 행크는 그 동안 조국에 충성했던 자신의 가치관에 혼란을 겪게 되고 결국 아들의 죽음 뒤에 숨겨진 미스터리를 풀기 위해 오랫동안 간직해온 신념을 버리지 않을 수 없게 된다.",
-          "poster_path": "/bBHCQgUpoq5V082BajUBxZuctaE.jpg",
-          "media_type": "movie",
-          "genre_ids": [
-            36,
-            18,
-            53,
-            80,
-            9648
-          ],
-          "popularity": 23.019,
-          "release_date": "2007-09-14",
-          "video": false,
-          "vote_average": 6.8,
-          "vote_count": 910
-        }
-      ]
-    },
-    {
-      "adult": false,
-      "gender": 1,
-      "id": 32683,
-      "known_for_department": "Acting",
-      "name": "Sidse Babett Knudsen",
-      "original_name": "Sidse Babett Knudsen",
-      "popularity": 22.129,
-      "profile_path": "/yVkWyBuJaup9I6FIgjZlGkczNNj.jpg",
-      "known_for": [
-        {
-          "adult": false,
-          "backdrop_path": "/y3w1fdR3QfYy22ryvhRl6YyHohs.jpg",
-          "id": 207932,
-          "title": "인페르노",
-          "original_language": "en",
-          "original_title": "Inferno",
-          "overview": "전세계 인구를 절반으로 줄일 것을 주장한 천재 생물학자 ‘조브리스트’의 갑작스러운 자살 이후 하버드대 기호학자 ‘로버트 랭던’은 기억을 잃은 채 피렌체의 한 병원에서 눈을 뜬다. 담당 의사 ‘시에나 브룩스’의 도움으로 병원을 탈출한 랭던은 사고 전 자신의 옷에서 의문의 실린더를 발견하고, 단테의 신곡 [지옥편]을 묘사한 보티첼리의 ‘지옥의 지도’가 숨겨져 있음을 알게 된다. 하지만, 원본과 달리 지옥의 지도에는 조작된 암호들이 새겨져 있고, 랭던은 이 모든 것이 전 인류를 위협할 거대한 계획과 얽혀져 있다는 것을 직감하게 되는데…",
-          "poster_path": "/tAdpfrbdll9WjDAS92vq1dx3pYn.jpg",
-          "media_type": "movie",
-          "genre_ids": [
-            9648,
-            53,
-            18,
-            28
-          ],
-          "popularity": 23.801,
-          "release_date": "2016-10-13",
-          "video": false,
-          "vote_average": 6.054,
-          "vote_count": 5876
-        },
-        {
-          "adult": false,
-          "backdrop_path": "/AbZZz3QwbCrF1hpJfvtl0uZBGGN.jpg",
-          "id": 270010,
-          "title": "홀로그램 포 더 킹",
-          "original_language": "en",
-          "original_title": "A Hologram for the King",
-          "overview": "한 때는 잘나가던 사업가 였지만, 지금은 그냥 ‘이혼한 빚 많은 세일즈맨’이 되어버린 ‘앨런 클레이’(톰 행크스). 지칠대로 지친 그에게 사우디아라비의 왕족에게 회사의 신기술을 팔고 오라는 명령이 떨어진다. 태어나서 단 한번도 가보지 않은 낯선 땅에 선 ‘앨런’은 정작 국왕의 그림자 조차도 못보고 뜻밖의 인연과 예상 밖의 일들만 겪지만, 자신의 인생 2막이 시작되고 있음을 점차 알게 되는데...",
-          "poster_path": "/hndivh5ESjAvdcTNINBK2Hfeqy7.jpg",
-          "media_type": "movie",
-          "genre_ids": [
-            35,
-            18
-          ],
-          "popularity": 12.488,
-          "release_date": "2016-04-22",
-          "video": false,
-          "vote_average": 5.838,
-          "vote_count": 1042
-        },
-        {
-          "adult": false,
-          "backdrop_path": "/cMwn2AQomPdPlfSt3aYg1cs9RN2.jpg",
-          "id": 250225,
-          "title": "더 듀크 오브 버건디",
-          "original_language": "en",
-          "original_title": "The Duke of Burgundy",
-          "overview": "곤충학자인 우아하고 세련된 중년 부인 신시아 곁에는 집안일을 도와주는 순수와 관능을 오가는 앳된 얼굴의 에블린이 있다. 강압과 순종, 명령과 복종, 격식과 파격 등 모든 것이 대비되는 두 사람이지만 둘은 깊이 사랑하는 사이.  그들을 지탱하는 가학과 피학의 관계 안에서 한 사람만이 행복과 쾌감을 느낀다. 놀랍게도 그것은 가해자인 신시아가 아니라 피해자인 에블린. 마조히즘에 중독된 에블린은 신사아로 하여금 사디즘을 행하도록 강요하고, 점점 더 그 강도를 높여간다.",
-          "poster_path": "/6vygdTiJ5bGz5lqnXFUgrD4LUDM.jpg",
-          "media_type": "movie",
-          "genre_ids": [
-            18,
-            9648,
-            10749
-          ],
-          "popularity": 12.148,
-          "release_date": "2014-10-18",
-          "video": false,
-          "vote_average": 6.4,
-          "vote_count": 296
+          "vote_average": 5,
+          "vote_count": 1
         }
       ]
     },
@@ -235,7 +39,7 @@
       "known_for_department": "Acting",
       "name": "Iva Babić",
       "original_name": "Iva Babić",
-      "popularity": 5.452,
+      "popularity": 4.211,
       "profile_path": "/7gp6ZXEy1RkWRoTa3fHSGwPQkCK.jpg",
       "known_for": [
         {
@@ -253,7 +57,7 @@
             28,
             80
           ],
-          "popularity": 39.986,
+          "popularity": 45.854,
           "release_date": "2023-05-25",
           "video": false,
           "vote_average": 6.1,
@@ -273,7 +77,7 @@
             18,
             80
           ],
-          "popularity": 0.735,
+          "popularity": 1.4,
           "release_date": "2013-07-25",
           "video": false,
           "vote_average": 5.5,
@@ -293,7 +97,7 @@
             18,
             35
           ],
-          "popularity": 0.6,
+          "popularity": 1.523,
           "release_date": "2015-10-15",
           "video": false,
           "vote_average": 5.7,
@@ -304,597 +108,11 @@
     {
       "adult": false,
       "gender": 2,
-      "id": 52057,
-      "known_for_department": "Acting",
-      "name": "Obba Babatundé",
-      "original_name": "Obba Babatundé",
-      "popularity": 7.162,
-      "profile_path": "/jkvxfhETmwR877VluO5kfbxxNER.jpg",
-      "known_for": [
-        {
-          "adult": false,
-          "backdrop_path": "/qom1SZSENdmHFNZBXbtJAU0WTlC.jpg",
-          "id": 11036,
-          "title": "노트북",
-          "original_language": "en",
-          "original_title": "The Notebook",
-          "overview": "17살, 노아는 밝고 순수한 앨리를 보고 첫눈에 반한다. 빠른 속도로 서로에게 빠져드는 둘. 그러나 이들 앞에 놓인 장벽에 막혀 이별하게 된다. 24살, 앨리는 우연히 신문에서 노아의 소식을 접하고 잊을 수 없는 첫사랑 앞에서 다시 한 번 선택의 기로에 서게 되는데…",
-          "poster_path": "/ntdgcdsmMuHd9s4oEKTvWDiUyU7.jpg",
-          "media_type": "movie",
-          "genre_ids": [
-            10749,
-            18
-          ],
-          "popularity": 54.15,
-          "release_date": "2004-06-25",
-          "video": false,
-          "vote_average": 7.88,
-          "vote_count": 10585
-        },
-        {
-          "adult": false,
-          "backdrop_path": "/mfwq2nMBzArzQ7Y9RKE8SKeeTkg.jpg",
-          "id": 274,
-          "title": "양들의 침묵",
-          "original_language": "en",
-          "original_title": "The Silence of the Lambs",
-          "overview": "FBI 요원 스탈링은 몸집이 비대한 여자들의 살을 도려내는 변태 살인마를 추적하라는 상부의 명령을 받는다. 스탈링은 사건 해결의 단서를 얻기 위해 인육을 먹은 죄로 감옥에 수감된 정신과 의사 렉터 박사를 찾아간다. 지능범인 렉터와 침착하게 대처하는 스탈링은 긴장감 속에서 협상을 한다. 이러한 와중에 상원 의원의 딸 캐더린이 납치된다. 결국 범인의 정체를 알려준다던 렉터는 다른 감옥으로 이송되고 스탈링은 수사에서 제외된다. 범인에 대한 단서를 알아낸 범죄 심리 전문가인 렉터는 이송 중에 도주하고, 스탈링은 렉터와 나눈 마지막 대화를 기억하고 수사를 계속하는데...",
-          "poster_path": "/2hBAfjDlRbamiX7TuzLes2EcnCM.jpg",
-          "media_type": "movie",
-          "genre_ids": [
-            80,
-            18,
-            53
-          ],
-          "popularity": 11.751,
-          "release_date": "1991-02-14",
-          "video": false,
-          "vote_average": 8.3,
-          "vote_count": 14965
-        },
-        {
-          "adult": false,
-          "backdrop_path": "/tUeMIPdYo1eXJZdBhxw4118RIAm.jpg",
-          "id": 9800,
-          "title": "필라델피아",
-          "original_language": "en",
-          "original_title": "Philadelphia",
-          "overview": "동성연애자인 변호사 앤드류는 필라델피아에서 가장 이름있는 법률사무소에 입사하여 촉망받는 변호사로 발돋움한다. 그러던 중 그는 회사의 역사상 가장 중대한 재판을 맡아 '하이라인'사의 변호를 하게 된다. 회사에서 동성연애자를 혐오한다는 것을 알고, 앤드류는 동성연애자라는 사실과 에이즈 환자임을 숨겨왔다. 열심히 일하던 그는 뜻하지 않은 사건에 부딪힌다. 자신이 완성해 놓은 하이라인사의 고소장이 마감 전날 사라진 것이다. 그 일로 인해 그는 회사로부터 해고 당한다.  자신의 해고가 계획된 것이라 생각한 그는 법률사무소 대표 찰스를 상대로 소송을 제기하고자 이전 자신의 라이벌이었던 변호사 조를 찾아간다. 조는 처음엔 앤드류가 에이즈 환자라는 이유로 거절하나 결국 그의 신념과 확신에 끌려 법정 투쟁에 들어간다. 그리하여 그는 앤드류가 해고당한 이유는 그의 능력 부족이 아니라 에이즈 때문이며, 질병으로 인한 해고는 차별이며 위법임을 입증한다. 자신의 권리와 명예를 회복한 앤드류는 얼마후 조용히 눈을 감는다. 재판이 끝날 때까지 죽을지 모르는 상태에서도 앤드류는 자신의 권리를 끝까지 지키겠다는 신념으로 싸워나가며, 조는 인간의 권리와 사회의 정의는 개인의 성별, 인종, 종교, 성적취향에 상관없이 동등하게 실현되어야 한다는 공통된 생각으로 세상 사람들의 편견과 싸워 나가리라 결심한다.",
-          "poster_path": "/ljuLoK1D6SV9tI4odb3Na3Zehlu.jpg",
-          "media_type": "movie",
-          "genre_ids": [
-            18
-          ],
-          "popularity": 22.915,
-          "release_date": "1993-12-22",
-          "video": false,
-          "vote_average": 7.726,
-          "vote_count": 3899
-        }
-      ]
-    },
-    {
-      "adult": false,
-      "gender": 2,
-      "id": 1341485,
-      "known_for_department": "Acting",
-      "name": "Ananth Babu",
-      "original_name": "Ananth Babu",
-      "popularity": 8.308,
-      "profile_path": "/6gtD5IYIbEG8KzaSDMDrDWGvTnR.jpg",
-      "known_for": [
-        {
-          "adult": false,
-          "backdrop_path": "/iy9uFMJvzlDC3kMFPI2Fk2HJZ2x.jpg",
-          "id": 628241,
-          "title": "Ala Vaikunthapurramuloo",
-          "original_language": "te",
-          "original_title": "అల వైకుంఠపురములో",
-          "overview": "Fate plays a vital role in connecting the life of Bantu, a son who seeks validation from his cold-hearted father with the life of Raj, whose millionaire father wishes that he was more assertive.",
-          "poster_path": "/48DIQOSEgpoWUFBrmHW2En6aNZQ.jpg",
-          "media_type": "movie",
-          "genre_ids": [
-            28,
-            35,
-            18
-          ],
-          "popularity": 15.162,
-          "release_date": "2020-01-12",
-          "video": false,
-          "vote_average": 6.8,
-          "vote_count": 67
-        },
-        {
-          "adult": false,
-          "backdrop_path": "/6JdIyeVFncjeQMDkQPfLceaOvPW.jpg",
-          "id": 135870,
-          "title": "반역자",
-          "original_language": "te",
-          "original_title": "రెబెల్",
-          "overview": "After his parents are brutally murdered, a man goes on a quest to find his parents' killers. He finds that his own uncle is involved in the killings.",
-          "poster_path": "/dNTzorrVmcJ25fUGzs9FfkoXb0P.jpg",
-          "media_type": "movie",
-          "genre_ids": [
-            28
-          ],
-          "popularity": 1.207,
-          "release_date": "2012-09-28",
-          "video": false,
-          "vote_average": 4.217,
-          "vote_count": 46
-        },
-        {
-          "adult": false,
-          "backdrop_path": "/ikflDnSujh5VTmPEBF2YdUERQDJ.jpg",
-          "id": 37172,
-          "title": "Athadu",
-          "original_language": "te",
-          "original_title": "అతడు",
-          "overview": "A professional killer is hired to fake the assassination of a politician. However, when the politician is killed and he is framed for his murder, he takes on a dead man's identity to escape the law.",
-          "poster_path": "/dV2h6dx5nUatgNClkqCaKKTmA4O.jpg",
-          "media_type": "movie",
-          "genre_ids": [
-            28,
-            53
-          ],
-          "popularity": 4.433,
-          "release_date": "2005-08-10",
-          "video": false,
-          "vote_average": 7.1,
-          "vote_count": 37
-        }
-      ]
-    },
-    {
-      "adult": false,
-      "gender": 2,
-      "id": 1540764,
-      "known_for_department": "Acting",
-      "name": "Yogi Babu",
-      "original_name": "Yogi Babu",
-      "popularity": 10.414,
-      "profile_path": "/lTNb5POaftGHXzgN9aIegcehh89.jpg",
-      "known_for": [
-        {
-          "adult": false,
-          "backdrop_path": "/6JpbbREGqdEtePnCwxJRcTNX2jZ.jpg",
-          "id": 205022,
-          "title": "첸나이 익스프레스",
-          "original_language": "hi",
-          "original_title": "Chennai Express",
-          "overview": "라훌은 자신의 유골을 인도에서 신성한 장소 중 하나인 라메스와람에 뿌려달라는 할아버지의 유언을 지키기 위해 첸나이행 특급열차에 오른다. 라훌은 기차에서 아리따운 여인을 만나는데 그녀는 조폭이나 다름없는 가족들을 피해 달아나는 중! 활기 넘치는 곳 남인도를 배경으로 의 샤룩 칸과 디피카 파두콘 콤비가 선사하는 눈과 귀가 즐거운 맛살라 무비. (2014년 제18회 부천국제판타스틱영화제)",
-          "poster_path": "/9LZgpUyFEvqHaDVuveE002mhgTi.jpg",
-          "media_type": "movie",
-          "genre_ids": [
-            10749,
-            35,
-            28
-          ],
-          "popularity": 12.694,
-          "release_date": "2013-08-08",
-          "video": false,
-          "vote_average": 6.536,
-          "vote_count": 291
-        },
-        {
-          "adult": false,
-          "backdrop_path": "/sX8FMSuzhTxU04suSfev26iKkBj.jpg",
-          "id": 462718,
-          "title": "Pariyerum Perumal",
-          "original_language": "ta",
-          "original_title": "பரியேறும் பெருமாள்",
-          "overview": "A law student from a lower caste begins a friendship with his classmate, a girl who belongs to a higher caste, and the men in her family start giving him trouble over this.",
-          "poster_path": "/2G2Pp9Ym0ca9NIrjDF7EOWNrbZb.jpg",
-          "media_type": "movie",
-          "genre_ids": [
-            10749,
-            18
-          ],
-          "popularity": 4.786,
-          "release_date": "2018-09-28",
-          "video": false,
-          "vote_average": 8.164,
-          "vote_count": 61
-        },
-        {
-          "adult": false,
-          "backdrop_path": "/u6vFOUjFoPOLDH1f2fG2WQqyHch.jpg",
-          "id": 806067,
-          "title": "Mandela",
-          "original_language": "ta",
-          "original_title": "மண்டேலா",
-          "overview": "An underprivileged hairdresser becomes the game changer in a local body election in a village where caste politics rules the roost. Will he be able to bring some changes to people's lives?",
-          "poster_path": "/t9A7nv8ac8VrXDt6tgu4UXi2zAq.jpg",
-          "media_type": "movie",
-          "genre_ids": [
-            35,
-            18
-          ],
-          "popularity": 4.014,
-          "release_date": "2021-04-05",
-          "video": false,
-          "vote_average": 6.971,
-          "vote_count": 17
-        }
-      ]
-    },
-    {
-      "adult": false,
-      "gender": 2,
-      "id": 584878,
-      "known_for_department": "Acting",
-      "name": "Babloo Prithiveeraj",
-      "original_name": "Babloo Prithiveeraj",
-      "popularity": 6.046,
-      "profile_path": "/lnRXcRebSmfJaSaRqTt91o1vkhE.jpg",
-      "known_for": [
-        {
-          "adult": false,
-          "backdrop_path": "/eNQYfLDZxz4RrHCzE4lSPZi52Xz.jpg",
-          "id": 38637,
-          "title": "Vaaranam Aayiram",
-          "original_language": "ta",
-          "original_title": "வாரணம் ஆயிரம்",
-          "overview": "A son deals with the death of his father and examines how their relationship influences him through growing up, romance, tragedy and adventure.",
-          "poster_path": "/3PxkiDTObsws7pzkdUiHCjOxVA4.jpg",
-          "media_type": "movie",
-          "genre_ids": [
-            18,
-            10749
-          ],
-          "popularity": 6.143,
-          "release_date": "2008-11-14",
-          "video": false,
-          "vote_average": 7.4,
-          "vote_count": 49
-        },
-        {
-          "adult": false,
-          "backdrop_path": null,
-          "id": 59900,
-          "title": "Gaganam",
-          "original_language": "te",
-          "original_title": "గగనం",
-          "overview": "When terrorists hijack a plane from Chennai, a struggle with the pilots damages the engine forcing them to make an emergency landing in Tirupati. NSG commando Ravi is entrusted with rescue operations.",
-          "poster_path": "/n9OYOo0mZ97la2JnKP06fDg7xdq.jpg",
-          "media_type": "movie",
-          "genre_ids": [
-            28,
-            18,
-            53
-          ],
-          "popularity": 3.969,
-          "release_date": "2011-02-11",
-          "video": false,
-          "vote_average": 5.7,
-          "vote_count": 9
-        },
-        {
-          "adult": false,
-          "backdrop_path": "/1Z4D31l2avNXR8KLTgqIGW3uHkP.jpg",
-          "id": 82255,
-          "title": "Nuvvu Naaku Nachav",
-          "original_language": "te",
-          "original_title": "నువ్వు నాకు నచ్చావ్",
-          "overview": "Venky and Nandini's relationship changes from mere friendship to something that is more romantic. However, love only blossoms between the two after Nandini's marriage is fixed elsewhere.",
-          "poster_path": "/8SU8u4Aez5O5aAABOoKVn1xnqvl.jpg",
-          "media_type": "movie",
-          "genre_ids": [
-            18,
-            35,
-            10749,
-            10751
-          ],
-          "popularity": 5.342,
-          "release_date": "2001-09-06",
-          "video": false,
-          "vote_average": 6.8,
-          "vote_count": 19
-        }
-      ]
-    },
-    {
-      "adult": false,
-      "gender": 1,
-      "id": 1409121,
-      "known_for_department": "Acting",
-      "name": "Fumika Baba",
-      "original_name": "Fumika Baba",
-      "popularity": 11.633,
-      "profile_path": "/8OMeO92lSLYwvu4VcHKGXnd5FBG.jpg",
-      "known_for": [
-        {
-          "adult": false,
-          "backdrop_path": "/7axEU7gTWKnAbzm9WqaXQvI67L5.jpg",
-          "id": 961327,
-          "title": "바이올런스 액션",
-          "original_language": "ja",
-          "original_title": "バイオレンスアクション",
-          "overview": "키쿠노 케이는 낮에는 부기전문학교를 다니고 밤에는 아르바이트 일을 한다.  케이가 하는 아르바이트란 지명제 킬러로서 그녀는 넘버1의 실력을 지닌 최고의 킬러였다. 어느 날 버스에서 테라노를 만났지만 그대로 아르바이트 하는 곳으로 향한다. 이 날의 의뢰는 거대 야쿠자 조직에 있는 3대째 조장으로부터 한 인물을 암살시켜달라는 것이었다. 그 사람은 버스에서 만난 테라노였는데 ...",
-          "poster_path": "/zMxhCIqLvDpi3JpnKdMV2drI1hB.jpg",
-          "media_type": "movie",
-          "genre_ids": [
-            28,
-            18
-          ],
-          "popularity": 6.961,
-          "release_date": "2022-08-19",
-          "video": false,
-          "vote_average": 6.469,
-          "vote_count": 32
-        },
-        {
-          "adult": false,
-          "backdrop_path": "/5j6SaIRz0cKwtKr2Ppy5w8OQ771.jpg",
-          "id": 208751,
-          "name": "사랑과 탄환",
-          "original_language": "ja",
-          "original_name": "恋と弾丸",
-          "overview": "대학생인 유리는 수상한 집단에 얽혀 불법 약물에 당할 뻔하지만, 오우야 파의 부두목인 토시오미의 도움으로 위기에서 벗어난다. 유리는 그런 그에게 고마움을 전하기 위해 오우야 파를 찾아 가게 되는데... 오우야는 유리의 강인한 심지에 끌리고 유리는 오우야의 다정하고 신사적인 모습에 설렌다. 오우야 파에서 일어난 저격 사건을 계기로 야쿠자인 오우야의 연인이 되기로 결심하는 유리. 그녀는 위험한 세계에 사는 오우야에게 달콤하게 빠져든다. 한편, 오우야에게 집착하는 호스티스 쵸우코와 술집 마담, 유리의 소꿉친구이자 강력계 형사인 진, 토시오미의 아버지이자 오우야 파의 보스인 오우야 슈이치로, 그리고 마피아 보스인 세미리오의 등장은 한층 더 파란을 불러일으키는데... 역사상 가장 위험한 사랑이 지금 시작된다.",
-          "poster_path": "/oSAOKfovsrefayA25usDyoObhYQ.jpg",
-          "media_type": "tv",
-          "genre_ids": [
-            18
-          ],
-          "popularity": 18.522,
-          "first_air_date": "2022-10-27",
-          "vote_average": 7,
-          "vote_count": 7,
-          "origin_country": [
-            "JP"
-          ]
-        },
-        {
-          "adult": false,
-          "backdrop_path": "/rOondMRTXQDQDIvCQ5AaCzcFUe7.jpg",
-          "id": 73659,
-          "name": "파이널판타지 XIV 빛의 아버지",
-          "original_language": "ja",
-          "original_name": "ファイナルファンタジーXIV 光のお父さん",
-          "overview": "일, 게임에 분투하는 젊은 아들과 일만 열심히 해오다 60세를 넘기고 나서 온라인 게임에 빠지게 되는 아버지가 서로 비밀을 가지고 있으면서 게임 세계에서 상대를 이해하며 거리를 좁혀 나가는 이야기를 그린 드라마",
-          "poster_path": "/cuPkfmEsWh3kEEjAHabH1m76BGP.jpg",
-          "media_type": "tv",
-          "genre_ids": [
-            18,
-            10751
-          ],
-          "popularity": 12.739,
-          "first_air_date": "2017-04-17",
-          "vote_average": 7.3,
-          "vote_count": 19,
-          "origin_country": [
-            "JP"
-          ]
-        }
-      ]
-    },
-    {
-      "adult": false,
-      "gender": 2,
-      "id": 3162258,
-      "known_for_department": "Acting",
-      "name": "Melvin G Babu",
-      "original_name": "Melvin G Babu",
-      "popularity": 0.683,
-      "profile_path": "/io2QUpl38n5RN7ez2DSqDqSG2Gc.jpg",
-      "known_for": [
-        {
-          "adult": false,
-          "backdrop_path": "/jXQOHa5R62Ijc95ymSp6TvC8HhE.jpg",
-          "id": 877244,
-          "title": "Jo & Jo",
-          "original_language": "ml",
-          "original_title": "ജോ & ജോ",
-          "overview": "Jo & Jo is a coming of age comedy-drama that tells the story of how a few youngsters in a village enjoy their life when the world itself shuts down due to covid19 pandemic and how their life fell apart after an unexpected event happened.",
-          "poster_path": "/45lsVwyPRisnoGrN1AOsELjkcTT.jpg",
-          "media_type": "movie",
-          "genre_ids": [
-            18,
-            35
-          ],
-          "popularity": 1.632,
-          "release_date": "2022-05-13",
-          "video": false,
-          "vote_average": 7.45,
-          "vote_count": 10
-        },
-        {
-          "adult": false,
-          "backdrop_path": null,
-          "id": 661080,
-          "title": "Anugraheethan Antony",
-          "original_language": "ml",
-          "original_title": "അനുഗ്രഹീതൻ ആന്‍റണി",
-          "overview": "A happy-go-lucky Antony disappoints his Dad who was a teacher, so his Dad brings home 2 puppies to insult Antony and show him how thankful Dogs are. Antony despises the Dogs and never leaves any chances to trouble them",
-          "poster_path": "/8MNVm3Nitdqv4wCRdpBNehR1e2C.jpg",
-          "media_type": "movie",
-          "genre_ids": [
-            10749
-          ],
-          "popularity": 1.274,
-          "release_date": "2021-04-01",
-          "video": false,
-          "vote_average": 6,
-          "vote_count": 7
-        },
-        {
-          "adult": false,
-          "backdrop_path": "/3wezqv9NmabiSt0dQMuF9TlOiPG.jpg",
-          "id": 1013748,
-          "title": "Oh My Darling",
-          "original_language": "ml",
-          "original_title": "Oh My Darling",
-          "overview": "Love has many faces, but Joel and Jenny love with earnestness, but when their love is tested in the fire of adversity, it has to overcome that. When reality is not what it appears to be, can love survive?",
-          "poster_path": "/ywUOF1b5RpbUkQDBAVIKozmOh4g.jpg",
-          "media_type": "movie",
-          "genre_ids": [
-            10749,
-            35
-          ],
-          "popularity": 1.651,
-          "release_date": "2023-02-24",
-          "video": false,
-          "vote_average": 5.75,
-          "vote_count": 4
-        }
-      ]
-    },
-    {
-      "adult": false,
-      "gender": 2,
-      "id": 205923,
-      "known_for_department": "Acting",
-      "name": "Babs Olusanmokun",
-      "original_name": "Babs Olusanmokun",
-      "popularity": 7.925,
-      "profile_path": "/bqycmpUrpISeLzQniiYwAZ5X1RN.jpg",
-      "known_for": [
-        {
-          "adult": false,
-          "backdrop_path": "/70AV2Xx5FQYj20labp0EGdbjI6E.jpg",
-          "id": 637649,
-          "title": "캐시트럭",
-          "original_language": "en",
-          "original_title": "Wrath of Man",
-          "overview": "캐시트럭을 노리는 무장 강도에 의해 아들을 잃은 H(제이슨 스타뎀).  분노에 휩싸인 그는 아들을 죽인 범인의 단서를 찾기 위해  현금 호송 회사에 위장 취업한다.  첫 임무부터 백발백중 사격 실력을 자랑하며,  단숨에 에이스로 급부상한 H.  캐시트럭을 노리는 자들을 하나 둘 처리하며, 아들을 죽인 범인들과 점점 가까워지는데…  자비는 없다, 분노에 가득 찬 응징만이 남았다.",
-          "poster_path": "/vNwYPtCDETrSkiBXsoiMFR9L6Do.jpg",
-          "media_type": "movie",
-          "genre_ids": [
-            28,
-            12,
-            80,
-            53
-          ],
-          "popularity": 71.028,
-          "release_date": "2021-04-22",
-          "video": false,
-          "vote_average": 7.67,
-          "vote_count": 4615
-        },
-        {
-          "adult": false,
-          "backdrop_path": "/jYEW5xZkZk2WTrdbMGAPFuBqbDc.jpg",
-          "id": 438631,
-          "title": "듄",
-          "original_language": "en",
-          "original_title": "Dune",
-          "overview": "10191년, 아트레이데스 가문의 후계자인 폴은 시간과 공간을 초월해 과거와 미래를 모두 볼 수 있고, 더 나은 미래를 만들 유일한 구원자인 예지된 자의 운명을 타고났다. 그리고 어떤 계시처럼 매일 꿈에서 아라키스의 행성에 있는 한 여인을 만난다. 귀족들이 지지하는 아트레이데스 가문에 대한 황제의 질투는 폴과 그 일족들을 죽음이 기다리는 아라키스로 이끄는데...",
-          "poster_path": "/wv22frLmCpXDRjKj4MWFwa4eTOK.jpg",
-          "media_type": "movie",
-          "genre_ids": [
-            878,
-            12
-          ],
-          "popularity": 80.976,
-          "release_date": "2021-09-15",
-          "video": false,
-          "vote_average": 7.79,
-          "vote_count": 9376
-        },
-        {
-          "adult": false,
-          "backdrop_path": "/627K48naKH2Y3Rz47Ydra4qktdI.jpg",
-          "id": 103516,
-          "name": "스타 트렉: 스트레인지 뉴 월드",
-          "original_language": "en",
-          "original_name": "Star Trek: Strange New Worlds",
-          "overview": "새로운 우주, 새로운 모험. 엔터프라이즈호의 새로운 항해가 시작된다.",
-          "poster_path": "/ciJBexIalbX8dthldX7ttREiHlv.jpg",
-          "media_type": "tv",
-          "genre_ids": [
-            10765
-          ],
-          "popularity": 103.407,
-          "first_air_date": "2022-05-05",
-          "vote_average": 8.296,
-          "vote_count": 404,
-          "origin_country": [
-            "US"
-          ]
-        }
-      ]
-    },
-    {
-      "adult": false,
-      "gender": 2,
-      "id": 1098324,
-      "known_for_department": "Acting",
-      "name": "Ryoma Baba",
-      "original_name": "Ryoma Baba",
-      "popularity": 2.852,
-      "profile_path": "/2MCYKQWTFSnbi44L9hzv5XGEULu.jpg",
-      "known_for": [
-        {
-          "adult": false,
-          "backdrop_path": "/lUtTKKGfQzafb08zPWYNGfjOqOD.jpg",
-          "id": 275994,
-          "title": "Takumi-kun Series: Pure",
-          "original_language": "ja",
-          "original_title": "タクミくんシリーズ　Ｐｕｒｅ　～ピュア～",
-          "overview": "Unlike the three previous films, Pure focuses on the relationship between Misu Arata and Shingyouji Kanemitsu , which begins when Shingyouji takes the test to enter Shidou Gakuen . That's when he meets Misu and falls for him. Then we come back to the present where the sempai who admires Misu appears, bringing Shingyouji problems and jealousy.",
-          "poster_path": "/vppNY4LpYrmKmZtc9RD8Mf6hhng.jpg",
-          "media_type": "movie",
-          "genre_ids": [
-            18
-          ],
-          "popularity": 3.4,
-          "release_date": "2010-12-18",
-          "video": false,
-          "vote_average": 4.7,
-          "vote_count": 6
-        },
-        {
-          "adult": false,
-          "backdrop_path": null,
-          "id": 125181,
-          "title": "An Assassin",
-          "original_language": "ja",
-          "original_title": "アサシン",
-          "overview": "Ryo Hanaki was raised to be a professional assassin. One day he was defeated by some accident in the mission. Here he meets Rio, an attractive high school girl. He spent days as a heartless assassin, but his life starting changes after he helps Rio. By a twist of fate, Rio who was a complete unknown became an assassin target overnight. A single mistake from his decision to save Rio decided the destiny of the masses...",
-          "poster_path": null,
-          "media_type": "movie",
-          "genre_ids": [
-            28,
-            18,
-            10749
-          ],
-          "popularity": 0.84,
-          "release_date": "2011-10-08",
-          "video": false,
-          "vote_average": 5.4,
-          "vote_count": 4
-        },
-        {
-          "adult": false,
-          "backdrop_path": "/uIoXJzrRlU4VSd339nPrsv8JO2S.jpg",
-          "id": 178966,
-          "title": "특명전대 고버스터즈 VS 해적전대 고카이저 THE MOVIE",
-          "original_language": "ja",
-          "original_title": "特命戦隊ゴーバスターズVS海賊戦隊ゴーカイジャー THE MOVIE",
-          "overview": "The Gokaigers were captured by the Zangyack remnants after departing to the Zangyack homeworld to destroy the empire once and for all. The Gokaigers, now working for the newly reformed Zangyack empire, return to Earth with a black Gokai Galleon and attack the Go-Busters in search of five phantom Ranger Keys which will unlock the \"Greatest Power in the Universe\". During the fight with the Gokaigers, the Go-Busters are able capture Navi, who tells them that the Zangyack are also working with Vaglass and that they must go back in time to save the other members of the Super Sentai Teams and defeat the alliance of Zangyack and Vaglass.",
-          "poster_path": "/zIkPtsW9aRdZRzuqdqzO13Sm2C0.jpg",
-          "media_type": "movie",
-          "genre_ids": [
-            28,
-            12,
-            878
-          ],
-          "popularity": 0.6,
-          "release_date": "2013-01-19",
-          "video": false,
-          "vote_average": 6.6,
-          "vote_count": 10
-        }
-      ]
-    },
-    {
-      "adult": false,
-      "gender": 2,
       "id": 17740,
       "known_for_department": "Acting",
       "name": "Lucas Babin",
       "original_name": "Lucas Babin",
-      "popularity": 6.076,
+      "popularity": 3.267,
       "profile_path": "/hcfPBbZSrnGumyvjacBRJkJK4ds.jpg",
       "known_for": [
         {
@@ -911,11 +129,11 @@
             35,
             10402
           ],
-          "popularity": 33.087,
+          "popularity": 30.828,
           "release_date": "2003-10-03",
           "video": false,
-          "vote_average": 7.069,
-          "vote_count": 5163
+          "vote_average": 7.07,
+          "vote_count": 5167
         },
         {
           "adult": false,
@@ -931,11 +149,11 @@
             18,
             9648
           ],
-          "popularity": 11.624,
+          "popularity": 13.344,
           "release_date": "2006-03-31",
           "video": false,
-          "vote_average": 6.805,
-          "vote_count": 1108
+          "vote_average": 6.806,
+          "vote_count": 1109
         },
         {
           "adult": false,
@@ -952,7 +170,7 @@
             35,
             10770
           ],
-          "popularity": 12.203,
+          "popularity": 9.558,
           "release_date": "2000-01-01",
           "video": false,
           "vote_average": 6,
@@ -963,77 +181,151 @@
     {
       "adult": false,
       "gender": 1,
-      "id": 59466,
-      "known_for_department": "Directing",
-      "name": "Jamie Babbit",
-      "original_name": "Jamie Babbit",
-      "popularity": 6.948,
-      "profile_path": "/zySwCaK5XLylqpiJ4l2VhdO6Dw5.jpg",
+      "id": 88814,
+      "known_for_department": "Acting",
+      "name": "Parveen Babi",
+      "original_name": "Parveen Babi",
+      "popularity": 2.212,
+      "profile_path": "/euyz7d7NU2CjB7rHS9afeJBzeX0.jpg",
       "known_for": [
         {
           "adult": false,
-          "backdrop_path": "/k7GM13qRYSour3lk90Dq1EwdpoW.jpg",
-          "id": 2649,
-          "title": "더 게임",
-          "original_language": "en",
-          "original_title": "The Game",
-          "overview": "천재적인 금융가로 냉철한 성격을 가진 사업가 니콜라스 반 오튼(마이클 더글라스)은 그의 생일날 동생 콘라드(숀 펜)로부터 이상한 게임 안내장을 받게된다. 이 후, 니콜라스는 규칙과 방향도 모른 채 계속 이어지는 이상한 사건들에 대하여 당황하게 되고 게임은 점점 깊은 수렁으로 빨려 들어가게 되는데...",
-          "poster_path": "/npvUSLiRQxcGwOzjJO8OTxthO77.jpg",
+          "backdrop_path": "/wtgHk46U2imn9QsxEsMprGCECXG.jpg",
+          "id": 38022,
+          "title": "Amar Akbar Anthony",
+          "original_language": "hi",
+          "original_title": "अमर अकबर एन्थोनी",
+          "overview": "Bollywood action comedy film with a lost and found theme, about three brothers separated during their childhood who grew up in three homes, adopting three religions. They meet in their youth to fight a common villain. It was the biggest blockbuster of 1977, and won several awards at 25th Filmfare Awards including Best Actor, Best Music Director and Best Editing.",
+          "poster_path": "/fnK0pJj3Ntk8P2ED5kuxwezzVph.jpg",
           "media_type": "movie",
           "genre_ids": [
-            18,
-            53,
-            9648
+            28,
+            35,
+            18
           ],
-          "popularity": 26.168,
-          "release_date": "1997-09-12",
+          "popularity": 5.934,
+          "release_date": "1977-05-27",
           "video": false,
-          "vote_average": 7.56,
-          "vote_count": 5962
+          "vote_average": 6.8,
+          "vote_count": 61
         },
         {
           "adult": false,
-          "backdrop_path": "/jgb9xICHFX8wTGQ75js4uNbttQs.jpg",
-          "id": 62688,
-          "name": "슈퍼걸",
-          "original_language": "en",
-          "original_name": "Supergirl",
-          "overview": "재난을 막기 위해 자신의 초능력과 정체를 드러낸 카라 댄버스. 슈퍼맨의 사촌이자 슈퍼걸로 알려진 그녀가 내셔널 시티의 수호자로 나선다.",
-          "poster_path": "/vqBsgL9nd2v04ZvCqPzwtckDdFD.jpg",
+          "backdrop_path": "/ulxoNgk9HYenfQKJ5nihMOVIiW7.jpg",
+          "id": 22460,
+          "title": "Deewaar",
+          "original_language": "hi",
+          "original_title": "दीवार",
+          "overview": "Reflecting the tumultuous politics of the early ’70s in India, Deewar tells the story of a pair of impoverished brothers who, after their family is betrayed by the misplaced idealism of their father, struggle to survive on the streets of Mumbai. They head for a showdown when one becomes a policeman, and the other becomes a criminal.",
+          "poster_path": "/2raycv4TyvJL5NijzEwW1apQQOA.jpg",
+          "media_type": "movie",
+          "genre_ids": [
+            28,
+            80,
+            18
+          ],
+          "popularity": 3.719,
+          "release_date": "1975-01-14",
+          "video": false,
+          "vote_average": 6.952,
+          "vote_count": 52
+        },
+        {
+          "adult": false,
+          "backdrop_path": "/ojDhlnFd5GhueA3olHxcYJx430V.jpg",
+          "id": 51615,
+          "title": "Namak Halaal",
+          "original_language": "hi",
+          "original_title": "नमक हलाल",
+          "overview": "Young Arjun is brought up by his Daddu (paternal grandfather). His Daddu decides for him to go to the city in search of a new job and life. While in the city he meets up with Bhairon who guides him into an interview in a 5-star hotel owned by Raja.",
+          "poster_path": "/mPaT9BUc8RiBVdZ05VLTDuwdr56.jpg",
+          "media_type": "movie",
+          "genre_ids": [
+            28,
+            35,
+            9648
+          ],
+          "popularity": 3.037,
+          "release_date": "1982-04-30",
+          "video": false,
+          "vote_average": 6.5,
+          "vote_count": 20
+        }
+      ]
+    },
+    {
+      "adult": false,
+      "gender": 2,
+      "id": 234740,
+      "known_for_department": "Acting",
+      "name": "André Babikian",
+      "original_name": "André Babikian",
+      "popularity": 8.76,
+      "profile_path": "/r4CLyKyVFtyg7vQR0K1kSuuG8Me.jpg",
+      "known_for": [
+        {
+          "adult": false,
+          "backdrop_path": "/bmFk1eaQIsdRZhA4ifX3Pzbr1zC.jpg",
+          "id": 99969,
+          "name": "The Sommerdahl Murders",
+          "original_language": "da",
+          "original_name": "Sommerdahl",
+          "overview": "A love triangle between Dan Sommerdahl, his wife Marianne Sommerdahl and their best friend Flemming Torp occurs as they try to solves killings in Helsingør.",
+          "poster_path": "/8OWpc7Lck7gmgRhUG5KN7LjmH0Q.jpg",
           "media_type": "tv",
           "genre_ids": [
-            18,
-            10765,
-            10759
+            80,
+            18
           ],
-          "popularity": 197.695,
-          "first_air_date": "2015-10-26",
-          "vote_average": 7.332,
-          "vote_count": 3966,
+          "popularity": 28.283,
+          "first_air_date": "2020-03-01",
+          "vote_average": 5.211,
+          "vote_count": 19,
           "origin_country": [
-            "US"
+            "DK"
           ]
         },
         {
           "adult": false,
-          "backdrop_path": "/ysaA0BInz4071p3LKqAQnWKZCsK.jpg",
-          "id": 2004,
-          "name": "말콤네 좀 말려줘",
-          "original_language": "en",
-          "original_name": "Malcolm in the Middle",
-          "overview": "늘 사건사고가 일어나는 말콤네 가족 특히 사고 뭉친 4형제로 인하여 말콤네 가족은 늘 시끌벅적합니다. 후에 말코의 4형제는 5형제가 됩니다.",
-          "poster_path": "/ck4iRhTXFD7CsEBi2iOdOXL7QhE.jpg",
+          "backdrop_path": "/7Vq8FDnmkw75QRipA5zLkTsTgdU.jpg",
+          "id": 3875,
+          "title": "브라더스",
+          "original_language": "da",
+          "original_title": "Brødre",
+          "overview": "사랑하는 사람을 잃은 슬픔,\r 그리고 그 슬픔을 아는 자들의 유대  다정다감한 성격의 미카엘은 아름다운 아내 사라와 사랑스러운 두 딸, 그리고 늙으신 부모님께도 자상한 남편이자 아버지, 아들이다. 이런 그에게는 늘 삐딱할 뿐 아니라 교도소까지 들락거리는 동생 야닉마저도 사랑스러울 뿐이다.  야닉이 교도소에서 출소한 직후, 아프가니스탄으로 발령받은 미카엘은 헬기 사고로 사망하고 이 소식을 들은 가족들은 슬픈 현실에 점차 적응해가기 시작한다.  흔들리는 가족들을 책임져야겠다는 생각에 엉망이었던 자신의 삶을 다잡아가는 야닉. 그리고 미카엘의 빈 자리를 메워주는 야닉과 사라 사이에는 오묘한 감정이 싹트기 시작한다. 하지만 그것은 서로를 향한 사랑이 아니라 바로 미카엘에 대한 두 사람의 사랑이었다.  너무나 변해버린 사랑이 돌아왔다  한편, 아프가니스탄에서 헬기 사고를 당했던 미카엘은 게릴라들에게 발견돼 목숨을 건지지만 자신이 살기 위해 원치 않는 살인을 저지르게 된다. 또한 어렵게 돌아온 가족의 품에서도 안착하지 못하고 자신이 없는 사이 동생과 아내 사이에 생긴 유대감을 사랑으로 의심하기 시작한다. 끊임없는 죄책감과 의심은 그를 광폭하게 만들고 가족들은 변해버린 미카엘을 바라보며 공포에 떠는데….",
+          "poster_path": "/faViDuoxyQ3qJsCbLclqBp4oK4y.jpg",
+          "media_type": "movie",
+          "genre_ids": [
+            18,
+            10752
+          ],
+          "popularity": 7.479,
+          "release_date": "2004-08-27",
+          "video": false,
+          "vote_average": 6.692,
+          "vote_count": 91
+        },
+        {
+          "adult": false,
+          "backdrop_path": "/qDdq8gQCestNvdMfBgzEbQTXD9R.jpg",
+          "id": 61912,
+          "name": "The Protectors",
+          "original_language": "da",
+          "original_name": "Livvagterne",
+          "overview": "The Danish national police branch PET is in charge of personal protection, mainly of politicians and royal family. That also involves preventive work concerning terrorism, stalking etcetera. Meanwhile several team members must keep op top of personal concerns, such as ethnic background-related concerns and relational troubles at home. ",
+          "poster_path": "/fUJNWSEqWWwrS2uJMvPliovbd8a.jpg",
           "media_type": "tv",
           "genre_ids": [
-            10751,
-            35
+            18,
+            80,
+            9648
           ],
-          "popularity": 121.647,
-          "first_air_date": "2000-01-09",
-          "vote_average": 8.494,
-          "vote_count": 3878,
+          "popularity": 6.894,
+          "first_air_date": "2009-01-01",
+          "vote_average": 6.2,
+          "vote_count": 6,
           "origin_country": [
-            "US"
+            "DK"
           ]
         }
       ]
@@ -1041,218 +333,666 @@
     {
       "adult": false,
       "gender": 2,
-      "id": 71090,
+      "id": 39891,
       "known_for_department": "Acting",
-      "name": "Raj Babbar",
-      "original_name": "Raj Babbar",
-      "popularity": 4.046,
-      "profile_path": "/czcJMiNDxfQrNnDPNBM2O6cTmZR.jpg",
+      "name": "Jean Babilée",
+      "original_name": "Jean Babilée",
+      "popularity": 3.853,
+      "profile_path": "/zunIAbMETq0o7ueci1eWKgaCFAG.jpg",
       "known_for": [
         {
           "adult": false,
-          "backdrop_path": "/q2luENP1VlrRf29jSBIaMv0MMIK.jpg",
-          "id": 73582,
-          "title": "보디가드",
-          "original_language": "hi",
-          "original_title": "Bodyguard",
-          "overview": "아버지가 고용한 보디가드가 못마땅한 디비야. 임무 수행을 방해하려고 시시때때로 그에게 장난 전화를 건다. 근데 뭐지. 통화하면 할수록 마음에 드는 이 남자. 이러다 장난 전화가 사랑의 오작교가 되겠는걸. 일이 꼬인다 꼬여.",
-          "poster_path": "/12VEUEHebd9ydQs0Y4ikzb179LY.jpg",
+          "backdrop_path": "/sQoqKID3XdB01mCJATPAV9q49VB.jpg",
+          "id": 65707,
+          "title": "대결",
+          "original_language": "fr",
+          "original_title": "Duelle",
+          "overview": "겨울의 마지막 초승달과 봄의 첫 보름달 사이, 죽은 자들이 지상으로 돌아오는 40일의 시간. 그 카니발 기간동안 달의 여신 레니와 태양의 여신 비바는 신비의 힘을 가진 반지를 차지하기 위해 대결을 벌인다. 그러나 반지는 그만 인간들의 수중에 떨어지고, 이제 피에로와 그의 누이 루시, 그리고 그의 애인 잔느를 둘러싼 결투가 벌어진다.",
+          "poster_path": "/6pYgnWXuSDVViwcFLQuptl0TVKV.jpg",
           "media_type": "movie",
           "genre_ids": [
             18,
-            28,
-            10749
+            14,
+            9648
           ],
-          "popularity": 14.846,
-          "release_date": "2011-08-31",
+          "popularity": 4.927,
+          "release_date": "1976-09-15",
           "video": false,
-          "vote_average": 5.292,
-          "vote_count": 120
+          "vote_average": 6.976,
+          "vote_count": 41
         },
         {
           "adult": false,
-          "backdrop_path": "/1ljhKlRsjAGpwwi5babIiPMaoMA.jpg",
-          "id": 11763,
-          "title": "Bunty Aur Babli",
+          "backdrop_path": "/lORkRlHcuVJ8tdN49qqfHpmnbjE.jpg",
+          "id": 63149,
+          "title": "Sweet and Sour",
+          "original_language": "fr",
+          "original_title": "Dragées au poivre",
+          "overview": "Gerard, a young man from a \"good family\" dreams of becoming an actor. To do this, he follows everywhere his sister Frédérique who is infatuated with cinéma vérité.",
+          "poster_path": "/3HWLpyxCBN1v9jqsNEZSpuk7tOr.jpg",
+          "media_type": "movie",
+          "genre_ids": [
+            35
+          ],
+          "popularity": 1.146,
+          "release_date": "1963-09-04",
+          "video": false,
+          "vote_average": 5.8,
+          "vote_count": 4
+        },
+        {
+          "adult": false,
+          "backdrop_path": "/aMXbo0X8RNHozagv1Gm15rtazkC.jpg",
+          "id": 65610,
+          "title": "Spotlight on a Murderer",
+          "original_language": "fr",
+          "original_title": "Pleins feux sur l'assassin",
+          "overview": "An old count hides just before he dies to annoy his heirs. The heirs search a manor for the count's body and are killed off one by one. Jean-Marie, his fiancée Micheline, and Edwige investigate the deaths and search for the count's body.",
+          "poster_path": "/m98DYNJRh4Wi56HyUxM2LKQl3VU.jpg",
+          "media_type": "movie",
+          "genre_ids": [
+            9648,
+            18,
+            53
+          ],
+          "popularity": 4.809,
+          "release_date": "1961-03-31",
+          "video": false,
+          "vote_average": 6.8,
+          "vote_count": 17
+        }
+      ]
+    },
+    {
+      "adult": false,
+      "gender": 2,
+      "id": 1751998,
+      "known_for_department": "Acting",
+      "name": "Vilen Babichev",
+      "original_name": "Vilen Babichev",
+      "popularity": 4.205,
+      "profile_path": "/8EW0EQzya60s7sHB0XY1pBV25hz.jpg",
+      "known_for": [
+        {
+          "adult": false,
+          "backdrop_path": "/4mXvakxQfwoSFrK6ANhfKvPMtBh.jpg",
+          "id": 401513,
+          "title": "어트랙션",
+          "original_language": "ru",
+          "original_title": "Притяжение",
+          "overview": "어느 날 갑자기 러시아 모스크바 도심 한가운데로 거대한 비행 물체가 추락하고,  외계 존재의 등장에 국가는 비상사태에 돌입한다.  한편 추락 현장에서 가까스로 살아남은 ‘율리아’는 죽은 친구의 복수를 위해 비행 물체에 접근한다.  그 과정에서 다시 한번 위험에 빠진 ‘율리아’는 갑자기 나타난 외계 존재의 도움으로 목숨을 건지게 되고,  그들이 지구에 온 목적이 침략이 아님을 알게 된다.  하지만 시간이 지나도 떠나지 않는 외계 존재에 대한 적대감과 분노가 커져가는 ‘툐마’를 비롯한 사람들은  군대를 조직해 전쟁을 준비하고, ‘율리아’는 미스터리한 존재 ‘하콘’과 함께  일어나서는 안될 전쟁을 막기 위해 결국 나서기로 하는데...  인류의 운명을 건 외계 존재와 인류와의 전쟁  일으킬 것인가, 막을 것인가!",
+          "poster_path": "/16C5aYGAgIWIPDQGTA6QFNdpnMw.jpg",
+          "media_type": "movie",
+          "genre_ids": [
+            18,
+            10749,
+            878,
+            12
+          ],
+          "popularity": 27.64,
+          "release_date": "2017-01-26",
+          "video": false,
+          "vote_average": 6.671,
+          "vote_count": 726
+        },
+        {
+          "adult": false,
+          "backdrop_path": "/8HbqSozBJxv6UldR9lMUECUlbLI.jpg",
+          "id": 430155,
+          "title": "코마",
+          "original_language": "ru",
+          "original_title": "Кома",
+          "overview": "젊고 재능은 있지만 세상에 인정받지 못한 건축가 ‘빅터’는 갑작스러운 사고를 당한 후 잠에서 깨어난다. 어떤 과학적 논리로도 설명할 수 없는 중력, 물리 법칙을 무시한 건물들과 공간이 있는 이곳은 혼수상태에 빠진 자들만 올 수 있는 곳 ‘코마’라는 세계이다.  이곳에 있는 사람들은 ‘리퍼’라는 정체불명의 괴물에게 쫓겨 안전한 섬을 찾으러 떠나게 되고, 그 섬과 관련해서 엄청난 비밀이 드러나는데 과연 ‘빅터’는 혼수상태에서 현실세계로 빠져나올 수 있을까…",
+          "poster_path": "/d9jtAXtP1Hd2ckuHttCdRil3TZk.jpg",
+          "media_type": "movie",
+          "genre_ids": [
+            878,
+            12,
+            28
+          ],
+          "popularity": 25.303,
+          "release_date": "2019-11-19",
+          "video": false,
+          "vote_average": 6.396,
+          "vote_count": 473
+        },
+        {
+          "adult": false,
+          "backdrop_path": "/7m8zy0eJ0d0JmEyOkC2fSx1KbYU.jpg",
+          "id": 428045,
+          "title": "아이언 마스크: 용패지미",
+          "original_language": "ru",
+          "original_title": "Тайна печати Дракона",
+          "overview": "왕국을 지켜주던 용의 인장을 차지하려 한 흑마녀의 군대는 백마법사와 공주를 잡아 세상의 양쪽 끝에 있는 감옥에 가둬버린다. 우연히 세계 지도를 만드는 조너선에 의해 풀려난 공주는 갇혀있는 아버지와 왕국을 구하기 위해 마녀에 맞서는 최후의 전투를 치르게 되는데…",
+          "poster_path": "/8PLnqZL0vXwjVDsUYuAlWiE38QI.jpg",
+          "media_type": "movie",
+          "genre_ids": [
+            28,
+            12,
+            10751,
+            14
+          ],
+          "popularity": 18.461,
+          "release_date": "2019-08-16",
+          "video": false,
+          "vote_average": 6.197,
+          "vote_count": 375
+        }
+      ]
+    },
+    {
+      "adult": false,
+      "gender": 1,
+      "id": 1064554,
+      "known_for_department": "Acting",
+      "name": "Babita Kapoor",
+      "original_name": "Babita Kapoor",
+      "popularity": 2.222,
+      "profile_path": "/dWZVnIbmrIHGeJCHFqVQBiHlL8H.jpg",
+      "known_for": [
+        {
+          "adult": false,
+          "backdrop_path": "/8YtsPZxGEt6ibIj2l0Twx5ORnXh.jpg",
+          "id": 116854,
+          "title": "Kab? Kyoon? Aur Kahan?",
           "original_language": "hi",
-          "original_title": "बंटी और बब्ली",
-          "overview": "Bunty and Babli are two avid dreamers. Two free souls born into caged small town realities. They grow weary of being two specks on the horizon. They desire the horizon itself.And so they pack their aspirations in worn out bags, whip a scarf of confidence around their proud necks and set forth. On a journey across the length and breadth of the country, spinning circles around the people they meet.",
-          "poster_path": "/32OxUzs9ETQ3QvLFFYaDuuAtq3Y.jpg",
+          "original_title": "कब? क्यों? और कहाँ?",
+          "overview": "Dharmendra plays a suave CID Officer who romances Babita on board a ship and slowly we get to the plot which involves Babita's dad who dies under mysterious circumstances leaving behind a huge \" property\" and an evil looking uncle Pran who is after it and her.. Nothing is as it seems as the sinister plot unfolds and our innocent heroine is under threat of losing her sanity and perhaps her life.. Unless of course the hero manages to unravel the plot and save them all..It involves the mystery of dead body in a coffin and things that go bump in the night.",
+          "poster_path": "/nTDNIWMQYU1SWlIl26ThKd18TXe.jpg",
+          "media_type": "movie",
+          "genre_ids": [
+            28,
+            9648,
+            10749
+          ],
+          "popularity": 0.934,
+          "release_date": "1970-05-08",
+          "video": false,
+          "vote_average": 4,
+          "vote_count": 4
+        },
+        {
+          "adult": false,
+          "backdrop_path": null,
+          "id": 407815,
+          "title": "Banphool",
+          "original_language": "hi",
+          "original_title": "बनफूल",
+          "overview": "Haria lives with his widowed and elderly grandmother at a tea estate and works as Elephant Driver. He has no knowledge of his biological father, as his mother died at the time of his birth. He meets and falls in love with a gypsy girl, Gulabi, and both want to get married. But Gulabi has another suitor, none other than Ajay, the only son of the tea estate owner. When Ajay finds out that Gulabi loves Haria, he plans to get rid of Haria, but fails. He waits for the right moment, and has his men abduct Gulabi. But before he could have his way with her, she is rescued by Raja, but Ajay subsequently shoots Raja to death. An enraged Haria wants to kill Ajay in return, but Ajay's dad stops him from doing so. Then Ajay's dad finds out a secret about his past life, and decides to change his last will and testament. Ajay finds out about this and lays in wait with a shotgun to kill his very own father - and anyone else who dares to stand in his way",
+          "poster_path": "/tEQPeJU9j0eOKIn0QPKURKqe39M.jpg",
+          "media_type": "movie",
+          "genre_ids": [
+            10749
+          ],
+          "popularity": 1.167,
+          "release_date": "1971-12-31",
+          "video": false,
+          "vote_average": 6.5,
+          "vote_count": 2
+        },
+        {
+          "adult": false,
+          "backdrop_path": null,
+          "id": 127686,
+          "title": "Haseena Maan Jaayegi",
+          "original_language": "hi",
+          "original_title": "हसीना मान जाएगी",
+          "overview": "An army officer's wife is unsure if the man she is living with is her husband or his look-alike.",
+          "poster_path": "/zUibwNH5FQbUBSrPrFf65VpbZg9.jpg",
+          "media_type": "movie",
+          "genre_ids": [
+            28,
+            18,
+            10749
+          ],
+          "popularity": 0.638,
+          "release_date": "1968-01-05",
+          "video": false,
+          "vote_average": 5,
+          "vote_count": 1
+        }
+      ]
+    },
+    {
+      "adult": false,
+      "gender": 1,
+      "id": 2898586,
+      "known_for_department": "Acting",
+      "name": "Martina Babišová",
+      "original_name": "Martina Babišová",
+      "popularity": 1.448,
+      "profile_path": "/hPzw3wTya4NLHEIMePmmY47ycAE.jpg",
+      "known_for": [
+        {
+          "adult": false,
+          "backdrop_path": "/bxz18yYY0W3HLDj0o10GLRqMbqe.jpg",
+          "id": 731663,
+          "title": "Shoky & Morthy: Last Big Thing",
+          "original_language": "cs",
+          "original_title": "Shoky & Morthy: Poslední velká akce",
+          "overview": "Two pranksters set out on a wild adventure to shoot a horror documentary, resurrect their dwindling fame and save their YouTube channel.",
+          "poster_path": "/dz9HznbfrShkchu4KNGiodLOnf8.jpg",
           "media_type": "movie",
           "genre_ids": [
             35,
-            80,
+            27,
+            12
+          ],
+          "popularity": 1.699,
+          "release_date": "2021-08-05",
+          "video": false,
+          "vote_average": 4.286,
+          "vote_count": 7
+        },
+        {
+          "adult": false,
+          "backdrop_path": "/tQZtXSYDzQUaASZYMfakoNo9DC3.jpg",
+          "id": 90027,
+          "name": "카니발 로",
+          "original_language": "en",
+          "original_name": "Carnival Row",
+          "overview": "네오 빅토리아 시대를 배경으로 한다. 전쟁으로 폐허가 된 고향을 떠난 마법 생명체들이 빈민가 ‘카니발 로우’에 모여들면서 인간과 갈등이 발생하고, 끔찍한 연쇄살인의 피해자가 된다는 이야기를 그린다. 올랜도 블룸이 살인사건을 수사하는 인간 탐정을, 카라 델러비인은 전쟁을 피해 카니발 로우에 입성한 요정이자 주인공의 마음을 사로잡는 인물로 등장한다.",
+          "poster_path": "/y16BMvX8aimbhk8goq1GVRexpVV.jpg",
+          "media_type": "tv",
+          "genre_ids": [
+            10765
+          ],
+          "popularity": 48.089,
+          "first_air_date": "2019-08-29",
+          "vote_average": 7.814,
+          "vote_count": 1046,
+          "origin_country": [
+            "US"
+          ]
+        },
+        {
+          "adult": false,
+          "backdrop_path": "/ibNvtkuptjWB2KfE6Odt7wszKSQ.jpg",
+          "id": 93740,
+          "name": "파운데이션",
+          "original_language": "en",
+          "original_name": "Foundation",
+          "overview": "아이작 아시모프의 소설 원작. 은하 제국의 멸망이 다가오자, 인류를 구하고 문명을 재건하기 위해 나선 망명자들의 장대한 여정을 그린다.",
+          "poster_path": "/kZeDTJrkXBzP80KEdb7hMAOJnrd.jpg",
+          "media_type": "tv",
+          "genre_ids": [
+            10765,
+            18
+          ],
+          "popularity": 587.443,
+          "first_air_date": "2021-09-24",
+          "vote_average": 7.9,
+          "vote_count": 955,
+          "origin_country": [
+            "IE"
+          ]
+        }
+      ]
+    },
+    {
+      "adult": false,
+      "gender": 1,
+      "id": 1240950,
+      "known_for_department": "Acting",
+      "name": "Babi Xavier",
+      "original_name": "Babi Xavier",
+      "popularity": 0.6,
+      "profile_path": "/4kWnY4xeKziFI7CtapLAc1q36Oy.jpg",
+      "known_for": [
+        {
+          "adult": false,
+          "backdrop_path": "/eZf4wT34dwwCKHWEr0pgqItjvxH.jpg",
+          "id": 129679,
+          "title": "Zoando na TV",
+          "original_language": "pt",
+          "original_title": "Zoando na TV",
+          "overview": "Angel works in a wedding dress store. Ulisses, her boyfriend, works as personal trainer. They are swallowed for the television and, to leave, need to discover how to use the Ulisses' ring.",
+          "poster_path": "/4Y9rX4gsgeiXppnRuGTGDyUsPN4.jpg",
+          "media_type": "movie",
+          "genre_ids": [
+            14,
+            35,
+            10751
+          ],
+          "popularity": 1.962,
+          "release_date": "1999-02-11",
+          "video": false,
+          "vote_average": 4,
+          "vote_count": 26
+        },
+        {
+          "adult": false,
+          "backdrop_path": "/zkX0ZQTcGnRQ8H2swD0Ma1djpsu.jpg",
+          "id": 38204,
+          "name": "Anything for Love",
+          "original_language": "pt",
+          "original_name": "Por Amor",
+          "overview": "Helena is an independendent woman with strong emotions. More than a dedicated mother, she is also a friend to her daughter. Her daughter is experiencing difficulties in her marriage with Marcelo because of his renewed interest in a formoe girlfriend. Marcelo‘s mother deslikes Helena and would like nothing better to see her son‘s marriage destroyed. Helena starts her life over again when she falls in love at first sight with Atilio, whom she marries. Although of poor health, her daughter wants to have a baby, believing that by fulfiling her husband‘s dream, she can save her marriage. As fate would have it, mother and daughter fall pregnant at the same time, each giving birth to a boy.",
+          "poster_path": "/lq3lz2xtJmtNtmoXM7AVtXL1D5v.jpg",
+          "media_type": "tv",
+          "genre_ids": [
+            18,
+            10766,
+            10751
+          ],
+          "popularity": 21.839,
+          "first_air_date": "1997-10-13",
+          "vote_average": 6.091,
+          "vote_count": 11,
+          "origin_country": [
+            "BR"
+          ]
+        },
+        {
+          "adult": false,
+          "backdrop_path": "/hYsoBDKzpa4YttVOIhiTv4uVtB4.jpg",
+          "id": 65166,
+          "name": "José do Egito",
+          "original_language": "pt",
+          "original_name": "José do Egito",
+          "overview": "",
+          "poster_path": "/diXtQic9EzM3HRpvA0PfL32kkJ0.jpg",
+          "media_type": "tv",
+          "genre_ids": [
+            18
+          ],
+          "popularity": 32.974,
+          "first_air_date": "2013-01-30",
+          "vote_average": 8.231,
+          "vote_count": 13,
+          "origin_country": [
+            "BR"
+          ]
+        }
+      ]
+    },
+    {
+      "adult": false,
+      "gender": 1,
+      "id": 1657720,
+      "known_for_department": "Acting",
+      "name": "Laurie Babin",
+      "original_name": "Laurie Babin",
+      "popularity": 4.588,
+      "profile_path": "/ek3GKDKEn4ed8eqQSTIwsPt5WPL.jpg",
+      "known_for": [
+        {
+          "adult": false,
+          "backdrop_path": "/oIfm0FjSnj18sRCE9dWiaAlWyHI.jpg",
+          "id": 472964,
+          "title": "The Little Girl Who Was Too Fond of Matches",
+          "original_language": "fr",
+          "original_title": "La petite fille qui aimait trop les allumettes",
+          "overview": "In the wake of their father’s death, two children gradually come to realize the perverse nature of their upbringing.",
+          "poster_path": "/5Hs3nAAniDccoTasNdnaieg6pQB.jpg",
+          "media_type": "movie",
+          "genre_ids": [
+            18,
+            27
+          ],
+          "popularity": 1.704,
+          "release_date": "2017-09-11",
+          "video": false,
+          "vote_average": 6,
+          "vote_count": 20
+        },
+        {
+          "adult": false,
+          "backdrop_path": "/q8zSFOfD1sqSm6M2o6tdYTsX7yE.jpg",
+          "id": 93667,
+          "name": "422",
+          "original_language": "fr",
+          "original_name": "Le 422",
+          "overview": "In an abandoned house in a small village, five youngsters discover a secret passage to a mysterious world hiding a priceless treasure. However, the joy brought by this extraordinary discovery will be short-lived for Lou and his friends. Threatened by immoral villains, our young protagonists have no choice but to plunge into this strange world to save themselves and embark on a treasure hunt that push them to their ultimate limit.",
+          "poster_path": "/l7qOTTTV1FluVnTOuBTiixNo7gS.jpg",
+          "media_type": "tv",
+          "genre_ids": [
+            10765
+          ],
+          "popularity": 12.138,
+          "first_air_date": "2019-12-23",
+          "vote_average": 4,
+          "vote_count": 3,
+          "origin_country": [
+            "CA"
+          ]
+        },
+        {
+          "adult": false,
+          "backdrop_path": "/og42e1oJUcrSTNRcsgXBSh6LtTt.jpg",
+          "id": 331797,
+          "title": "The Passion of Augustine",
+          "original_language": "fr",
+          "original_title": "La Passion d'Augustine",
+          "overview": "The nuns of a musical convent work hard in order to prevent the religious school from closing.",
+          "poster_path": "/6i9kN5VV23cLWfCh0E6FetCgIeA.jpg",
+          "media_type": "movie",
+          "genre_ids": [
+            18
+          ],
+          "popularity": 2.298,
+          "release_date": "2015-03-20",
+          "video": false,
+          "vote_average": 7.075,
+          "vote_count": 20
+        }
+      ]
+    },
+    {
+      "adult": false,
+      "gender": 2,
+      "id": 62266,
+      "known_for_department": "Acting",
+      "name": "Danny Babington",
+      "original_name": "Danny Babington",
+      "popularity": 4.141,
+      "profile_path": "/kW7VSrtHNkNZQVuAZrqN5UzNkaP.jpg",
+      "known_for": [
+        {
+          "adult": false,
+          "backdrop_path": "/hjA7kpsb1g2MyCfHJfPhjI0k03n.jpg",
+          "id": 10876,
+          "title": "퀼스",
+          "original_language": "en",
+          "original_title": "Quills",
+          "overview": "나폴레옹 황제가 통치하던 시대의 프랑스  가학적이고 문란한 성생활 때문에 정신병원에 수감된 사드 후작(제프리 러시)은 그 안에서도 자신의 욕망을 소설로 써 내려 간다. 그는 젊은 세탁부 마들렌(케이트 윈슬렛)을 통해 원고를 몰래 출판하기까지 한다.  이상주의에 불타는 병원 원장 쿨미어 신부(와킨 피닉스)는 그런 사실을 모르는 채 사드를 교화하려 하지만 나폴레옹은 잔인한 치료로 악명 높은 의사 꼴라(마이클 케인)를 병원에 파견한다.  꼴라는 점잖은 외모 뒤에 위선과 죄악을 감추고 있는 인물이었는데...",
+          "poster_path": "/AvGdw3BpvJV2wHmK2qY0N7XHqET.jpg",
+          "media_type": "movie",
+          "genre_ids": [
+            18
+          ],
+          "popularity": 14.781,
+          "release_date": "2000-11-22",
+          "video": false,
+          "vote_average": 7.111,
+          "vote_count": 574
+        },
+        {
+          "adult": false,
+          "backdrop_path": "/vXQaoM0z7N8Wf48786xSS2os2oC.jpg",
+          "id": 15775,
+          "title": "이프 온리",
+          "original_language": "en",
+          "original_title": "If Only",
+          "overview": "사랑을 꿈꾸는 로맨티스트 '그녀'와 성공을 꿈꾸는 워커홀릭 '그'. 바이올린을 전공하는 사랑스런 로맨티스트 사만다(제니퍼 러브 휴잇)와 자신의 일에만 몰두하는 성공한 젊은 비즈니스 맨 이안(폴 니콜스). 둘은 서로를 사랑하지만 사만다는 일만 생각하고 자신은 자신은 뒷전인 이안의 모습에 마음이 아프고, 이안은 자신을 이해해주지 못하는 사만다가 답답하다.  사만다에겐 졸업연주회, 이안에겐 투자설명회. 오늘은 두 사람 모두에게 중요한 하루이다. 그녀는 그를 위해 선물과 아침식사를 준비하지만, 오늘이 그녀의 졸업연주회 날이라는 것 조차 잊고 있던 그를 보며 사만다는 서운함을 감추지 못한다.  출근길.. 옷에 쏟은 커피 때문에 집으로 돌아온 사만다는 이안이 중요한 파일을 두고 갔음을 알고 급히 설명회 장소로 향한다. 하지만 그 파일은 단순한 복사본. 갑작스런 그녀의 출현으로 설명회를 망쳤다고 생각한 이안은 사만다의 전화조차 받지 않는다.  사만다의 졸업 연주회에 가는 길.. 이안은 '그녀가 있음을 감사하고 계산 없이 사랑하라'는 택시기사의 충고를 들으며 문득 그녀의 소중함을 깨닫는다. 하지만 졸업연주회가 끝나고 식사를 하던 두 사람은 그 동안의 쌓인 감정들 때문에 말다툼을 하고, 레스토랑에서 뛰쳐나와 혼자 택시를 타고 가던 사만다는 이안이 보는 앞에서 교통사고로 목숨을 잃는다. 그녀에게 사랑한다는 말 한마디 제대로 해주지 못했던 이안은 그녀의 죽음을 인정할 수 없는데...  다음 날 아침.. 눈을 뜬 그는 믿지 못할 상황과 마주한다. 자신의 곁에는 그녀가 있고, 그녀가 떠나간 어제가 다시 반복되고 있는 것! 이안은 어제의 일들이 단순한 꿈이길 바라며 그녀의 운명을 바꾸려 노력한다. 하지만 어제와 같은 일들이 계속 반복되는 것을 보며 그는 정해진 운명을 바꿀 수 없음을 깨닫는다. 이안에게 다시 주어진 사만다와의 마지막 하루. 이제 그녀를 사랑할 수 있는 시간은 단 하루뿐! 그는 마지막으로 그녀에게 자신의 모든 사랑을 담은 최고의 하루를 선물하기로 하는데...",
+          "poster_path": "/mdP2jfx5ai3DoCFWQi5mqBWuxAy.jpg",
+          "media_type": "movie",
+          "genre_ids": [
+            14,
+            18,
             10749
           ],
-          "popularity": 5.069,
-          "release_date": "2005-05-27",
+          "popularity": 15.586,
+          "release_date": "2004-01-23",
           "video": false,
-          "vote_average": 6.349,
+          "vote_average": 7.001,
+          "vote_count": 515
+        },
+        {
+          "adult": false,
+          "backdrop_path": "/cBlKxl2YSRVTLb1szSur8H3BNdZ.jpg",
+          "id": 347026,
+          "title": "오직 사랑뿐",
+          "original_language": "en",
+          "original_title": "A United Kingdom",
+          "overview": "1947년. 동생 뮤리엘(로라 카마이클)과 함께 선교회 댄스파티에 나간 루스(로자먼드 파이크)는 그곳에서 세레체(데이빗 오예로워)를 만나 첫 눈에 반하게 된다. 후에 그가 영국령 베추어나랜드(현 보츠와나 공화국)의 왕위 계승자라는 것을 알게된 루스는, 그가 고국으로 돌아갈 때까지라도 그와 최선을 다하기로 마음을 먹는다. 그러던 중 사랑은 깊어지고, 그녀에 청혼을 하는 세레체. 루스는 그의 사랑을 받아들이게 되지만, 그때부터 두 사람의 시련은 시작되고 만다.  집안의 극심한 반대에 가출을 선택한 루스. 하지만 하나의 산을 넘자 이번에는 영국정부의 반대에 부딪히게 되고, 두 사람은 우여곡절 끝에 결혼하는데 성공한다. 그렇게 모든 산을 넘었을 것이라 생각했지만, 이번에는 부족에서 백인을 자신들의 국모로 받아들일 수 없다는 반대가 생기게 되고, 두 사람은 또다시 넘어야 할 산을 만나게 되는데...",
+          "poster_path": "/lrm99l56zG46o5MfPs4FIaUJc4K.jpg",
+          "media_type": "movie",
+          "genre_ids": [
+            18,
+            36
+          ],
+          "popularity": 8.493,
+          "release_date": "2016-11-25",
+          "video": false,
+          "vote_average": 6.667,
+          "vote_count": 478
+        }
+      ]
+    },
+    {
+      "adult": false,
+      "gender": 2,
+      "id": 1748372,
+      "known_for_department": "Acting",
+      "name": "Walker Babington",
+      "original_name": "Walker Babington",
+      "popularity": 2.315,
+      "profile_path": "/mzcVDjgay5JPoEE8r1BpsqRBEzG.jpg",
+      "known_for": [
+        {
+          "adult": false,
+          "backdrop_path": "/8GXri7UnwE7dVNfUAZVDn7Z8UBZ.jpg",
+          "id": 333484,
+          "title": "매그니피센트 7",
+          "original_language": "en",
+          "original_title": "The Magnificent Seven",
+          "overview": "1879년, 평화로운 마을 로즈 크릭을 무력으로 점령한 보그 일당의 탐욕적인 악행과 착취로 인해  선량한 사람들이 이유 없이 쫓겨나게 된다. 남편의 억울한 죽음을 지켜본 엠마는 치안 유지관을 가장한  현상범 전문 헌터 ‘샘 치좀’(덴젤 워싱턴)을 찾아가 전 재산을 건 복수를 의뢰한다.  ‘샘 치좀’은 도박꾼 ‘조슈아 패러데이’(크리스 프랫), 명사수 ‘굿나잇 로비쇼’(에단 호크), 암살자 ‘빌리 락스’(이병헌),  무법자, 추격자 그리고 인디언 전사까지, 7인의 무법자들을 모아 모든 것을 날려버릴 마지막 결전을 준비하는데….  정의가 사라진 세상, 통쾌한 복수가 시작된다!",
+          "poster_path": "/ie7skA97V0vTC6BR7srDcnWsL2d.jpg",
+          "media_type": "movie",
+          "genre_ids": [
+            12,
+            28,
+            37
+          ],
+          "popularity": 44.045,
+          "release_date": "2016-09-14",
+          "video": false,
+          "vote_average": 6.419,
+          "vote_count": 5531
+        },
+        {
+          "adult": false,
+          "backdrop_path": "/9R2FuGT0BeZl8usfsfqIcO7KK7v.jpg",
+          "id": 514847,
+          "title": "헌트",
+          "original_language": "en",
+          "original_title": "The Hunt",
+          "overview": "낯선 사람들과 함께 의문의 지역에 갇혀 영문도 모른 채 사냥 당하고 있는 ‘크리스탈’(베티 길핀)이 자신들을 사냥하는 주체를 밝히고, 그들을 찾아 복수하기 위해 고군분투하는 이야기",
+          "poster_path": "/8mS3VvzeDfw6VdgQQbXsunNBEit.jpg",
+          "media_type": "movie",
+          "genre_ids": [
+            28,
+            53,
+            27
+          ],
+          "popularity": 33.046,
+          "release_date": "2020-03-11",
+          "video": false,
+          "vote_average": 6.652,
+          "vote_count": 2854
+        },
+        {
+          "adult": false,
+          "backdrop_path": "/zh1M8fE2vQ0BKxYzIvMYan7ryV.jpg",
+          "id": 549294,
+          "title": "싱크로닉",
+          "original_language": "en",
+          "original_title": "Synchronic",
+          "overview": "구급대원 스티브와 데니스는 치명적인 부작용을 가진 약물 ‘싱크로닉’과 관련된 일련의 이상한 사건에 파견된다. 그들은 그 약물을 사용하는 아이들과 함께 파티장에 도착하고, 데니스는 딸 브리아나도 그 장소에 있었지만 지금은 실종된 상태라는 것을 알게 된다. 스티브는 이 약물 대유행을 막고, 브리아나에게 무슨 일이 일어났는지 알아내기 위해 모든 희생을 감수하며 이 사건을 떠맡는다.",
+          "poster_path": "/6X2LqfeakDftzo86QcDtNsZkPvx.jpg",
+          "media_type": "movie",
+          "genre_ids": [
+            878,
+            18,
+            53,
+            27
+          ],
+          "popularity": 17.853,
+          "release_date": "2020-10-23",
+          "video": false,
+          "vote_average": 6.312,
+          "vote_count": 785
+        }
+      ]
+    },
+    {
+      "adult": false,
+      "gender": 2,
+      "id": 580590,
+      "known_for_department": "Acting",
+      "name": "Yann Babilée Keogh",
+      "original_name": "Yann Babilée Keogh",
+      "popularity": 1.166,
+      "profile_path": "/fjSaJb8Gt5D3UpEkg0ILazDtheo.jpg",
+      "known_for": [
+        {
+          "adult": false,
+          "backdrop_path": "/qd4qZy5oiL6mp0hFRI7hYncRPM6.jpg",
+          "id": 13735,
+          "title": "Les Randonneurs à Saint-Tropez",
+          "original_language": "fr",
+          "original_title": "Les Randonneurs à Saint-Tropez",
+          "overview": "Ten years after their disastrous walking holiday in Corsica, four friends – Cora, Nadine, Mathieu and Louis – decide to spend the summer together on the Côte d’Azur. To their surprise, who should they meet in St-Tropez but Eric, the guide-from-Hell who transformed their last holiday into a nightmare and whom they swore never to see again...",
+          "poster_path": "/jmIGelJ7tgqc9hNRMUnsfKkL1vT.jpg",
+          "media_type": "movie",
+          "genre_ids": [
+            35
+          ],
+          "popularity": 4.672,
+          "release_date": "2008-04-09",
+          "video": false,
+          "vote_average": 5.2,
           "vote_count": 63
         },
         {
           "adult": false,
-          "backdrop_path": "/S3EIcOUQYxgd3QzjOo2rZJ2MN8.jpg",
-          "id": 554600,
-          "title": "스페셜포스: 써지컬 스트라이크",
-          "original_language": "hi",
-          "original_title": "Uri: The Surgical Strike",
-          "overview": "2016년 9월 인도령 카슈미르 우리(URI) 지역 근처에서 파키스탄의 무장단체 소행으로 추정되는 매복공격으로 19명의 인도군과 민간인이 죽고80명이 부상당하는 일이 발생한다. 이 영화는 무장단체 공격을 보복하는 인도 특수부대를 조명하며 역동적인 전투와 액션을 보여준다.",
-          "poster_path": "/xUfmFfFvZjQ38GD70qBKllh9IaZ.jpg",
-          "media_type": "movie",
-          "genre_ids": [
-            28,
-            18,
-            10752
-          ],
-          "popularity": 9.859,
-          "release_date": "2019-01-11",
-          "video": false,
-          "vote_average": 7.105,
-          "vote_count": 176
-        }
-      ]
-    },
-    {
-      "adult": false,
-      "gender": 2,
-      "id": 586626,
-      "known_for_department": "Acting",
-      "name": "Nagendra Babu",
-      "original_name": "Nagendra Babu",
-      "popularity": 9.264,
-      "profile_path": "/9aW1BPFyiSZuIPpes2ISUhFZnfl.jpg",
-      "known_for": [
-        {
-          "adult": false,
-          "backdrop_path": "/2pJ9xW1mA7zRfrg9On9e8AekrQM.jpg",
-          "id": 540468,
-          "title": "Geetha Govindam",
-          "original_language": "te",
-          "original_title": "గీత గోవిందం",
-          "overview": "Vijay Govind, a young college lecturer who dreams of marriage falls for Geetha, a level-headed woman who's wary of strangers and isn't easy to convince. While things seem to go smoothly, Vijay makes a terrible mistake which not only derails any hope for his love story, but also potential repercussions with his family.",
-          "poster_path": "/sTreb0ajewXqeIqAyZ0IWtafoB5.jpg",
-          "media_type": "movie",
-          "genre_ids": [
-            10749
-          ],
-          "popularity": 6.43,
-          "release_date": "2018-08-15",
-          "video": false,
-          "vote_average": 6.905,
-          "vote_count": 58
-        },
-        {
-          "adult": false,
-          "backdrop_path": "/tO2x1l6Mvg9M8n0qcFc8l17bBVw.jpg",
-          "id": 364080,
-          "title": "Bruce Lee - The Fighter",
-          "original_language": "te",
-          "original_title": "Bruce Lee - The Fighter",
-          "overview": "When a stuntman is mistaken for a police officer, he begins fighting crime.",
-          "poster_path": "/qNYG0NLXcdZEW56pcOjrm0w6Vos.jpg",
-          "media_type": "movie",
-          "genre_ids": [
-            10749,
-            28,
-            18
-          ],
-          "popularity": 4.092,
-          "release_date": "2015-10-16",
-          "video": false,
-          "vote_average": 5.828,
-          "vote_count": 29
-        },
-        {
-          "adult": false,
-          "backdrop_path": "/5DnOehrdigGCBb6Lfcyq6QqF1BK.jpg",
-          "id": 69504,
-          "title": "Vettai",
-          "original_language": "ta",
-          "original_title": "வேட்டை",
-          "overview": "Guru always helps his timid brother win accolades and promotions in his career as a policeman. But a brutal incident makes Guru realise that he needs to help his brother in another way.",
-          "poster_path": "/vuzpXdttuTnQEQ7gzfzS56kihvo.jpg",
-          "media_type": "movie",
-          "genre_ids": [
-            28,
-            53
-          ],
-          "popularity": 2.61,
-          "release_date": "2012-01-13",
-          "video": false,
-          "vote_average": 6.528,
-          "vote_count": 18
-        }
-      ]
-    },
-    {
-      "adult": false,
-      "gender": 2,
-      "id": 237629,
-      "known_for_department": "Acting",
-      "name": "Sarath Babu",
-      "original_name": "Sarath Babu",
-      "popularity": 5.666,
-      "profile_path": "/giugWi2EV6GYxmrkn4XKgyvjRGp.jpg",
-      "known_for": [
-        {
-          "adult": false,
-          "backdrop_path": "/p2SvjtejMgiBDCLL3ugOmCxk3sY.jpg",
-          "id": 23790,
-          "title": "마가디라",
-          "original_language": "te",
-          "original_title": "మగధీర",
-          "overview": "공주와 무사의 이루어지지 못한 사랑,  공주와 무사 그리고 원수까지 현재 세상에 다시 환생하여 얽힌 인연이 반복되게 됩니다.\r 사랑을 다 이루지 못한 채 절벽에서 함께 죽음을 맞이하게 됩니다.  몇 백년이 지난 현재에 환생한 주인공  어느날 우연히 택시에서 내민손이 한 여자와 닿게 되고 말 그대로 전기가 통합니다.\r 남자는 손이 닿았던 그 느낌 만으로 그 여자와 운명이 닿아 있다는 것을 직감하고 뒤를 돌아 보았으나\r 그가 본 것은 그녀의 뒷모습 뿐이었고, 바로 택시에 뛰어 내려 그곳으로 가 보았으나 그가 봤던 옷을 입고 있는 여자를 찾을 수가 없었습니다.  너무나 간절히 그녀를 보고 싶어 하는 그  하지만 거기엔 그녀가 없었던 것이 아니라 그 사이 옷하나를 더 걸쳐 못알아 본 그녀가 있었고 그녀는 자신을 이유 없이 찾는 그를 보고 이상하게 생각하다가, 너무나 간절히 자신을 찾는 그를 골탕먹이면서 이야기가 시작됩니다.",
-          "poster_path": "/l1FmwvRwJR7iUP2MAdsY01FUsq5.jpg",
-          "media_type": "movie",
-          "genre_ids": [
-            28
-          ],
-          "popularity": 16.674,
-          "release_date": "2009-07-31",
-          "video": false,
-          "vote_average": 7.2,
-          "vote_count": 94
-        },
-        {
-          "adult": false,
-          "backdrop_path": "/ee3qMmAnJIufWSb8zS40OSfVQBV.jpg",
-          "id": 66247,
-          "title": "춤추는 무뚜",
-          "original_language": "ta",
-          "original_title": "முத்து",
-          "overview": "무뚜(라지니 칸트)는 인도 타미르나드주의 대지주 라자의 시종으로, 주인과 하인 모두의 정신적 지주이자 해결사이다. 주인인 라자는 삼촌과 어머니로부터 삼촌의 딸과 결혼을 강요받지만, 썩 마음이 내키지 않는다.  라자는 공연 관람이 취미인데, 어느날 공연장에서 본 배우 랑가에 반한다. 랑가를 신부감으로 찍은 라자는 그날 공연장에서 일어난 싸움에 개입하고, 무뚜는 랑가를 구해 라자의 집으로 간다. 가는 도중에 랑가와 무뚜는 사랑에 빠지게 되어 결혼을 약속한다. 무뚜가 랑가를 데리고 집으로 오고 라자는 랑가가 자신의 감정을 무뚜에게서 전해듣고 결혼하려고 온 줄로만 안다.  삼촌의 딸은 딸대로 속이 타고, 라자의 재산을 가로채려던 삼촌이 음모를 꾸며 무뚜를 내쫓는데, 라자의 어머니가 모든 걸 밝히게 되고",
-          "poster_path": "/6tL4ujxvyY6Csxv5sKt0fDsCzf3.jpg",
+          "backdrop_path": "/mbx6sdBhdToY18hZVTTJDmK5bLt.jpg",
+          "id": 65233,
+          "title": "The Conquest",
+          "original_language": "fr",
+          "original_title": "La Conquête",
+          "overview": "A look at French president Nicolas Sarkozy's rise to power.",
+          "poster_path": "/iUFMMPjImAtKyVqP2uSqwKAraJk.jpg",
           "media_type": "movie",
           "genre_ids": [
             35,
-            18,
-            28
+            18
           ],
-          "popularity": 12.642,
-          "release_date": "1995-10-23",
+          "popularity": 5.666,
+          "release_date": "2011-05-18",
           "video": false,
-          "vote_average": 7.185,
-          "vote_count": 27
+          "vote_average": 5.843,
+          "vote_count": 89
         },
         {
           "adult": false,
-          "backdrop_path": "/r6IqWqTZiGzOyaa8ebXVf08qEn0.jpg",
-          "id": 48757,
-          "title": "Annamalai",
-          "original_language": "ta",
-          "original_title": "அண்ணாமலை",
-          "overview": "A class-divided friendship goes through highs and lows through several decades.",
-          "poster_path": "/e96hSrmolvJ2SiaxlDNs3Ye2WEo.jpg",
+          "backdrop_path": "/jmO14YxEMdHt0sCVd8t54VYXsnR.jpg",
+          "id": 67539,
+          "title": "Lady of the Camelias",
+          "original_language": "it",
+          "original_title": "La storia vera della signora dalle camelie",
+          "overview": "A young girl from the provinces, comes to Paris with one goal: to become a part of the rich bourgeoisie. To achieve this she will use her unique beauty and charm.",
+          "poster_path": "/3uTjVeoqJbwPf5E4UzCdslqj6bw.jpg",
           "media_type": "movie",
           "genre_ids": [
-            18,
-            10749
+            10749,
+            18
           ],
-          "popularity": 2.524,
-          "release_date": "1992-06-27",
+          "popularity": 3.572,
+          "release_date": "1981-02-26",
           "video": false,
-          "vote_average": 7.4,
+          "vote_average": 6.4,
           "vote_count": 23
         }
       ]
@@ -1260,218 +1000,245 @@
     {
       "adult": false,
       "gender": 2,
-      "id": 41044,
+      "id": 586105,
       "known_for_department": "Acting",
-      "name": "Babou Ceesay",
-      "original_name": "Babou Ceesay",
-      "popularity": 7.206,
-      "profile_path": "/nhHcSiJc9U9JBzGJZ3QVS9jEc2b.jpg",
+      "name": "Roger Babià",
+      "original_name": "Roger Babià",
+      "popularity": 0.6,
+      "profile_path": null,
       "known_for": [
         {
           "adult": false,
-          "backdrop_path": "/6t8ES1d12OzWyCGxBeDYLHoaDrT.jpg",
-          "id": 330459,
-          "title": "스타워즈 스토리: 로그 원",
-          "original_language": "en",
-          "original_title": "Rogue One: A Star Wars Story",
-          "overview": "희망이 사라진 세상. 반군 소속의 진은 적의 최종병기 데스 스타 개발에 아버지가 참여했단 과거 때문에  데스 스타의 약점을 캐내는 임무를 떠맡게 된다. 단숨에 행성 하나를 파괴할 위력을 지닌 데스 스타가 완성되기 전에 설계도를 훔쳐내야 하는 이번 작전의 성공 확률은 고작 2.4%. 생사도 모르는 아버지에 얽힌 비밀을 밝히려는 진을 비롯해 유능한 정보 요원 카시안, 두 눈이 멀었지만 탁월한 무술 실력을 지닌 치루트, 전투 베테랑 베이즈, 파일럿 보디, 시니컬한 드로이드 K-2SO까지 합류, 거대한 전쟁을 끝낼 가장 비밀스런 작전이 시작되는데...",
-          "poster_path": "/44oic6PRJVeGUWNrpzlmuVVKWyv.jpg",
-          "media_type": "movie",
-          "genre_ids": [
-            28,
-            12,
-            878
-          ],
-          "popularity": 62.12,
-          "release_date": "2016-12-14",
-          "video": false,
-          "vote_average": 7.5,
-          "vote_count": 14326
-        },
-        {
-          "adult": false,
-          "backdrop_path": "/puL7PZVbpOs2xWK06VRUqJb6U1z.jpg",
-          "id": 333352,
-          "title": "아이 인 더 스카이",
-          "original_language": "en",
-          "original_title": "Eye in the Sky",
-          "overview": "영국에 있는 작전지휘관,  미국에 있는 드론조종사, 케냐에 있는 테러리스트  그리고 상공에 있는 감시자들…  케냐에 은신중인 테러 조직 생포를 위해 영국-미국-케냐 3개국은 드론을 이용한 합동작전을 실시한다. 그러던 중 영국 합동사령부의 작전지휘관 파월 대령(헬렌 미렌)은 테러 조직의 자살폭탄테러 계획을 알게 되고, 생포작전을 사살작전으로 변경한다. 하지만 미국 공군기지에서 미사일 발사를 준비하던 드론조종사 와츠 중위(아론 폴)는 폭발 반경 안으로 들어온 소녀를 목격하고 작전 보류를 요청한다. 드론 미사일 발사에 따른 부수적 피해와 책임을 두고 각국 고위 정치인들의 논쟁이 거세지는 동안 테러가 임박하고, 타겟을 감시하던 소형 드론의 배터리마저 방전되는데…",
-          "poster_path": "/cTlqYzGGjqZhOls9k3IhAJIKzOP.jpg",
+          "backdrop_path": "/9f3YCfDNLVWeBBPWDDSklyCtKQc.jpg",
+          "id": 75725,
+          "title": "A Christmas Tale",
+          "original_language": "es",
+          "original_title": "Cuento de Navidad",
+          "overview": "Cubelles, Tarragona, Spain, Christmas 1985. Five friends make an unexpected discovery in the forest: a woman disguised as Santa Claus trapped in a deep hole dug in the middle of nowhere.",
+          "poster_path": "/vB5dmtGyfsNQzTfmigrjtoCzTmL.jpg",
           "media_type": "movie",
           "genre_ids": [
             18,
             53,
-            10752
+            10770
           ],
-          "popularity": 22.219,
-          "release_date": "2015-09-07",
+          "popularity": 4.2,
+          "release_date": "2005-10-27",
           "video": false,
-          "vote_average": 7.03,
-          "vote_count": 1429
-        },
+          "vote_average": 6.404,
+          "vote_count": 57
+        }
+      ]
+    },
+    {
+      "adult": false,
+      "gender": 2,
+      "id": 1080047,
+      "known_for_department": "Acting",
+      "name": "Boubacar Babiane",
+      "original_name": "Boubacar Babiane",
+      "popularity": 0.6,
+      "profile_path": null,
+      "known_for": [
         {
           "adult": false,
-          "backdrop_path": "/3ai1xA4ndz7UgfqDGPwRKHwT87P.jpg",
-          "id": 458131,
-          "title": "더 베스트 오브 에너미즈",
+          "backdrop_path": "/nZlvmbnx5ZJYkSVocuQvOgVlWli.jpg",
+          "id": 7840,
+          "title": "10,000 BC",
           "original_language": "en",
-          "original_title": "The Best of Enemies",
-          "overview": "70 년대 초 노스캐롤라이나주에서 일어난 시민 운동가인 앤 애트워터와 인종차별주의자 클레이본 폴 엘리스의 이야기에 초첨을 맞춘 책 , 오샤 그레이 데이비슨의 “Race and Redemption in the New South” 를 바탕으로 하고 있다 .  앤 애트워터는 하녀 출신에서 사회운동가가 되었으며 클레이본 폴 엘리스는 가난한 백인 노동 계급을 대신하여 도시회의에 참석 하기 시작 하였던 노동자 였으며 , 두 사람은 법원에서 명령한 인종차별 폐지 정책을 가지고 만나게 되면서 펼처지는 이야기 입니다.",
-          "poster_path": "/s89CQG8prJItCFhC9NTmPmXxVX3.jpg",
+          "original_title": "10,000 BC",
+          "overview": "암흑의 시대. 천지를 뒤흔드는 태초의 대결. 인간과 동물 모두 야생의 본성이 살아 있고 거대한 맘모스가 지축을 흔들며 땅 위에서 공존했던 시대. 산에 사는 작은 부족의 젊은 청년 들레이(스티븐 스트레이트)는 아름다운 에볼렛(카밀라 벨)을 사랑한다. 하지만 낯선 전사들이 부족을 급습하고 에볼렛을 납치해가자 들레이는 살아남은 부족들과 함께 그녀를 구출하기 위해 세상 끝으로의 힘든 여정을 시작한다.  세상의 끝을 향한 힘든 여정의 시작. 야생과 문명의 충돌. 미지의 세상에 발을 들여놓은 들레이와 부족민들은 그곳에 문명이 태동하고 있고, 자신들은 알지 못했던 세상이 존재한다는 사실을 깨닫는다. 노예 사냥꾼들에게 가족, 형제자매를 빼앗긴 부족의 전사들은 들레이와 함께 싸울 것을 맹세한다.  여정의 끝, 그들은 피라미드가 하늘 높이 솟아있는 미지의 땅에서 사악하지만 강력한 제국과 부족의 미래를 놓고 운영을 건 대혈투를 벌인다.  그들의 형제자매들을 노예로 삼은 신을 상대로 과연 승리할 수 있을 것인가…",
+          "poster_path": "/hTUxPh05rl7NdUzfU117dac53LT.jpg",
+          "media_type": "movie",
+          "genre_ids": [
+            12,
+            28,
+            18,
+            14
+          ],
+          "popularity": 23.622,
+          "release_date": "2008-03-04",
+          "video": false,
+          "vote_average": 5.431,
+          "vote_count": 2725
+        }
+      ]
+    },
+    {
+      "adult": false,
+      "gender": 1,
+      "id": 2602869,
+      "known_for_department": "Acting",
+      "name": "Kristina Babich",
+      "original_name": "Kristina Babich",
+      "popularity": 1.008,
+      "profile_path": null,
+      "known_for": [
+        {
+          "adult": false,
+          "backdrop_path": "/9xJAR8BdcivZOpvnBDtmg8x45wK.jpg",
+          "id": 667944,
+          "title": "다우 디제너레이션",
+          "original_language": "ru",
+          "original_title": "DAU. Degeneration",
+          "overview": "A secret Soviet Institute conducts scientific and occult experiments on animals and human beings to create the perfect person. The KGB general and his aides turn a blind eye to erotic adventures of the director of the Institute, scandalous debauches of prominent scientists and their cruel and insane research. One day, a radical ultra right-wing group arrives in the laboratory under the guise of test subjects. They get a task - to eradicate the decaying elements of the Institute’s community, and if needs be, destroy the fragile world of secret Soviet science.",
+          "poster_path": "/gpUqIDTQiZJQKK6jUqKE5miX74G.jpg",
           "media_type": "movie",
           "genre_ids": [
             18,
-            36
-          ],
-          "popularity": 21.991,
-          "release_date": "2019-04-05",
-          "video": false,
-          "vote_average": 7.416,
-          "vote_count": 369
-        }
-      ]
-    },
-    {
-      "adult": false,
-      "gender": 2,
-      "id": 40542,
-      "known_for_department": "Directing",
-      "name": "Héctor Babenco",
-      "original_name": "Héctor Babenco",
-      "popularity": 4.279,
-      "profile_path": "/l5PcjJ9q6Ao4hYUCbwbk27Q9W1j.jpg",
-      "known_for": [
-        {
-          "adult": false,
-          "backdrop_path": "/9AtTPsbMmLGliV8rYH4vQfKtq78.jpg",
-          "id": 8440,
-          "title": "카란디루",
-          "original_language": "pt",
-          "original_title": "Carandiru",
-          "overview": "남미 최대의 감옥 카란디루. 과밀수용으로 폭력과 전염병이 급속도로 번져가던 어느 날 에이즈 치료와 예방교육을 위해 한 의사(드라우지오 바렐라)가 도착한다. 바렐라는 카란디루에 발을 들여놓는 순간부터 거친 수감자들의 칼부림을 목격하고 열악한 환경에 몸서리치지만, 수 많은 환자들을 외면하지 못해 그곳에 남기로 한다.  감옥 한 쪽에 마련된 간이 진료실은 ‘이곳에 죄 지은 사람은 없다’는 수감자들의 각양각색 사연들이 오가는 특별한 공간이 된다. 자기는 원래 좀도둑에 불과했다고 주장하는 우연한 살인범 에보니, 아내‘들’의 사랑다툼이 방화로 이어져 감옥신세까지 지게 되었다는 미워할 수 없는 바람둥이 하이니스, 이름과는 정반대로 트랜스젠더 레이디 디와 사랑에 빠지고 옥중결혼식까지 올리는 행운의 사나이 투 배드(Too bad)... 바렐라는 다양한 죄수들을 만나 각각의 너무나 인간적인 범죄의 뒷이야기에 귀를 기울인다.  얼핏 보면 온갖 범죄자들이 모인 무법천지, 그러나 나름의 엄격한 위계질서를 가지고 움직이던 카란디루의 최대행사인 축구시합이 열리던 날! 축구장 밖에서 일어난 사소한 싸움이 카란디루 전체의 폭동으로 번지게 되고... 경찰기동대의 잔혹한 진압으로 카란디루는 순식간에 끔찍한 피바다를 이룬다. 운 좋게도 비극의 그날 카란디루를 잠시 떠나있었던 바렐라는 살아남은 자들의 생생한 고백을 전해듣는다.",
-          "poster_path": "/bkq8RsbCb7ugW0ZmsD8SYEvQWSp.jpg",
-          "media_type": "movie",
-          "genre_ids": [
-            18
-          ],
-          "popularity": 9.674,
-          "release_date": "2003-03-21",
-          "video": false,
-          "vote_average": 7.56,
-          "vote_count": 489
-        },
-        {
-          "adult": false,
-          "backdrop_path": "/mZDqGCY7JKqlJKddMyqsGmYeJqE.jpg",
-          "id": 11703,
-          "title": "거미 여인의 키스",
-          "original_language": "en",
-          "original_title": "Kiss of the Spider Woman",
-          "overview": "호모인 모리나(윌리암 허트 분)는 반도덕 범죄자로 기소되어 복역 중, 감방 동료로 발렌틴(라울 줄리아 분)이라는 진보주의 정치범을 맞게 된다. 섬세한 감성의 모리나는 매일 밤 어둠 속에서 나찌 장교와 프랑스 레지스탕스 여인의 비극적 사랑을 담은 영화 이야기를 들려주며 고문으로 처참하게 망가진 발렌틴의 상처를 어루만져준다. 모리나에 대한 거부감이 연민으로 바뀌면서 둘 사이에는 우정이 싹트고, 발렌틴이 육체와 정신의 건강을 되찾고 모리나를 이해할 즈음에는 사랑의 감정이 싹튼다. 모리가 출감하는 날 발렌틴은 동지이자 연인인 리디아(안나 마리아 브라가 분)에게 메세지를 전해줄 것을 부탁한다. 모리나는 자신이 미행당하는 것을 알면서도 발렌틴에 대한 애정으로써 약속 장소로 향한다.",
-          "poster_path": "/lbrn4gOjYKrLrINn3uUJRlV2NZO.jpg",
-          "media_type": "movie",
-          "genre_ids": [
-            18
-          ],
-          "popularity": 12.793,
-          "release_date": "1985-07-26",
-          "video": false,
-          "vote_average": 7.047,
-          "vote_count": 253
-        },
-        {
-          "adult": false,
-          "backdrop_path": "/oPg34Ft2RC2EtDfb4q5kNhJRPcA.jpg",
-          "id": 42148,
-          "title": "피쇼테",
-          "original_language": "pt",
-          "original_title": "Pixote: A Lei do Mais Fraco",
-          "overview": "피쇼테는 강간과 살인이 경찰들과 조직폭력배의 담합에 의해 버젓이 자행되고 있는 소년원에서 친구들과 탈출한다. 그러나 마약 딜러, 창녀들과 사기를 저지르다 또다시 혼자 남은 피쇼테는 쓸쓸히 기찻길을 걸어가는데...",
-          "poster_path": "/zaBtclnYKv2JkgRDQ7OiFtWHm4e.jpg",
-          "media_type": "movie",
-          "genre_ids": [
-            80,
-            18
-          ],
-          "popularity": 7.617,
-          "release_date": "1980-09-26",
-          "video": false,
-          "vote_average": 7.869,
-          "vote_count": 176
-        }
-      ]
-    },
-    {
-      "adult": false,
-      "gender": 2,
-      "id": 591149,
-      "known_for_department": "Acting",
-      "name": "Giri Babu",
-      "original_name": "Giri Babu",
-      "popularity": 4.422,
-      "profile_path": "/rOwTKoZGqAnh1jPCpPnn7ccAT0i.jpg",
-      "known_for": [
-        {
-          "adult": false,
-          "backdrop_path": "/2pJ9xW1mA7zRfrg9On9e8AekrQM.jpg",
-          "id": 540468,
-          "title": "Geetha Govindam",
-          "original_language": "te",
-          "original_title": "గీత గోవిందం",
-          "overview": "Vijay Govind, a young college lecturer who dreams of marriage falls for Geetha, a level-headed woman who's wary of strangers and isn't easy to convince. While things seem to go smoothly, Vijay makes a terrible mistake which not only derails any hope for his love story, but also potential repercussions with his family.",
-          "poster_path": "/sTreb0ajewXqeIqAyZ0IWtafoB5.jpg",
-          "media_type": "movie",
-          "genre_ids": [
-            10749
-          ],
-          "popularity": 6.43,
-          "release_date": "2018-08-15",
-          "video": false,
-          "vote_average": 6.905,
-          "vote_count": 58
-        },
-        {
-          "adult": false,
-          "backdrop_path": "/ikflDnSujh5VTmPEBF2YdUERQDJ.jpg",
-          "id": 37172,
-          "title": "Athadu",
-          "original_language": "te",
-          "original_title": "అతడు",
-          "overview": "A professional killer is hired to fake the assassination of a politician. However, when the politician is killed and he is framed for his murder, he takes on a dead man's identity to escape the law.",
-          "poster_path": "/dV2h6dx5nUatgNClkqCaKKTmA4O.jpg",
-          "media_type": "movie",
-          "genre_ids": [
-            28,
+            27,
             53
           ],
-          "popularity": 4.433,
-          "release_date": "2005-08-10",
+          "popularity": 3.386,
+          "release_date": "2020-02-28",
           "video": false,
-          "vote_average": 7.1,
-          "vote_count": 37
-        },
+          "vote_average": 6.7,
+          "vote_count": 11
+        }
+      ]
+    },
+    {
+      "adult": false,
+      "gender": 1,
+      "id": 1324046,
+      "known_for_department": "Acting",
+      "name": "Rosa Babiy",
+      "original_name": "Rosa Babiy",
+      "popularity": 2.744,
+      "profile_path": "/SkBDCgUu613953jnmolLL0mchh.jpg",
+      "known_for": [
         {
           "adult": false,
-          "backdrop_path": "/mC4N2A7qPemHNESEUB4maaxquDV.jpg",
-          "id": 80994,
-          "title": "Gamyam",
-          "original_language": "te",
-          "original_title": "గమ్యం",
-          "overview": "Two guys, a thief and a rich man, meet in a journey that the latter starts to find love. On their way they find the destinies of their lives.",
-          "poster_path": "/xOnX16iyA6bI8YL9ryeKjYl4YVK.jpg",
+          "backdrop_path": "/2SwdwCgAweEnuUqgFW3O52i0ynw.jpg",
+          "id": 271397,
+          "title": "트라이브",
+          "original_language": "uk",
+          "original_title": "Плем'я",
+          "overview": "기숙 학교에 들어가게 된 소년 ‘세르게이’. 그는 어쩔 수 없이 학교를 휘어잡고 있는 ‘조직(The tribe)’의 일원이 되고 그들과 어울려 지낸다. 하지만 곧 한 소녀를 사랑하게 되고, 그들의 비밀스러운 관계는 그의 삶을 뒤바꾸게 되는데…  이제 그는 사랑을 지키기 위해 조직의 모든 것을 무너뜨리려 한다.",
+          "poster_path": "/iEjzV1Ir9SsPETSDUOMLqxpep9r.jpg",
+          "media_type": "movie",
+          "genre_ids": [
+            18,
+            80
+          ],
+          "popularity": 11.114,
+          "release_date": "2014-09-11",
+          "video": false,
+          "vote_average": 6.895,
+          "vote_count": 243
+        }
+      ]
+    },
+    {
+      "adult": false,
+      "gender": 0,
+      "id": 1440184,
+      "known_for_department": "Editing",
+      "name": "Maud Dubois-Babinot",
+      "original_name": "Maud Dubois-Babinot",
+      "popularity": 0.6,
+      "profile_path": null,
+      "known_for": [
+        {
+          "adult": false,
+          "backdrop_path": null,
+          "id": 293104,
+          "title": "Entre lui et moi",
+          "original_language": "fr",
+          "original_title": "Entre lui et moi",
+          "overview": "Guillaume is getting ready to meet his wife in the maternity ward where she has just given birth. But an unexpected phone call plunges him back into bitter childhood memories: his father, whom he has not seen for years, wants nothing more than to see his daughter-in-law and the newborn child.",
+          "poster_path": null,
           "media_type": "movie",
           "genre_ids": [
             18
           ],
-          "popularity": 1.346,
-          "release_date": "2008-02-29",
+          "popularity": 0.6,
+          "release_date": "2013-08-22",
           "video": false,
-          "vote_average": 5.8,
-          "vote_count": 16
+          "vote_average": 0,
+          "vote_count": 0
+        }
+      ]
+    },
+    {
+      "adult": false,
+      "gender": 0,
+      "id": 60917,
+      "known_for_department": "Art",
+      "name": "Branimir Babić",
+      "original_name": "Branimir Babić",
+      "popularity": 1.268,
+      "profile_path": null,
+      "known_for": [
+        {
+          "adult": false,
+          "backdrop_path": "/dKqa850uvbNSCaQCV4Im1XlzEtQ.jpg",
+          "id": 661374,
+          "title": "나이브스 아웃: 글래스 어니언",
+          "original_language": "en",
+          "original_title": "Glass Onion: A Knives Out Mystery",
+          "overview": "가장 아끼는 친구들을 본인의 사유지인 그리스의 섬으로 초대한 IT계의 억만장자 마일스 브론. 하지만 머지않아 이곳이 마냥 낙원이 아니라는 사실이 드러난다.",
+          "poster_path": "/lrgmo1qluO9c2qdBduiu412fRDS.jpg",
+          "media_type": "movie",
+          "genre_ids": [
+            35,
+            80,
+            9648
+          ],
+          "popularity": 66.75,
+          "release_date": "2022-11-12",
+          "video": false,
+          "vote_average": 7.057,
+          "vote_count": 4496
+        },
+        {
+          "adult": false,
+          "backdrop_path": "/2nerKhF40OzjnGGOyzHcsAw8T53.jpg",
+          "id": 11902,
+          "title": "언더그라운드",
+          "original_language": "sr",
+          "original_title": "Подземље",
+          "overview": "1941년 나치 독일의 침공으로 베오그라드와 세르비아 전체는 혼란에 빠지고 국민들은 전의를 불태우며 저항한다. 블랙키와 마르코는 지하에서 무기를 제조하고 밀매하며 돈을 벌고 있었는데 전쟁으로 지하 생활을 시작한 파르티잔 가족들은 마르코와 블랙키를 전쟁 영웅으로 착각한다. 전쟁의 소용돌이 속에서도 자신의 입지를 굳힌 블랙키는 여배우 나탈리아를 강제로 데려다 결혼식을 하지만 곧 독일군 장교인 프란츠에게 그녀를 빼앗긴다. 평소부터 나탈리아에 흑심을 품은 마르코는 블랙키를 구출하여 지하 세계에 은신시키고 나탈리아와 결혼 생활을 즐기는 한편, 전쟁이 끝나고 티토 정부가 들어서자 내각에 입각하여 전쟁 영웅 대접을 받는다. 마르코는 자신의 지위를 고수하기 위해 지하 세계의 블랙키를 비롯한 모든 사람들에게 전쟁이 끝났다는 사실을 알려주지 않는다. 이후 지하 세계는 점점 지상과 마찬가지로 완벽한 생활 체계를 구축하며 전쟁 준비를 계속하게 되는데...",
+          "poster_path": "/h8N6y13t4VusrDdH5PzTkwvBvgN.jpg",
+          "media_type": "movie",
+          "genre_ids": [
+            35,
+            18,
+            10752
+          ],
+          "popularity": 12.18,
+          "release_date": "1995-04-11",
+          "video": false,
+          "vote_average": 7.764,
+          "vote_count": 585
+        },
+        {
+          "adult": false,
+          "backdrop_path": "/LaRu6lT4VT4RRJ8mfs1puwBc6k.jpg",
+          "id": 9616,
+          "title": "씬",
+          "original_language": "en",
+          "original_title": "The Order",
+          "overview": "거대한 음모를 지배하는 미스터리...\r 죽음의 순간 비밀이 풀린다!  뉴욕의 젊은 신부 알렉스(히스 레저 분)는 친아버지처럼 여기던 도미닉 신부가 로마에서 사망했다는 소식을 듣는다. 알렉스는 그의 죽음의 진실을 밝히고자 각별한 인연으로 맺어진 마라(샤닌 소사몬)와 함께 로마로 향한다.  도미닉의 시신을 살펴보던 알렉스는 시신의 주변과 가슴에 쓰여진 고대 문자 메시지를 발견하고 그의 죽음이 중세시대의 이단 종교 집단에서 행했던 ‘씬 이터’, 즉 죄를 먹는 사람에게 죄를 사면받는 의식과 매우 흡사함을 알게 된다.  베일에 가려진 이단 종교 집단의 도움을 받아 씬 이터의 행방을 찾아 나선 알렉스는 자신이 씬 이터라고 주장하는 ‘윌리엄 이든’을 만나게 된다. 윌리엄에게 접근해 비밀을 파헤칠수록 더욱 커져 가는 의문과 혼란에 괴로워하는 알렉스는 종교적 믿음 대신 마라와의 사랑에 더 많이 의지하게 된다.  그러던 어느날, 마라가 끔찍하게 죽고, 그녀의 죽음에서도 씬 이터의 흔적이 발견된다. 알렉스는 누군가 모종의 음모를 꾸미고 씬 이터라는 존재를 이용하고 있음을 감지하는데...",
+          "poster_path": "/oIa9pzm3gF96qYAZB2JvOPiuZCM.jpg",
+          "media_type": "movie",
+          "genre_ids": [
+            18,
+            14,
+            27,
+            9648,
+            10749,
+            53
+          ],
+          "popularity": 12.226,
+          "release_date": "2003-09-05",
+          "video": false,
+          "vote_average": 5.673,
+          "vote_count": 323
         }
       ]
     }
   ],
-  "total_pages": 164,
-  "total_results": 3268
+  "total_pages": 25,
+  "total_results": 493
 }

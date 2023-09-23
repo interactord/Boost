@@ -1,56 +1,52 @@
-import Architecture
-import ComposableArchitecture
 import Foundation
+import Architecture
 import SwiftUI
+import ComposableArchitecture
 import DesignSystem
 
-// MARK: - MovieHomePage
-
 struct MovieHomePage {
-
+  
   private let store: StoreOf<MovieHomeStore>
   @ObservedObject private var viewStore: ViewStoreOf<MovieHomeStore>
   @FocusState private var isFocus: Bool?
-
+  
   init(store: StoreOf<MovieHomeStore>) {
     self.store = store
-    viewStore = ViewStore(store, observe: { $0 })
+    self.viewStore = ViewStore(store, observe: { $0 })
   }
 }
 
 extension MovieHomePage {
   private var searchComponentViewState: SearchComponent.ViewState {
-    .init(placeHolder: "Search any movies or person")
+    .init(placeHolder: "Serch any movies or person")
   }
-
+  
   private var itemListComponentViewState: ItemListComponent.ViewState {
     .init(rawValue: viewStore.fetchNowPlaying.value.resultList)
   }
-
+  
   private var searchResultMoviesComponentViewState: SearchResultMoviesComponent.ViewState {
     .init(
       fetchSearchMovie: viewStore.fetchSearchMovie.value,
       fetchSearchKeyword: viewStore.fetchSearchKeyword.value)
   }
-
-  private var searchResultPeopleComponentViewState: SearchResultPeopleComponent.ViewState {
+  
+  private var searchResultPeopleComponenetViewState: SearchResultPeopleComponenet.ViewState {
     .init(rawValue: viewStore.fetchSearchPeople.value)
+    
   }
 }
-
-// MARK: View
 
 extension MovieHomePage {
   private var isLoading: Bool {
     viewStore.fetchNowPlaying.isLoading
     || viewStore.fetchSearchMovie.isLoading
     || viewStore.fetchSearchKeyword.isLoading
-    || viewStore.fetchSearchPeople.isLoading
   }
 }
 
 extension MovieHomePage: View {
-
+  
   var body: some View {
     VStack {
       // 서치뷰
@@ -63,49 +59,51 @@ extension MovieHomePage: View {
           viewStore.send(.onClearKeyword)
           isFocus = false
         })
-        .padding(.trailing, 16)
-        .padding(.bottom, 8)
-
+      .padding(.trailing, 16)
+      .padding(.bottom, 8)
+      
       Divider()
-
+      
         // 아이템 리스트
         ItemListComponent(
           viewState: itemListComponentViewState,
-          nextPageAction: { viewStore.send(.getNowPlay) })
+          nextPageAction: { viewStore.send(.getNowPlay)},
+          selectAction: { viewStore.send(.onSelectItem($0)) })
         .overlay {
-          if (isFocus ?? false) {
+          if (isFocus ?? false)  {
             VStack {
-
+              
                 Picker("", selection: viewStore.$searchFocus) {
                   Text("Movies").tag(MovieHomeStore.State.SearchType.movies)
                   Text("People").tag(MovieHomeStore.State.SearchType.people)
                 }
                 .pickerStyle(SegmentedPickerStyle())
                 .padding(.trailing, 16)
-
+                
                 Divider()
-
+                
                 switch viewStore.searchFocus {
                 case .movies:
                   // 서치 했을때의 무비 리스트
                   SearchResultMoviesComponent(
                     viewState: searchResultMoviesComponentViewState)
-
+                  
                 case .people:
                   // 서치 했을때의 사람 리스트
-                  SearchResultPeopleComponent(
-                    viewState: searchResultPeopleComponentViewState)
+                  SearchResultPeopleComponenet(
+                    viewState: searchResultPeopleComponenetViewState)
                 }
-
-                Spacer()
-              }
+              
+              Spacer()
+            }
             .background(.white)
-          }
+          } 
         }
+      
       Spacer()
     }
     .padding(.leading, 16)
-    .background(.white)
+    .backgroundStyle(.white)
     .navigationTitle("Now Playing")
     .toolbar {
       ToolbarItem(placement: .navigationBarTrailing) {
@@ -114,11 +112,12 @@ extension MovieHomePage: View {
             .resizable()
             .foregroundColor(.customYellowColor)
         }
-        .animation(.none, value: viewStore.state)
+        .animation(.none, value: viewStore.state) // 특정한 곳에 애니메이션 주기 싫을때
       }
     }
     .animation(.spring(), value: viewStore.state)
     .setRequestFlightView(isLoading: isLoading)
+    // 키보드가 내려 갈대 다른 아이템이 보이지 않게 하기 위해
     .ignoresSafeArea(.keyboard, edges: .bottom)
     .onAppear {
       viewStore.send(.getNowPlay)

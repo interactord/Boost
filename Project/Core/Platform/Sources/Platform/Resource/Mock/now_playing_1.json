@@ -1,7 +1,7 @@
 {
   "dates": {
-    "maximum": "2023-09-21",
-    "minimum": "2023-08-04"
+    "maximum": "2023-09-16",
+    "minimum": "2023-07-30"
   },
   "page": 1,
   "results": [
@@ -17,13 +17,13 @@
       "original_language": "en",
       "original_title": "Meg 2: The Trench",
       "overview": "전 세계에서 가장 깊은 마리아나 해구, 역사상 가장 거대하고 무자비한 포식자가 도사리는 그곳에서 강철 다이버 ‘조나스’(제이슨 스타뎀)가 더 맹렬하게 돌아온 ‘메가로돈’과 짜릿한 대결을 펼치는 액션 어드벤처",
-      "popularity": 2259.905,
+      "popularity": 3167.597,
       "poster_path": "/cbAHK6Vrt0GClMRUxH8TsgC2JqL.jpg",
       "release_date": "2023-08-04",
       "title": "메가로돈 2",
       "video": false,
       "vote_average": 7,
-      "vote_count": 1722
+      "vote_count": 1773
     },
     {
       "adult": false,
@@ -37,13 +37,33 @@
       "original_language": "en",
       "original_title": "The Nun II",
       "overview": "1956년, 프랑스의 한 성당에서 신부가 끔찍하게 살해당한다. 이 사건을 조사하기 위해 파견된 아이린 수녀는 4년 전 자신을 공포에 떨게 했던 악마의 기운을 느낀다. 어두운 밤, 계속해서 일어나는 의문의 사건들 가운데 충격적인 진실이 드러나는데…",
-      "popularity": 1608.611,
+      "popularity": 2374.554,
       "poster_path": "/hx4R7GqhiUP2LHJZJNrzCIqadd3.jpg",
       "release_date": "2023-09-08",
       "title": "더 넌 2",
       "video": false,
-      "vote_average": 6.7,
-      "vote_count": 163
+      "vote_average": 6.6,
+      "vote_count": 193
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/w2nFc2Rsm93PDkvjY4LTn17ePO0.jpg",
+      "genre_ids": [
+        16,
+        35,
+        28
+      ],
+      "id": 614930,
+      "original_language": "en",
+      "original_title": "Teenage Mutant Ninja Turtles: Mutant Mayhem",
+      "overview": "뉴욕의 하수구로 스며든 미스터리한 녹색 액체, ‘우즈’로 인해 아기 거북이 네 마리와 청년 쥐 스플린터는 사람과 비슷한 모습의 돌연변이가 된다. 15년 후, 10대 청소년이 된 레오나르도, 미켈란젤로, 라파엘, 도나텔로는 하수구에 숨어 사는 생활에서 벗어나 인간 세상에서 평범한 삶을 살고 싶어하고 우연히 만난 학생 기자 에이프릴과 함께 도시를 위협하는 '슈퍼플라이'와 그 일당을 물리치면 뉴욕의 히어로가 되어 당당히 세상에 나갈 수 있을 거라는 꿈을 꾸는데… 인간들을 모두 돌연변이로 만들겠다는 ‘슈퍼플라이’의 음모로 위험에 빠진 뉴욕! 틴에이저 히어로로 다시 태어난 ‘닌자터틀’ 형제들의 스트릿 액션 어드벤처가 펼쳐진다!",
+      "popularity": 1095.712,
+      "poster_path": "/6xORIhe6cP3iM5RYTHs7MTOH1qa.jpg",
+      "release_date": "2023-08-02",
+      "title": "닌자터틀: 뮤턴트 대소동",
+      "video": false,
+      "vote_average": 7.3,
+      "vote_count": 498
     },
     {
       "adult": false,
@@ -56,13 +76,13 @@
       "original_language": "en",
       "original_title": "After Everything",
       "overview": "",
-      "popularity": 806.746,
+      "popularity": 936.266,
       "poster_path": "/gZLGCibvFY4zmt8sWUZcbBTHRtk.jpg",
       "release_date": "2023-09-13",
       "title": "애프터 에브리씽",
       "video": false,
-      "vote_average": 5.6,
-      "vote_count": 9
+      "vote_average": 6.4,
+      "vote_count": 18
     },
     {
       "adult": false,
@@ -75,32 +95,32 @@
       "original_language": "en",
       "original_title": "Strays",
       "overview": "",
-      "popularity": 714.82,
+      "popularity": 955.292,
       "poster_path": "/n1hqbSCtyBAxaXEl1Dj3ipXJAJG.jpg",
       "release_date": "2023-08-18",
       "title": "스트레이즈",
       "video": false,
       "vote_average": 7.5,
-      "vote_count": 259
+      "vote_count": 290
     },
     {
       "adult": false,
       "backdrop_path": "/qEm4FrkGh7kGoEiBOyGYNielYVc.jpg",
       "genre_ids": [
-        27,
-        14
+        53,
+        27
       ],
       "id": 635910,
       "original_language": "en",
       "original_title": "The Last Voyage of the Demeter",
       "overview": "브램 스토커의 소설인 <드라큘라> 중 한 에피소드를 영화화하는 작품으로 드라큘라의 관을 싣고 가던 영국 배의 선원들이 차례로 사라지는 공포스러운 상황에 관한 이야기",
-      "popularity": 539.305,
+      "popularity": 739.234,
       "poster_path": "/nrtbv6Cew7qC7k9GsYSf5uSmuKh.jpg",
       "release_date": "2023-08-11",
       "title": "데메테르호의 마지막 항해",
       "video": false,
-      "vote_average": 7.3,
-      "vote_count": 580
+      "vote_average": 7.4,
+      "vote_count": 606
     },
     {
       "adult": false,
@@ -115,33 +135,13 @@
       "original_language": "en",
       "original_title": "The Little Mermaid",
       "overview": "아틀란티카 바다의 왕 트라이튼의 사랑스러운 막내딸인 인어 에리얼은 늘 인간들이 사는 바다 너머 세상으로의 모험을 꿈꾼다. 어느 날, 우연히 바다 위로 올라갔다가 폭풍우 속 가라앉는 배에 탄 인간 에릭 왕자의 목숨을 구해준다. 갈망하던 꿈과 운명적인 사랑을 이루기 위해 용기를 낸 에리얼은 사악한 바다 마녀 울슐라와의 위험한 거래를 통해 다리를 얻게 된다. 드디어 바다를 벗어나 그토록 원하던 인간 세상으로 가게 되지만, 그 선택으로 에리얼과 아틀란티카 왕국 모두 위험에 처하게 되는데… 바닷속, 그리고 그 너머 아름다운 꿈과 사랑의 멜로디가 펼쳐진다!",
-      "popularity": 535.075,
+      "popularity": 722.316,
       "poster_path": "/do9pxOrrFqgyebHwxj2IYtZXQIp.jpg",
       "release_date": "2023-08-25",
       "title": "인어공주",
       "video": false,
       "vote_average": 6.6,
-      "vote_count": 1984
-    },
-    {
-      "adult": false,
-      "backdrop_path": "/3mrli3xsGrAieQks7KsBUm2LpCg.jpg",
-      "genre_ids": [
-        28,
-        80,
-        53
-      ],
-      "id": 979275,
-      "original_language": "en",
-      "original_title": "Mob Land",
-      "overview": "",
-      "popularity": 476.251,
-      "poster_path": "/mcz8oi9oCgq1wkA3Wz2kluE94pE.jpg",
-      "release_date": "2023-08-04",
-      "title": "Mob Land",
-      "video": false,
-      "vote_average": 5.9,
-      "vote_count": 19
+      "vote_count": 2021
     },
     {
       "adult": false,
@@ -157,13 +157,33 @@
       "original_language": "en",
       "original_title": "The Super Mario Bros. Movie",
       "overview": "따단-딴-따단-딴 ♫ 전 세계를 열광시킬 올 타임 슈퍼 어드벤처의 등장! 뉴욕의 평범한 배관공 형제 '마리오'와 ‘루이지’는 배수관 고장으로 위기에 빠진 도시를 구하려다 미스터리한 초록색 파이프 안으로 빨려 들어가게 된다. 파이프를 통해 새로운 세상으로 차원 이동하게 된 형제. 형 '마리오'는 뛰어난 리더십을 지닌 '피치'가 통치하는 버섯왕국에 도착하지만 동생 '루이지'는 빌런 '쿠파'가 있는 다크랜드로 떨어지며 납치를 당하고 ‘마리오’는 동생을 구하기 위해 ‘피치’와 ‘키노피오’의 도움을 받아 '쿠파'에 맞서기로 결심한다. 그러나 슈퍼스타로 세상을 지배하려는 그의 강력한 힘 앞에 이들은 예기치 못한 위험에 빠지게 되는데...!",
-      "popularity": 496.625,
+      "popularity": 669.766,
       "poster_path": "/dlGyzCxbBQK1U2O5o31Z1hB6erc.jpg",
       "release_date": "2023-08-27",
       "title": "슈퍼 마리오 브라더스",
       "video": false,
       "vote_average": 7.8,
-      "vote_count": 6598
+      "vote_count": 6623
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/3mrli3xsGrAieQks7KsBUm2LpCg.jpg",
+      "genre_ids": [
+        28,
+        80,
+        53
+      ],
+      "id": 979275,
+      "original_language": "en",
+      "original_title": "Mob Land",
+      "overview": "",
+      "popularity": 651.329,
+      "poster_path": "/mcz8oi9oCgq1wkA3Wz2kluE94pE.jpg",
+      "release_date": "2023-08-04",
+      "title": "Mob Land",
+      "video": false,
+      "vote_average": 5.9,
+      "vote_count": 20
     },
     {
       "adult": false,
@@ -177,17 +197,17 @@
       "original_language": "en",
       "original_title": "The Equalizer 3",
       "overview": "",
-      "popularity": 418.567,
+      "popularity": 513.883,
       "poster_path": "/p0WBnzgyqxMxbF4UGiqTwBLnwht.jpg",
       "release_date": "2023-09-01",
       "title": "더 이퀄라이저 3",
       "video": false,
       "vote_average": 6.9,
-      "vote_count": 170
+      "vote_count": 187
     },
     {
       "adult": false,
-      "backdrop_path": "/7C0xeAUYGQa0ETvPYndlaml9Y8H.jpg",
+      "backdrop_path": "/mQLVpcaVBqiAbKK2MGawCtIwFW0.jpg",
       "genre_ids": [
         9648,
         18,
@@ -197,13 +217,13 @@
       "original_language": "en",
       "original_title": "A Haunting in Venice",
       "overview": "세계적 명탐정 '에르큘 포와로'는 오랜 탐정 생활에서 은퇴하여 아름다운 도시 베니스에서 평범한 삶을 살아가고 있다. 그런 그에게 오랜 친구이자 베스트셀러 작가인 '아리아드네 올리버'가 찾아와 죽은 영혼을 부를 수 있다고 알려진 영험한 심령술사의 실체를 밝혀달라고 부탁하게 된다.핼러윈 밤, 베니스 운하 위 위치한 고풍스러운 저택의 주인이자 1년 전 사랑하는 딸을 잃고 깊은 상실에 빠진 '로웨나 드레이크'의 초대로 교령회에 참석한 이들은 미스터리한 심령술사 '조이스 레이놀즈'가 죽은 영혼의 목소리를 전하는 광경을 보며 혼란에 빠지게 된다. 갑자기 발생한 끔찍한 살인 사건에 실체 없는 용의자를 쫓던 '에르큘 포와로'는  자신의 모든 믿음이 흔들리는 경험을 하며 충격에 빠지게 되는데....",
-      "popularity": 398.167,
+      "popularity": 400.064,
       "poster_path": "/dUQdookYulZV9sTIEvAuAu1Ptxv.jpg",
       "release_date": "2023-09-15",
       "title": "베니스 유령 살인사건",
       "video": false,
-      "vote_average": 6.7,
-      "vote_count": 55
+      "vote_average": 6.8,
+      "vote_count": 162
     },
     {
       "adult": false,
@@ -217,13 +237,13 @@
       "original_language": "en",
       "original_title": "Gran Turismo",
       "overview": "레이싱 게임 ‘그란 투리스모’의 덕후 ‘잔 마든보로’ 스피드라고는 게임으로만 만족해야 했던 그에게 레이싱 선수 발굴을 목표로 만들어진 ‘그란 투리스모 콘테스트’라는 기회가 찾아온다. 앉아서 게임만 하던 그의 앞에 닥친 혹독한 훈련과 치열한 경쟁.뛰어난 잠재력을 입증해 프로 레이싱 팀에 합류하는데 성공하지만 상대팀 선수들은 게이머 출신인 그를 인정하지 않고, 프로 레이싱의 세계는 그를 더욱 거칠게 몰아붙이는데...  리셋 버튼 없는 목숨을 건 실전! 게이머에서 레이서가 된 소년의 흥미로운 스토리가 스크린에서 펼쳐진다!",
-      "popularity": 314.051,
+      "popularity": 417.587,
       "poster_path": "/mewjjhpju5JT1wDFJDMdctWcCqd.jpg",
       "release_date": "2023-08-11",
       "title": "그란 투리스모",
       "video": false,
       "vote_average": 7.5,
-      "vote_count": 268
+      "vote_count": 273
     },
     {
       "adult": false,
@@ -237,13 +257,33 @@
       "original_language": "en",
       "original_title": "Blue Beetle",
       "overview": "",
-      "popularity": 270.638,
+      "popularity": 367.021,
       "poster_path": "/2Dk0mkkgjwCIJ7VMThFQP21g4gJ.jpg",
       "release_date": "2023-08-18",
       "title": "블루 비틀",
       "video": false,
       "vote_average": 6.9,
-      "vote_count": 357
+      "vote_count": 362
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/iiXliCeykkzmJ0Eg9RYJ7F2CWSz.jpg",
+      "genre_ids": [
+        53,
+        28,
+        80
+      ],
+      "id": 762430,
+      "original_language": "en",
+      "original_title": "Retribution",
+      "overview": "",
+      "popularity": 256.095,
+      "poster_path": "/oUmmY7QWWn7OhKlcPOnirHJpP1F.jpg",
+      "release_date": "2023-08-25",
+      "title": "레트리뷰션",
+      "video": false,
+      "vote_average": 6.3,
+      "vote_count": 81
     },
     {
       "adult": false,
@@ -259,13 +299,13 @@
       "original_language": "en",
       "original_title": "The Monkey King",
       "overview": "서로 힘을 합쳐 파란만장한 모험에 나서는 원숭이와 마법의 여의봉. 악마와 용, 신, 그리고 가장 강력한 적인 원숭이 자신의 자만심과 맞서 싸운다.",
-      "popularity": 167.411,
+      "popularity": 240.503,
       "poster_path": "/i6ye8ueFhVE5pXatgyRrZ83LBD8.jpg",
       "release_date": "2023-08-11",
       "title": "몽키 킹",
       "video": false,
       "vote_average": 6.9,
-      "vote_count": 153
+      "vote_count": 156
     },
     {
       "adult": false,
@@ -279,31 +319,13 @@
       "original_language": "hi",
       "original_title": "जवान",
       "overview": "",
-      "popularity": 124.812,
+      "popularity": 122.399,
       "poster_path": "/w4mPBAfZS5yIXOcqEiEOL8fnuQG.jpg",
       "release_date": "2023-09-07",
       "title": "जवान",
       "video": false,
-      "vote_average": 7.5,
-      "vote_count": 44
-    },
-    {
-      "adult": false,
-      "backdrop_path": "/gknIloEJve4FgAzlKdOUZu1K9HT.jpg",
-      "genre_ids": [
-        53
-      ],
-      "id": 1109534,
-      "original_language": "en",
-      "original_title": "The Dive",
-      "overview": "외딴섬으로 다이빙을 떠난 자매 ‘드류’와 ‘메이’ 아름다운 바다 풍경에 감탄하던 것도 잠시, 산사태로 인해 거대한 바위와 물속으로 굴러떨어지고  바위는 두 사람을 깊은 바다 수면 속으로 끌고 들어간다.  수심 28m 추락, 생존 제한 시간 단 20분! 깊어질수록 턱 끝까지 차오르는 압도적 공포!",
-      "popularity": 107.215,
-      "poster_path": "/o43eMkNkWBBsyxEyyUeQwl4AOe.jpg",
-      "release_date": "2023-08-25",
-      "title": "다이브",
-      "video": false,
-      "vote_average": 6.4,
-      "vote_count": 36
+      "vote_average": 7.6,
+      "vote_count": 48
     },
     {
       "adult": false,
@@ -315,54 +337,31 @@
       "original_language": "en",
       "original_title": "You Are So Not Invited to My Bat Mitzvah",
       "overview": "중학생 단짝 친구, 스테이시와 리디아는 늘 최고의 성인식을 꿈꿔왔다. 하지만 인기 많은 남학생과 학교에서의 사건으로 일이 꼬이기 시작하고, 급기야 모든 게 엉망이 될 위기에 처한다.",
-      "popularity": 107.148,
+      "popularity": 114.377,
       "poster_path": "/ukpifWBW2xEmMtJX4bCpoNpWEr2.jpg",
       "release_date": "2023-08-18",
       "title": "내 성인식에 절대 오지 마!",
       "video": false,
       "vote_average": 6.4,
-      "vote_count": 207
+      "vote_count": 216
     },
     {
       "adult": false,
-      "backdrop_path": "/iiXliCeykkzmJ0Eg9RYJ7F2CWSz.jpg",
+      "backdrop_path": "/gknIloEJve4FgAzlKdOUZu1K9HT.jpg",
       "genre_ids": [
-        53,
-        28,
-        80
+        53
       ],
-      "id": 762430,
+      "id": 1109534,
       "original_language": "en",
-      "original_title": "Retribution",
-      "overview": "",
-      "popularity": 130.661,
-      "poster_path": "/oUmmY7QWWn7OhKlcPOnirHJpP1F.jpg",
+      "original_title": "The Dive",
+      "overview": "외딴섬으로 다이빙을 떠난 자매 ‘드류’와 ‘메이’ 아름다운 바다 풍경에 감탄하던 것도 잠시, 산사태로 인해 거대한 바위와 물속으로 굴러떨어지고  바위는 두 사람을 깊은 바다 수면 속으로 끌고 들어간다.  수심 28m 추락, 생존 제한 시간 단 20분! 깊어질수록 턱 끝까지 차오르는 압도적 공포!",
+      "popularity": 136.146,
+      "poster_path": "/o43eMkNkWBBsyxEyyUeQwl4AOe.jpg",
       "release_date": "2023-08-25",
-      "title": "레트리뷰션",
+      "title": "다이브",
       "video": false,
-      "vote_average": 5.6,
-      "vote_count": 46
-    },
-    {
-      "adult": false,
-      "backdrop_path": "/3AmEkooqE6W6Y0Ggb0ek2sMzIFi.jpg",
-      "genre_ids": [
-        28,
-        12,
-        14,
-        10752
-      ],
-      "id": 856289,
-      "original_language": "zh",
-      "original_title": "封神第一部：朝歌风云",
-      "overview": "",
-      "popularity": 83.489,
-      "poster_path": "/6P4bZuV9barAeJstqAwkE1F0XmN.jpg",
-      "release_date": "2023-09-20",
-      "title": "봉신 제1부: 조가풍운",
-      "video": false,
-      "vote_average": 8.2,
-      "vote_count": 49
+      "vote_average": 6.4,
+      "vote_count": 36
     },
     {
       "adult": false,
@@ -377,36 +376,34 @@
       "original_language": "en",
       "original_title": "Frozen",
       "overview": "서로가 최고의 친구였던 자매 엘사와 안나. 하지만 언니 엘사에게는 하나뿐인 동생에게조차 말 못할 비밀이 있다. 모든 것을 얼려버리는 신비로운 힘이 바로 그 것. 엘사는 통제할 수 없는 자신의 힘이 두려워 왕국을 떠나 북쪽 산으로 도망치고, 홀로 그곳에서 얼음 궁전을 지어 지내게 된다. 한편 얼어버린 왕국의 저주를 풀기 위해 안나는 언니를 찾아 나서고, 그 과정에서 안나는 까칠한 매력의 얼음장수 크리스토프와 만나 영원히 얼어붙은 왕국을 구해내기 위해 함께 고군분투한다.",
-      "popularity": 71.114,
+      "popularity": 97.362,
       "poster_path": "/nelAGS4rcZm2Qyuy3TSNWgU2mEL.jpg",
       "release_date": "2013-11-27",
       "title": "겨울왕국",
       "video": false,
       "vote_average": 7.2,
-      "vote_count": 15489
+      "vote_count": 15501
     },
     {
       "adult": false,
-      "backdrop_path": "/jsgRkhPxYtzAhDFCUyNbvlX63tY.jpg",
+      "backdrop_path": "/sGGNrDPV8VFJzOTZOcsFiJ45Xp3.jpg",
       "genre_ids": [
-        10749,
-        10751,
-        16,
-        14
+        28,
+        80
       ],
-      "id": 10020,
-      "original_language": "en",
-      "original_title": "Beauty and the Beast",
-      "overview": "18세기 프랑스의 작은 마을, 밝고 아름다운 소녀 벨은 아버지와 함께 단 둘이 살고 있다. 마을 청년 개스톤은 벨의 미모에 반해 끈질기게 구애를 하지만, 벨은 책 읽기만 즐기며 평범한 시골생활에서 벗어나기를 꿈꾼다. 그러던 어느 날, 아버지가 흉측한 야수의 성에 갇히게 되는 일이 벌어지고 벨은 아버지를 구하기 위해 아버지 대신 자신이 성에 남기로 한다. 그녀를 경계하던 야수는 순수하고 아름다운 벨에게 조금씩 마음을 열게 되고, 벨 또한 흉측한 외모에 가려진 야수의 따뜻한 영혼을 발견하게 된다. 한편 질투심에 눈이 먼 개스톤은 야수를 없애기 위해 마을 사람들을 이끌고 야수의 성으로 향하는데...",
-      "popularity": 61.436,
-      "poster_path": "/xN8yuKcIIQEJo1Cuk6RuZpV64Uh.jpg",
-      "release_date": "2012-01-13",
-      "title": "미녀와 야수",
+      "id": 987507,
+      "original_language": "ja",
+      "original_title": "バッドシティ",
+      "overview": "거리를 주름 잡던 거대 야쿠자의 두목이 누군가에게 살해당한 후 도시는 폭력으로 물들게 된다. 이후 한국 출신의 적대 세력 야쿠자 ‘김승기’가 범인으로 지목되지만, 행방을 알 수 없다. 이에 검사장 ‘히라야마 켄지’는 형무소에 갇혀 있던 폭력 형사 ‘토라타 마코토’에게 사건을 맡기고, ‘토라타 마코토’는 상상도 못한 자신만의 방법으로 ‘김승기’를 쫓는데…",
+      "popularity": 95.596,
+      "poster_path": "/q2P63PsXosAg1s58Kkn5desmSyA.jpg",
+      "release_date": "2023-08-01",
+      "title": "야쿠자들: 폭력의 도시",
       "video": false,
-      "vote_average": 7.7,
-      "vote_count": 9237
+      "vote_average": 6.9,
+      "vote_count": 71
     }
   ],
-  "total_pages": 14,
-  "total_results": 261
+  "total_pages": 15,
+  "total_results": 289
 }

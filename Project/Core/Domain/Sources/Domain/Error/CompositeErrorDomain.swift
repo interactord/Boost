@@ -17,7 +17,7 @@ extension CompositeErrorDomain: CustomDebugStringConvertible {
 }
 
 extension CompositeErrorDomain: Equatable {
-  public static func == (lhs: Self, rhs: Self) -> Bool {
+  public static func ==  (lhs: Self, rhs: Self) -> Bool {
     lhs.debugDescription == rhs.debugDescription
   }
 }

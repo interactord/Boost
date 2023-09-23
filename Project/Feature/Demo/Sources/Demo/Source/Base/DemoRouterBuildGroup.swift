@@ -1,8 +1,6 @@
 import Architecture
 import LinkNavigator
 
-// MARK: - DemoRouterBuildGroup
-
 public struct DemoRouterBuildGroup<RootNavigator: LinkNavigatorURLEncodedItemProtocol & LinkNavigatorFindLocationUsable> {
   public init() { }
 }

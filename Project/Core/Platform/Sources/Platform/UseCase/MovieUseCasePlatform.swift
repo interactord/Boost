@@ -11,7 +11,7 @@ public struct MovieUseCasePlatform {
 }
 
 extension MovieUseCasePlatform: MovieUseCase {
-  public var newPlaying: (MovieDomain.MovieList.Request.NowPlay)
+  public var nowPlaying: (MovieDomain.MovieList.Request.NowPlay)
   -> AnyPublisher<MovieDomain.MovieList.Response.NowPlay, CompositeErrorDomain> {
     { requestModel in
       Just(.init())

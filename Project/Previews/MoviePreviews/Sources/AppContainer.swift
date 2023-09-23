@@ -4,22 +4,16 @@ import Movie
 import Domain
 import Platform
 
-// MARK: - AppContainer
-
 final class AppContainer {
-
-  // MARK: Lifecycle
-
-  private init(
+   init(
     dependency: AppSideEffect,
-    navigator: SingleLinkNavigator<String>)
+    navigator: SingleLinkNavigator<String>
+  )
   {
     self.dependency = dependency
     self.navigator = navigator
   }
-
-  // MARK: Internal
-
+  
   let dependency: AppSideEffect
   let navigator: SingleLinkNavigator<String>
 }
@@ -32,7 +26,10 @@ extension AppContainer {
       movieUseCase: MovieUseCasePlatformMock(
         configurationDomain: configuration),
       searchUseCase: SearchUseCasePlatformMock(
-        configurationDomain: configuration))
+        configurationDomain: configuration),
+    movieDetailUseCase: MovieDetailUseCasePlatformMock(
+      configurationDomain: configuration)
+    )
     return .init(
       dependency: dependency,
       navigator: .init(
@@ -43,11 +40,11 @@ extension AppContainer {
 
 extension AppContainer {
   fileprivate class var configurationLive: ConfigurationDomain {
-    .init(
+     .init(
       entity: .init(
         baseURL: .init(
           apiURL: "https://api.themoviedb.org/3",
           apiToken: "1d9b898a212ea52e283351e521e17871",
-          imageURL: "https://image.tmdb.org/t/p")))
+          imageURL: "https://image.tmdb.org/t/p/")))
   }
 }

@@ -1,14 +1,12 @@
-import Architecture
 import Foundation
-import LinkNavigator
 import SwiftUI
-
-// MARK: - Page4View
+import LinkNavigator
+import Architecture
 
 struct Page4View {
   let linkNavigator: LinkNavigatorURLEncodedItemProtocol
   let model: DemoLink.QueryItem.Demo4?
-
+  
   public init(
     linkNavigator: LinkNavigatorURLEncodedItemProtocol,
     model: DemoLink.QueryItem.Demo4?)
@@ -18,31 +16,33 @@ struct Page4View {
   }
 }
 
-extension Page4View { }
+extension Page4View {
 
-// MARK: View
+}
+
 
 extension Page4View: View {
   var body: some View {
+
     ScrollView {
       VStack(spacing: 30) {
         Text("4")
           .font(.system(size: 80, weight: .ultraLight))
-
+        
         VStack {
-          GroupBox {
-            VStack(spacing: 10) {
-              HStack {
-                Image(systemName: "square.stack.3d.down.right.fill")
-                Text("Navigation Stack")
-              }
-              .font(.footnote)
-              .foregroundColor(.gray)
-
-//            Text("home -> 1 -> 2 -> 3 -> 4")
+        GroupBox {
+          VStack(spacing: 10) {
+            HStack {
+              Image(systemName: "square.stack.3d.down.right.fill")
+              Text("Navigation Stack")
             }
+            .font(.footnote)
+            .foregroundColor(.gray)
+            
+//            Text("home -> 1 -> 2 -> 3 -> 4")
           }
-
+        }
+        
           GroupBox {
             VStack(spacing: 10) {
               HStack {
@@ -51,17 +51,18 @@ extension Page4View: View {
               }
               .font(.footnote)
               .foregroundColor(.gray)
-
+              
               // 앞에서 textField에서 적은 값이 나오도록 할 것
               Text(model?.message ?? "-")
+
             }
           }
         }
-
+        
         // MARK: copy deep link
         Button(action: {
-          print("Did Tapped copy deep link")
-        }) {
+          print("Did Tapped copy deep link") })
+        {
           VStack {
             Text("copy deep link")
               .foregroundColor(.green)
@@ -70,15 +71,15 @@ extension Page4View: View {
               .foregroundColor(.gray)
           }
         }
-
+        
         // MARK: back to Home
         Button(action: {
           linkNavigator.backOrNext(
             linkItem: .init(
               path: DemoLink.Path.home.rawValue,
               items: ""),
-            isAnimated: true)
-        }) {
+            isAnimated: true) })
+        {
           VStack {
             Text("back to Home")
             Text("navigator.backOrNext(path: \"home\", items: [:], isAnimated: true)")
@@ -86,11 +87,11 @@ extension Page4View: View {
               .foregroundColor(.gray)
           }
         }
-
+        
         // MARK: back
         Button(action: {
-          linkNavigator.back(isAnimated: true)
-        }) {
+          linkNavigator.back(isAnimated: true) })
+        {
           VStack {
             Text("back")
             Text("navigator.back(isAnimated: true)")
@@ -98,15 +99,15 @@ extension Page4View: View {
               .foregroundColor(.gray)
           }
         }
-
+        
         // MARK: reset
         Button(action: {
           linkNavigator.replace(
             linkItem: .init(
               path: DemoLink.Path.home.rawValue,
               items: ""),
-            isAnimated: true)
-        }) {
+            isAnimated: true) })
+        {
           VStack {
             Text("reset")
               .foregroundColor(.red)
@@ -115,6 +116,7 @@ extension Page4View: View {
               .foregroundColor(.gray)
           }
         }
+        
       }
       .navigationTitle("Page 4")
     }

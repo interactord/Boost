@@ -11,52 +11,55 @@ public struct SearchUseCasePlatformMock {
 }
 
 extension SearchUseCasePlatformMock {
-  private var searchMovePage1: SearchDomain.Response.MovieResult {
+  private var searchMoviePage1: SearchDomain.Response.MovieResult {
     Files.searchMovie1Json.url
       .mapToData()
       .decoded()
   }
-
+  
   private var searchKeywordPage1: SearchDomain.Response.KeywordResult {
     Files.searchKeyword1Json.url
       .mapToData()
       .decoded()
   }
-
+  
   private var searchPeoplePage1: SearchDomain.Response.PeopleResult {
     Files.searchPerson1Json.url
       .mapToData()
       .decoded()
   }
+  
 }
 
 extension SearchUseCasePlatformMock: SearchUseCase {
   public var searchMovie: (SearchDomain.Request.KeywordAndPage) -> AnyPublisher<SearchDomain.Response.MovieResult, CompositeErrorDomain> {
     { _ in
-      Just(searchMovePage1)
+      Just(searchMoviePage1)
         .delay(for: .seconds(1), scheduler: RunLoop.main)
         .setFailureType(to: CompositeErrorDomain.self)
         .eraseToAnyPublisher()
     }
   }
-
-  public var searchPeople: (SearchDomain.Request.KeywordAndPage) -> AnyPublisher<SearchDomain.Response.PeopleResult, CompositeErrorDomain> {
+  
+  public var searchKeyword: (SearchDomain.Request.Keyword) -> AnyPublisher<SearchDomain.Response.KeywordResult, CompositeErrorDomain> {
     { _ in
-      Just(searchPeoplePage1)
+      Just(searchKeywordPage1)
         .delay(for: .seconds(1.2), scheduler: RunLoop.main)
         .setFailureType(to: CompositeErrorDomain.self)
         .eraseToAnyPublisher()
     }
   }
-
-  public var searchKeyword: (SearchDomain.Request.Keyword) -> AnyPublisher<SearchDomain.Response.KeywordResult, CompositeErrorDomain> {
+  
+  public var searchPeople: (SearchDomain.Request.KeywordAndPage) -> AnyPublisher<SearchDomain.Response.PeopleResult, CompositeErrorDomain>  {
     { _ in
-      Just(searchKeywordPage1)
-        .delay(for: .seconds(1.5), scheduler: RunLoop.main)
+      Just(searchPeoplePage1)
+        .delay(for: .seconds(1), scheduler: RunLoop.main)
         .setFailureType(to: CompositeErrorDomain.self)
         .eraseToAnyPublisher()
+      
     }
   }
+  
 }
 
 extension URL {

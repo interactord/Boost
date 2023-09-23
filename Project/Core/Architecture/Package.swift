@@ -27,12 +27,13 @@ let package = Package(
     .target(
       name: "Architecture",
       dependencies: [
-        "Domain",
-        "Platform",
-        "LinkNavigator",
-        .product(name: "ComposableArchitecture", package: "swift-composable-architecture"),
+      "Domain",
+      "Platform",
+      "LinkNavigator",
+      .product(name: "ComposableArchitecture", package: "swift-composable-architecture"),
       ]),
     .testTarget(
       name: "ArchitectureTests",
       dependencies: ["Architecture"]),
-  ])
+  ]
+)

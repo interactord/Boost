@@ -10,6 +10,16 @@ import Foundation
 // swiftlint:disable explicit_type_interface identifier_name
 // swiftlint:disable nesting type_body_length type_name vertical_whitespace_opening_braces
 internal enum Files {
+  /// movieDetail_card_1.json
+  internal static let movieDetailCard1Json = File(name: "movieDetail_card_1", ext: "json", relativePath: "", mimeType: "application/json")
+  /// movieDetail_credit_1.json
+  internal static let movieDetailCredit1Json = File(name: "movieDetail_credit_1", ext: "json", relativePath: "", mimeType: "application/json")
+  /// movieDetail_recommended_1.json
+  internal static let movieDetailRecommended1Json = File(name: "movieDetail_recommended_1", ext: "json", relativePath: "", mimeType: "application/json")
+  /// movieDetail_review_1.json
+  internal static let movieDetailReview1Json = File(name: "movieDetail_review_1", ext: "json", relativePath: "", mimeType: "application/json")
+  /// movieDetail_similar_1.json
+  internal static let movieDetailSimilar1Json = File(name: "movieDetail_similar_1", ext: "json", relativePath: "", mimeType: "application/json")
   /// now_playing_1.json
   internal static let nowPlaying1Json = File(name: "now_playing_1", ext: "json", relativePath: "", mimeType: "application/json")
   /// now_playing_2.json

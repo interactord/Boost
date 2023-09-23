@@ -1,12 +1,11 @@
 import Foundation
-
-// MARK: - MovieDetailMock
+import ComposableArchitecture
 
 struct MovieDetailMock {
-
+  
+  let mainQueue: AnySchedulerOf<DispatchQueue>
   let useCaseGroup: MovieSideEffectGroup
 }
 
-// MARK: MovieHomeEnvType
-
-extension MovieDetailMock: MovieDetailEnvType { }
+extension MovieDetailMock: MovieDetailEnvType {
+}
