@@ -13,7 +13,7 @@ struct MyListsRouteBuilder<RootNavigator: LinkNavigatorURLEncodedItemProtocol & 
         MyListsPage(store: .init(
           initialState: MyListsStore.State(),
           reducer: {
-            MyListsStore(env: MyListsLive(
+            MyListsStore(env: MyListsEnvLive(
               useCaseGroup: env,
               navigator: navigator))
           }))

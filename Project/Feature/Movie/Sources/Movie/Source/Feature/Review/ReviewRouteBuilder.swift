@@ -13,7 +13,7 @@ struct ReviewRoteBuilder<RootNavigator: LinkNavigatorURLEncodedItemProtocol & Li
         ReviewPage(store: .init(
           initialState: ReviewStore.State(),
           reducer: {
-            ReviewStore(env: ReviewLive(
+            ReviewStore(env: ReviewEnvLive(
               useCaseGroup: env,
               navigator: navigator))
           }))

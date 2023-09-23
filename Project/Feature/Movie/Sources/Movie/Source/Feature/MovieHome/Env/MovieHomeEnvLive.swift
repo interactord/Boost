@@ -5,9 +5,9 @@ import Foundation
 import LinkNavigator
 import URLEncodedForm
 
-// MARK: - MovieHomeLive
+// MARK: - MovieHomeEnvLive
 
-struct MovieHomeLive {
+struct MovieHomeEnvLive {
 
   let mainQueue: AnySchedulerOf<DispatchQueue>
   let useCaseGroup: MovieSideEffectGroup
@@ -26,7 +26,7 @@ struct MovieHomeLive {
 
 // MARK: MovieHomeEnvType
 
-extension MovieHomeLive: MovieHomeEnvType {
+extension MovieHomeEnvLive: MovieHomeEnvType {
   var routeToMovieDetail: (MovieDomain.MovieList.Response.ResultItem) -> Void {
     { item in
       navigator.backOrNext(

@@ -65,3 +65,12 @@ extension CastPage: View {
     .background(Color.customBgColor)
   }
 }
+
+#Preview {
+  CastPage(
+    store: .init(
+      initialState: CastStore.State(),
+      reducer: {
+        CastStore(env: CastEnvMock(useCaseGroup: MovieSideEffectGroupMock()))
+      }))
+}

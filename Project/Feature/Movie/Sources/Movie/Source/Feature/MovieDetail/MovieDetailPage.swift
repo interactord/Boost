@@ -178,14 +178,29 @@ extension MovieDetailPage: View {
       .padding(.horizontal, 16)
     } // scrollview
     .background(Color.customBgColor)
-
     .animation(.spring(), value: viewStore.state)
     .setRequestFlightView(isLoading: isLoading)
+    .navigationTitle("메갈로돈")
+    .navigationBarTitleDisplayMode(.large)
     .onAppear {
       viewStore.send(.getMovieDetail)
     }
     .onDisappear {
       viewStore.send(.teardown)
     }
+  }
+}
+
+#Preview {
+  NavigationView {
+    MovieDetailPage(
+      store: .init(
+        initialState: MovieDetailStore.State(),
+        reducer: {
+          MovieDetailStore(
+            env: MovieDetailEnvMock(
+              mainQueue: .main,
+              useCaseGroup: MovieSideEffectGroupMock()))
+        }))
   }
 }

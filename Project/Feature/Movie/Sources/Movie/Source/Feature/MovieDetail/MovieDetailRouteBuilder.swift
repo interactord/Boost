@@ -13,7 +13,7 @@ struct MovieDetailRouteBuilder<RootNavigator: LinkNavigatorURLEncodedItemProtoco
         MovieDetailPage(store: .init(
           initialState: MovieDetailStore.State(),
           reducer: {
-            MovieDetailStore(env: MovieDetailLive(
+            MovieDetailStore(env: MovieDetailEnvLive(
               useCaseGroup: env,
               navigator: navigator))
           }))

@@ -1,9 +1,9 @@
 import Foundation
 import LinkNavigator
 
-// MARK: - ReviewLive
+// MARK: - ReviewEnvLive
 
-struct ReviewLive {
+struct ReviewEnvLive {
 
   let useCaseGroup: MovieSideEffectGroup
   let navigator: LinkNavigatorURLEncodedItemProtocol
@@ -11,4 +11,4 @@ struct ReviewLive {
 
 // MARK: ReviewEnvType
 
-extension ReviewLive: ReviewEnvType { }
+extension ReviewEnvLive: ReviewEnvType { }

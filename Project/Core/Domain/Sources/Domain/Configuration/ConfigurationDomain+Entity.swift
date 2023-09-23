@@ -6,7 +6,7 @@ extension ConfigurationDomain {
   public struct Entity {
     public let baseURL: BaseURL
 
-    public init(baseURL: BaseURL) {
+    public init(baseURL: BaseURL = .init()) {
       self.baseURL = baseURL
     }
   }
@@ -18,7 +18,7 @@ extension ConfigurationDomain.Entity {
     public let apiToken: String
     public let imageURL: String
 
-    public init(apiURL: String, apiToken: String, imageURL: String) {
+    public init(apiURL: String = "", apiToken: String = "", imageURL: String = "") {
       self.apiURL = apiURL
       self.apiToken = apiToken
       self.imageURL = imageURL

@@ -13,7 +13,7 @@ struct CastRouteBuilder<RootNavigator: LinkNavigatorURLEncodedItemProtocol & Lin
         CastPage(store: .init(
           initialState: CastStore.State(),
           reducer: {
-            CastStore(env: CastLive(
+            CastStore(env: CastEnvLive(
               useCaseGroup: env,
               navigator: navigator))
           }))

@@ -2,9 +2,9 @@ import ComposableArchitecture
 import Foundation
 import LinkNavigator
 
-// MARK: - MovieDetailLive
+// MARK: - MovieDetailEnvLive
 
-struct MovieDetailLive {
+struct MovieDetailEnvLive {
 
   let mainQueue: AnySchedulerOf<DispatchQueue>
   let useCaseGroup: MovieSideEffectGroup
@@ -23,4 +23,4 @@ struct MovieDetailLive {
 
 // MARK: MovieDetailEnvType
 
-extension MovieDetailLive: MovieDetailEnvType { }
+extension MovieDetailEnvLive: MovieDetailEnvType { }

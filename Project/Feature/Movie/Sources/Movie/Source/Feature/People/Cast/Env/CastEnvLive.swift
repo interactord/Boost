@@ -1,9 +1,9 @@
 import Foundation
 import LinkNavigator
 
-// MARK: - CastLive
+// MARK: - CastEnvLive
 
-struct CastLive {
+struct CastEnvLive {
 
   let useCaseGroup: MovieSideEffectGroup
   let navigator: LinkNavigatorURLEncodedItemProtocol
@@ -11,4 +11,4 @@ struct CastLive {
 
 // MARK: CastEnvType
 
-extension CastLive: CastEnvType { }
+extension CastEnvLive: CastEnvType { }

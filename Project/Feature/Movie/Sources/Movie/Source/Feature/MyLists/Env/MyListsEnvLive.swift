@@ -1,9 +1,9 @@
 import Foundation
 import LinkNavigator
 
-// MARK: - MyListsLive
+// MARK: - MyListsEnvLive
 
-struct MyListsLive {
+struct MyListsEnvLive {
 
   let useCaseGroup: MovieSideEffectGroup
   let navigator: LinkNavigatorURLEncodedItemProtocol
@@ -11,4 +11,4 @@ struct MyListsLive {
 
 // MARK: MyListsEnvType
 
-extension MyListsLive: MyListsEnvType { }
+extension MyListsEnvLive: MyListsEnvType { }

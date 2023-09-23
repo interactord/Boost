@@ -1,12 +1,12 @@
 import Foundation
 
-// MARK: - MyListsMock
+// MARK: - MyListsEnvMock
 
-struct MyListsMock {
+struct MyListsEnvMock {
 
   let useCaseGroup: MovieSideEffectGroup
 }
 
 // MARK: MyListsEnvType
 
-extension MyListsMock: MyListsEnvType { }
+extension MyListsEnvMock: MyListsEnvType { }

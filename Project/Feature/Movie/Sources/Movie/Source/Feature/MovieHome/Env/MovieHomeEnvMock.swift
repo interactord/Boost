@@ -2,9 +2,9 @@ import ComposableArchitecture
 import Domain
 import Foundation
 
-// MARK: - MovieHomeMock
+// MARK: - MovieHomeEnvMock
 
-struct MovieHomeMock {
+struct MovieHomeEnvMock {
 
   let mainQueue: AnySchedulerOf<DispatchQueue>
   let useCaseGroup: MovieSideEffectGroup
@@ -12,7 +12,7 @@ struct MovieHomeMock {
 
 // MARK: MovieHomeEnvType
 
-extension MovieHomeMock: MovieHomeEnvType {
+extension MovieHomeEnvMock: MovieHomeEnvType {
   var routeToMovieDetail: (MovieDomain.MovieList.Response.ResultItem) -> Void {
     { _ in Void() }
   }

@@ -129,3 +129,14 @@ extension MovieHomePage: View {
     }
   }
 }
+
+#Preview {
+  MovieHomePage(store: .init(
+    initialState: MovieHomeStore.State(),
+    reducer: {
+      MovieHomeStore(
+        env: MovieHomeEnvMock(
+          mainQueue: .main,
+          useCaseGroup: MovieSideEffectGroupMock()))
+    }))
+}

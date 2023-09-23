@@ -13,7 +13,7 @@ struct CrewRouteBuilder<RootNavigator: LinkNavigatorURLEncodedItemProtocol & Lin
         CrewPage(store: .init(
           initialState: CrewStore.State(),
           reducer: {
-            CrewStore(env: CrewLive(
+            CrewStore(env: CrewEnvLive(
               useCaseGroup: env,
               navigator: navigator))
           }))

@@ -1,12 +1,12 @@
 import Foundation
 
-// MARK: - ReviewMock
+// MARK: - ReviewEnvMock
 
-struct ReviewMock {
+struct ReviewEnvMock {
 
   let useCaseGroup: MovieSideEffectGroup
 }
 
 // MARK: ReviewEnvType
 
-extension ReviewMock: ReviewEnvType { }
+extension ReviewEnvMock: ReviewEnvType { }
