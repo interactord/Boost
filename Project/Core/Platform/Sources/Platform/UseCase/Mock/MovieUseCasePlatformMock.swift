@@ -1,6 +1,8 @@
-import Foundation
-import Domain
 import Combine
+import Domain
+import Foundation
+
+// MARK: - MovieUseCasePlatformMock
 
 public struct MovieUseCasePlatformMock {
   private let configurationDomain: ConfigurationDomain
@@ -16,7 +18,7 @@ extension MovieUseCasePlatformMock {
       .mapToData()
       .decoded()
   }
-  
+
   private var nowPlaying2Json: MovieDomain.MovieList.Response.NowPlay {
     Files.nowPlaying2Json.url
       .mapToData()
@@ -24,15 +26,18 @@ extension MovieUseCasePlatformMock {
   }
 }
 
+// MARK: MovieUseCase
+
 extension MovieUseCasePlatformMock: MovieUseCase {
   public var nowPlaying: (MovieDomain.MovieList.Request.NowPlay)
-  -> AnyPublisher<MovieDomain.MovieList.Response.NowPlay, CompositeErrorDomain> {
+    -> AnyPublisher<MovieDomain.MovieList.Response.NowPlay, CompositeErrorDomain>
+  {
     { requestModel in
       print("AA ", requestModel.page)
       var response: MovieDomain.MovieList.Response.NowPlay {
         requestModel.page == 1 ? nowPlaying1Json : nowPlaying2Json
       }
-      
+
       return Just(response)
         .delay(for: .seconds(1), scheduler: RunLoop.main)
         .setFailureType(to: CompositeErrorDomain.self)

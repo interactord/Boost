@@ -1,11 +1,14 @@
 import Foundation
 import LinkNavigator
 
+// MARK: - CrewLive
+
 struct CrewLive {
-  
+
   let useCaseGroup: MovieSideEffectGroup
   let navigator: LinkNavigatorURLEncodedItemProtocol
 }
 
-extension CrewLive: CrewEnvType {
-}
+// MARK: CrewEnvType
+
+extension CrewLive: CrewEnvType { }

@@ -1,7 +1,9 @@
 import Architecture
+import Domain
 import LinkNavigator
 import Movie
-import Domain
+
+// MARK: - AppSideEffect
 
 struct AppSideEffect {
   init(
@@ -15,12 +17,13 @@ struct AppSideEffect {
     self.searchUseCase = searchUseCase
     self.movieDetailUseCase = movieDetailUseCase
   }
-  
+
   let configurationDomain: ConfigurationDomain
   let movieUseCase: MovieUseCase
   let searchUseCase: SearchUseCase
   let movieDetailUseCase: MovieDetailUseCase
 }
 
-extension AppSideEffect: MovieSideEffectGroup {
-}
+// MARK: MovieSideEffectGroup
+
+extension AppSideEffect: MovieSideEffectGroup { }

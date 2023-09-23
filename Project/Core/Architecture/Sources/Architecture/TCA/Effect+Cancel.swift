@@ -14,5 +14,3 @@ extension Effect {
     return cancel(id: newID)
   }
 }
-
-

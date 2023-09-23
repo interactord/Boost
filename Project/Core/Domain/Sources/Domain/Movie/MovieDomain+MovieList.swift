@@ -1,18 +1,22 @@
 import Foundation
 
+// MARK: - MovieDomain.MovieList
+
 extension MovieDomain {
   public enum MovieList {
-    public enum Request {}
-    public enum Response {}
+    public enum Request { }
+    public enum Response { }
   }
 }
+
+// MARK: - MovieDomain.MovieList.Request.NowPlay
 
 extension MovieDomain.MovieList.Request {
   public struct NowPlay: Equatable {
     public let language: String
     public let region: String
     public let page: Int
-    
+
     public init(language: String, region: String, page: Int) {
       self.language = language
       self.region = region
@@ -21,15 +25,11 @@ extension MovieDomain.MovieList.Request {
   }
 }
 
-
 extension MovieDomain.MovieList.Response {
   public struct NowPlay: Equatable, Codable {
-    public let totalPages: Int
-    public let totalResult: Int
-    public let page: Int
-    public let resultList: [ResultItem]
-    
-    
+
+    // MARK: Lifecycle
+
     public init(
       totalPages: Int = .zero,
       totalResult: Int = .zero,
@@ -41,7 +41,16 @@ extension MovieDomain.MovieList.Response {
       self.page = page
       self.resultList = resultList
     }
-    
+
+    // MARK: Public
+
+    public let totalPages: Int
+    public let totalResult: Int
+    public let page: Int
+    public let resultList: [ResultItem]
+
+    // MARK: Private
+
     private enum CodingKeys: String, CodingKey {
       case totalPages = "total_pages"
       case totalResult = "total_results"
@@ -49,8 +58,7 @@ extension MovieDomain.MovieList.Response {
       case resultList = "results"
     }
   }
-  
-  
+
   public struct ResultItem: Equatable, Codable, Identifiable {
     public let id: Int
     public let posterPath: String
@@ -58,7 +66,7 @@ extension MovieDomain.MovieList.Response {
     public let title: String
     public let voteAverage: Double
     public let releaseDate: String
-    
+
     private enum CodingKeys: String, CodingKey {
       case id
       case posterPath = "poster_path"

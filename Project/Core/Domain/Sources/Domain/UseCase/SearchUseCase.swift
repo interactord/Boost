@@ -1,11 +1,11 @@
-import Foundation
 import Combine
+import Foundation
 
 public protocol SearchUseCase {
   var searchMovie: (SearchDomain.Request.KeywordAndPage)
-  -> AnyPublisher<SearchDomain.Response.MovieResult, CompositeErrorDomain> { get }
+    -> AnyPublisher<SearchDomain.Response.MovieResult, CompositeErrorDomain> { get }
   var searchKeyword: (SearchDomain.Request.Keyword)
-  -> AnyPublisher<SearchDomain.Response.KeywordResult, CompositeErrorDomain> { get }
+    -> AnyPublisher<SearchDomain.Response.KeywordResult, CompositeErrorDomain> { get }
   var searchPeople: (SearchDomain.Request.KeywordAndPage)
-  -> AnyPublisher<SearchDomain.Response.PeopleResult, CompositeErrorDomain> { get }
+    -> AnyPublisher<SearchDomain.Response.PeopleResult, CompositeErrorDomain> { get }
 }

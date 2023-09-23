@@ -1,6 +1,8 @@
+import Domain
 import Foundation
 import SwiftUI
-import Domain
+
+// MARK: - MovieDetailPage.KeywordListComponent
 
 extension MovieDetailPage {
   struct KeywordListComponent {
@@ -8,14 +10,15 @@ extension MovieDetailPage {
   }
 }
 
-extension MovieDetailPage.KeywordListComponent {
-}
+extension MovieDetailPage.KeywordListComponent { }
+
+// MARK: - MovieDetailPage.KeywordListComponent + View
 
 extension MovieDetailPage.KeywordListComponent: View {
   var body: some View {
     VStack(alignment: .leading) {
       Text("Keywords")
-      
+
       ScrollView(.horizontal, showsIndicators: false) {
         LazyHStack {
           ForEach(viewState.keywordList, id: \.id) { item in
@@ -23,7 +26,7 @@ extension MovieDetailPage.KeywordListComponent: View {
               HStack {
                 Text(item.name)
                   .font(.footnote)
-                  
+
                 Image(systemName: "chevron.right")
                   .resizable()
                   .frame(width: 6, height: 8)
@@ -32,8 +35,7 @@ extension MovieDetailPage.KeywordListComponent: View {
               .padding(4)
               .background(
                 RoundedRectangle(cornerRadius: 10)
-                  .fill(Color.customBgColor)
-              )
+                  .fill(Color.customBgColor))
             }
           }
         }
@@ -44,21 +46,25 @@ extension MovieDetailPage.KeywordListComponent: View {
   }
 }
 
+// MARK: - MovieDetailPage.KeywordListComponent.ViewState
+
 extension MovieDetailPage.KeywordListComponent {
   struct ViewState: Equatable {
     let keywordList: [KeywordItem]
-    
+
     init(rawValue: MovieDetailDomain.Response.KeywordBucket?) {
       keywordList = (rawValue?.keywordList ?? []).map(KeywordItem.init(rawValue:))
     }
   }
 }
 
+// MARK: - MovieDetailPage.KeywordListComponent.ViewState.KeywordItem
+
 extension MovieDetailPage.KeywordListComponent.ViewState {
   struct KeywordItem: Equatable, Identifiable {
     let id: Int
     let name: String
-    
+
     init(rawValue: MovieDetailDomain.Response.KeywordItem) {
       id = rawValue.id
       name = rawValue.name

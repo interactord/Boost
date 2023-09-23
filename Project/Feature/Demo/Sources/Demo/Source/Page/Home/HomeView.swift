@@ -1,22 +1,24 @@
-import Foundation
-import SwiftUI
-import LinkNavigator
 import Architecture
+import Foundation
+import LinkNavigator
+import SwiftUI
+
+// MARK: - HomeView
 
 public struct HomeView {
   let linkNavigator: LinkNavigatorURLEncodedItemProtocol
-  
-  
+
   public init(linkNavigator: LinkNavigatorURLEncodedItemProtocol) {
     self.linkNavigator = linkNavigator
   }
 }
 
+// MARK: View
+
 extension HomeView: View {
   public var body: some View {
     ScrollView {
       VStack(spacing: 30) {
-        
         GroupBox {
           VStack(spacing: 10) {
             HStack {
@@ -25,18 +27,17 @@ extension HomeView: View {
             }
             .font(.footnote)
             .foregroundColor(.gray)
-            
           }
         }
-        
+
         // MARK:  go to next Page
         Button(action: {
           linkNavigator.next(
             linkItem: .init(
               path: DemoLink.Path.page1.rawValue,
               items: DemoLink.QueryItem.Demo().encoded()),
-            isAnimated: true) })
-        {
+            isAnimated: true)
+        }) {
           VStack {
             Text("go to next Page")
             Text("navigator.next(paths: [\"page1\"], items: [:], isAnimated: true)")
@@ -44,7 +45,7 @@ extension HomeView: View {
               .foregroundColor(.gray)
           }
         }
-        
+
         // MARK: go to last Page
         Button(action: {
           linkNavigator.next(
@@ -60,7 +61,7 @@ extension HomeView: View {
               .foregroundColor(.gray)
           }
         }
-        
+
         // MARK: show alert
         Button(action: {
           linkNavigator.alert(
@@ -69,8 +70,8 @@ extension HomeView: View {
               title: "Title",
               message: "message",
               buttons: [.init(title: "Ok", style: .default, action: { print("Ok tapped") })],
-              flagType: .default)) })
-        {
+              flagType: .default))
+        }) {
           VStack {
             Text("show alert")
               .foregroundColor(Color(.systemYellow))
@@ -78,16 +79,16 @@ extension HomeView: View {
               .font(.caption)
               .foregroundColor(.gray)
           }
-        }        
-        
+        }
+
         // MARK: open Page 2 as Sheet
         Button(action: {
           linkNavigator.sheet(
             linkItem: .init(
               pathList: [DemoLink.Path.page1.rawValue, DemoLink.Path.page2.rawValue],
               items: ""),
-            isAnimated: true) })
-        {
+            isAnimated: true)
+        }) {
           VStack {
             Text("open Page 2 as Sheet")
               .foregroundColor(.purple)
@@ -96,7 +97,7 @@ extension HomeView: View {
               .foregroundColor(.gray)
           }
         }
-        
+
         // MARK: open Page 2 Full Screen Sheet
         Button(action: {
           linkNavigator.fullSheet(
@@ -104,8 +105,8 @@ extension HomeView: View {
               pathList: [DemoLink.Path.page1.rawValue, DemoLink.Path.page2.rawValue],
               items: ""),
             isAnimated: true,
-            prefersLargeTitles: true) })
-        {
+            prefersLargeTitles: true)
+        }) {
           VStack {
             Text("open Page 2 Full Screen Sheet")
               .foregroundColor(.purple)
@@ -114,9 +115,8 @@ extension HomeView: View {
               .foregroundColor(.gray)
           }
         }
-
       }
-      
+
       .navigationTitle("Home")
     }
   }

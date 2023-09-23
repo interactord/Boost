@@ -1,20 +1,25 @@
 import Foundation
 
+// MARK: - Link.Movie
 
 extension Link {
-  public enum Movie {}
+  public enum Movie { }
 }
+
+// MARK: - Link.Movie.Path
 
 extension Link.Movie {
   public enum Path: String, Equatable {
     case home = "movieHome"
-    case myLists = "myLists"
-    case movieDetail = "movieDetail"
-    case review = "review"
-    case cast = "cast"
-    case crew = "crew"
+    case myLists
+    case movieDetail
+    case review
+    case cast
+    case crew
   }
 }
+
+// MARK: - Link.Movie.DataInjection
 
 extension Link.Movie {
   public enum DataInjection { }

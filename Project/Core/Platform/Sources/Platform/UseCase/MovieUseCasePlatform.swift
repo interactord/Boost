@@ -1,6 +1,8 @@
-import Foundation
 import Combine
 import Domain
+import Foundation
+
+// MARK: - MovieUseCasePlatform
 
 public struct MovieUseCasePlatform {
   private let configurationDomain: ConfigurationDomain
@@ -10,10 +12,13 @@ public struct MovieUseCasePlatform {
   }
 }
 
+// MARK: MovieUseCase
+
 extension MovieUseCasePlatform: MovieUseCase {
   public var nowPlaying: (MovieDomain.MovieList.Request.NowPlay)
-  -> AnyPublisher<MovieDomain.MovieList.Response.NowPlay, CompositeErrorDomain> {
-    { requestModel in
+    -> AnyPublisher<MovieDomain.MovieList.Response.NowPlay, CompositeErrorDomain>
+  {
+    { _ in
       Just(.init())
         .setFailureType(to: CompositeErrorDomain.self)
         .eraseToAnyPublisher()

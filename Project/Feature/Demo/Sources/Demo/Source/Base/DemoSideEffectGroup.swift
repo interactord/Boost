@@ -1,7 +1,5 @@
-import Foundation
 import Architecture
+import Foundation
 import LinkNavigator
 
-public protocol DemoSideEffectGroup: DependencyType {
-}
-
+public protocol DemoSideEffectGroup: DependencyType { }

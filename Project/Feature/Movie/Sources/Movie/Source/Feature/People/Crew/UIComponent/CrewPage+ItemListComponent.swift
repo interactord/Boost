@@ -1,6 +1,8 @@
+import Domain
 import Foundation
 import SwiftUI
-import Domain
+
+// MARK: - CrewPage.ItemListComponent
 
 extension CrewPage {
   struct ItemListComponent {
@@ -8,12 +10,14 @@ extension CrewPage {
   }
 }
 
+// MARK: - CrewPage.ItemListComponent + View
+
 extension CrewPage.ItemListComponent: View {
   var body: some View {
     ScrollView {
       LazyVStack(alignment: .leading) {
-        ForEach(viewState.profileList, id: \.id) { profile  in
-          
+        ForEach(viewState.profileList, id: \.id) { profile in
+
           HStack(spacing: 16) {
             Asset.spongeBob.swiftUIImage
               .resizable()
@@ -21,29 +25,26 @@ extension CrewPage.ItemListComponent: View {
               .clipShape(RoundedRectangle(cornerRadius: 10))
               .overlay(
                 RoundedRectangle(cornerRadius: 10)
-                  .stroke(.black, lineWidth: 1)
-              )
+                  .stroke(.black, lineWidth: 1))
               .padding(.top)
-            
+
             VStack(alignment: .leading, spacing: 8) {
-              
               Text(profile.name)
                 .font(.headline)
-                            
+
               Text(profile.department)
                 .font(.subheadline)
                 .foregroundColor(Color.gray)
             }
-            
+
             Spacer()
-            
+
             Image(systemName: "chevron.right")
               .resizable()
               .frame(width: 8, height: 12)
               .foregroundColor(Color(.gray))
-              
           }
-          
+
           Divider()
             .padding(.leading, 64)
         }
@@ -53,11 +54,15 @@ extension CrewPage.ItemListComponent: View {
   }
 }
 
+// MARK: - CrewPage.ItemListComponent.ViewState
+
 extension CrewPage.ItemListComponent {
   struct ViewState: Equatable {
     let profileList: [ProfileItem]
   }
 }
+
+// MARK: - CrewPage.ItemListComponent.ViewState.ProfileItem
 
 extension CrewPage.ItemListComponent.ViewState {
   struct ProfileItem: Equatable, Identifiable {
@@ -66,4 +71,3 @@ extension CrewPage.ItemListComponent.ViewState {
     let department: String
   }
 }
-

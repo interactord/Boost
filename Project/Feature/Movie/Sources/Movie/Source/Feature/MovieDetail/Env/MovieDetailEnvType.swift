@@ -1,44 +1,48 @@
-import Foundation
-import Domain
-import ComposableArchitecture
 import Architecture
+import ComposableArchitecture
+import Domain
+import Foundation
+
+// MARK: - MovieDetailEnvType
 
 protocol MovieDetailEnvType {
   var mainQueue: AnySchedulerOf<DispatchQueue> { get }
   var useCaseGroup: MovieSideEffectGroup { get }
-  
+
   var movieCard: ()
-  -> Effect<Result<MovieDetailDomain.Response.MovieCardResult, CompositeErrorDomain>> { get }
-  
+    -> Effect<Result<MovieDetailDomain.Response.MovieCardResult, CompositeErrorDomain>> { get }
+
   var movieReview: ()
-  -> Effect<Result<MovieDetailDomain.Response.MovieReviewResult, CompositeErrorDomain>> { get }
-  
+    -> Effect<Result<MovieDetailDomain.Response.MovieReviewResult, CompositeErrorDomain>> { get }
+
   var movieCredit: ()
-  -> Effect<Result<MovieDetailDomain.Response.MovieCreditResult, CompositeErrorDomain>> { get }
-  
+    -> Effect<Result<MovieDetailDomain.Response.MovieCreditResult, CompositeErrorDomain>> { get }
+
   var similarMovie: ()
-  -> Effect<Result<MovieDetailDomain.Response.SimilarMovieResult, CompositeErrorDomain>> { get }
-  
+    -> Effect<Result<MovieDetailDomain.Response.SimilarMovieResult, CompositeErrorDomain>> { get }
+
   var recommendedMovie: ()
-  -> Effect<Result<MovieDetailDomain.Response.RecommenededMovieResult, CompositeErrorDomain>> { get }
+    -> Effect<Result<MovieDetailDomain.Response.RecommenededMovieResult, CompositeErrorDomain>> { get }
 }
 
 extension MovieDetailEnvType {
   public var movieCard: ()
-  -> Effect<Result<MovieDetailDomain.Response.MovieCardResult, CompositeErrorDomain>> {
+    -> Effect<Result<MovieDetailDomain.Response.MovieCardResult, CompositeErrorDomain>>
+  {
     {
-        .publisher {
-          useCaseGroup
-            .movieDetailUseCase
-            .movieCard(.init(language: "ko-kr", appendToResponse: "keywords,images", includeImageLanguage: "ko,en,null"))
-            .mapToResult()
-            .receive(on: mainQueue)
-        }
+      .publisher {
+        useCaseGroup
+          .movieDetailUseCase
+          .movieCard(.init(language: "ko-kr", appendToResponse: "keywords,images", includeImageLanguage: "ko,en,null"))
+          .mapToResult()
+          .receive(on: mainQueue)
+      }
     }
   }
-  
+
   public var movieReview: ()
-  -> Effect<Result<MovieDetailDomain.Response.MovieReviewResult, CompositeErrorDomain>> {
+    -> Effect<Result<MovieDetailDomain.Response.MovieReviewResult, CompositeErrorDomain>>
+  {
     {
       .publisher {
         useCaseGroup
@@ -49,9 +53,10 @@ extension MovieDetailEnvType {
       }
     }
   }
-  
+
   public var movieCredit: ()
-  -> Effect<Result<MovieDetailDomain.Response.MovieCreditResult, CompositeErrorDomain>> {
+    -> Effect<Result<MovieDetailDomain.Response.MovieCreditResult, CompositeErrorDomain>>
+  {
     {
       .publisher {
         useCaseGroup
@@ -62,9 +67,10 @@ extension MovieDetailEnvType {
       }
     }
   }
-  
+
   public var similarMovie: ()
-  -> Effect<Result<MovieDetailDomain.Response.SimilarMovieResult, CompositeErrorDomain>> {
+    -> Effect<Result<MovieDetailDomain.Response.SimilarMovieResult, CompositeErrorDomain>>
+  {
     {
       .publisher {
         useCaseGroup
@@ -75,9 +81,10 @@ extension MovieDetailEnvType {
       }
     }
   }
-  
+
   public var recommendedMovie: ()
-  -> Effect<Result<MovieDetailDomain.Response.RecommenededMovieResult, CompositeErrorDomain>> {
+    -> Effect<Result<MovieDetailDomain.Response.RecommenededMovieResult, CompositeErrorDomain>>
+  {
     {
       .publisher {
         useCaseGroup
@@ -88,6 +95,5 @@ extension MovieDetailEnvType {
       }
     }
   }
-  
-}
 
+}

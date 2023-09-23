@@ -1,15 +1,18 @@
 import Foundation
 import SwiftUI
 
+// MARK: - MyListsPage.SeenListsComponent
+
 extension MyListsPage {
   struct SeenListsComponent {
     let viewState: ViewState
   }
 }
 
+// MARK: - MyListsPage.SeenListsComponent + View
+
 extension MyListsPage.SeenListsComponent: View {
   var body: some View {
-    
     ScrollView {
       Text(viewState.text)
         .font(.footnote)
@@ -17,10 +20,9 @@ extension MyListsPage.SeenListsComponent: View {
         .frame(maxWidth: .infinity, alignment: .leading)
         .padding(.leading, 16)
         .padding(.top, 20)
-        
+
       LazyVStack {
-        
-        ForEach(viewState.wishtList) { item  in
+        ForEach(viewState.wishtList) { item in
           HStack(spacing: 16) {
             Asset.spongeBob.swiftUIImage
               .resizable()
@@ -28,11 +30,10 @@ extension MyListsPage.SeenListsComponent: View {
               .clipShape(RoundedRectangle(cornerRadius: 10))
               .overlay(
                 RoundedRectangle(cornerRadius: 10)
-                  .stroke(.black, lineWidth: 1)
-              )
+                  .stroke(.black, lineWidth: 1))
               .shadow(radius: 10)
 
-            VStack (alignment: .leading, spacing: 8){
+            VStack(alignment: .leading, spacing: 8) {
               Text(item.title)
                 .font(.headline)
                 .fontWeight(.regular)
@@ -47,15 +48,14 @@ extension MyListsPage.SeenListsComponent: View {
                   .frame(width: 40, height: 40)
                   .foregroundColor(Color.lineColor(item.voteAverage))
                   .shadow(color: Color.lineColor(item.voteAverage), radius: 5, x: 0, y: 0)
-                  .overlay (
+                  .overlay(
                     Text("\(Int(item.voteAverage * 100))%")
-                      .font(.system(size: 10))
-                  )
+                      .font(.system(size: 10)))
 
                 Text(item.releaseDate)
                   .font(.subheadline)
               }
-              
+
               Text(item.overView)
                 .font(.callout)
                 .foregroundColor(Color.gray)
@@ -72,7 +72,7 @@ extension MyListsPage.SeenListsComponent: View {
               .padding(.trailing, 16)
           } // Hstack
           .padding(.vertical, 16)
-          
+
           Divider()
             .padding(.leading, 144)
         }
@@ -83,8 +83,7 @@ extension MyListsPage.SeenListsComponent: View {
   }
 }
 
-
-
+// MARK: - MyListsPage.SeenListsComponent.ViewState
 
 extension MyListsPage.SeenListsComponent {
   struct ViewState: Equatable {
@@ -92,6 +91,8 @@ extension MyListsPage.SeenListsComponent {
     let wishtList: [MovieItem]
   }
 }
+
+// MARK: - MyListsPage.SeenListsComponent.ViewState.MovieItem
 
 extension MyListsPage.SeenListsComponent.ViewState {
   struct MovieItem: Equatable, Identifiable {

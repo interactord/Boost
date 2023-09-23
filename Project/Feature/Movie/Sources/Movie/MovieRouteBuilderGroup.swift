@@ -1,6 +1,8 @@
 import Architecture
 import LinkNavigator
 
+// MARK: - MovieRouteBuilderGroup
+
 public struct MovieRouteBuilderGroup<RootNavigator: LinkNavigatorURLEncodedItemProtocol & LinkNavigatorFindLocationUsable> {
   public init() { }
 }

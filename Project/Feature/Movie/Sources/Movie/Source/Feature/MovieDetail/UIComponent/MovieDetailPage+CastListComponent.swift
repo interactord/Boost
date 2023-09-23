@@ -1,6 +1,8 @@
+import Domain
 import Foundation
 import SwiftUI
-import Domain
+
+// MARK: - MovieDetailPage.CastListComponent
 
 extension MovieDetailPage {
   struct CastListComponent {
@@ -8,8 +10,9 @@ extension MovieDetailPage {
   }
 }
 
-extension MovieDetailPage.CastListComponent {
-}
+extension MovieDetailPage.CastListComponent { }
+
+// MARK: - MovieDetailPage.CastListComponent + View
 
 extension MovieDetailPage.CastListComponent: View {
   var body: some View {
@@ -18,14 +21,14 @@ extension MovieDetailPage.CastListComponent: View {
         Text("Cast")
         Text("See all")
           .foregroundColor(.customGreenColor)
-        
+
         Spacer()
-        
+
         Image(systemName: "chevron.right")
           .resizable()
           .frame(width: 8, height: 10)
       }
-      
+
       ScrollView(.horizontal, showsIndicators: false) {
         LazyHStack {
           ForEach(viewState.profileList, id: \.id) { profile in
@@ -39,15 +42,13 @@ extension MovieDetailPage.CastListComponent: View {
                     .clipShape(RoundedRectangle(cornerRadius: 10))
                     .overlay(
                       RoundedRectangle(cornerRadius: 10)
-                        .stroke(.black, lineWidth: 1)
-                    )
+                        .stroke(.black, lineWidth: 1))
                 } else {
                   RoundedRectangle(cornerRadius: 10)
                     .fill(Color.customBgColor)
                     .frame(width: 70, height: 90)
-                  
                 }
-                
+
                 Text(profile.name)
                   .font(.footnote)
                   .foregroundColor(Color(.label))
@@ -62,21 +63,25 @@ extension MovieDetailPage.CastListComponent: View {
         }
       }
     }
-    
+
     .padding(.vertical)
     .padding(.horizontal, 16)
   }
 }
 
+// MARK: - MovieDetailPage.CastListComponent.ViewState
+
 extension MovieDetailPage.CastListComponent {
   struct ViewState: Equatable {
     let profileList: [ProfileItem]
-    
+
     init(rawValue: MovieDetailDomain.Response.MovieCreditResult?) {
       profileList = (rawValue?.castList ?? []).map(ProfileItem.init(rawValue:))
     }
   }
 }
+
+// MARK: - MovieDetailPage.CastListComponent.ViewState.ProfileItem
 
 extension MovieDetailPage.CastListComponent.ViewState {
   struct ProfileItem: Equatable, Identifiable {
@@ -84,7 +89,7 @@ extension MovieDetailPage.CastListComponent.ViewState {
     let name: String
     let character: String
     let profileImage: String
-    
+
     init(rawValue: MovieDetailDomain.Response.CastResultItem) {
       id = rawValue.id
       name = rawValue.name

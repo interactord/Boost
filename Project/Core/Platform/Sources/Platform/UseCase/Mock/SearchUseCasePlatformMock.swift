@@ -1,6 +1,8 @@
-import Foundation
-import Domain
 import Combine
+import Domain
+import Foundation
+
+// MARK: - SearchUseCasePlatformMock
 
 public struct SearchUseCasePlatformMock {
   private let configurationDomain: ConfigurationDomain
@@ -16,23 +18,28 @@ extension SearchUseCasePlatformMock {
       .mapToData()
       .decoded()
   }
-  
+
   private var searchKeywordPage1: SearchDomain.Response.KeywordResult {
     Files.searchKeyword1Json.url
       .mapToData()
       .decoded()
   }
-  
+
   private var searchPeoplePage1: SearchDomain.Response.PeopleResult {
     Files.searchPerson1Json.url
       .mapToData()
       .decoded()
   }
-  
+
 }
 
+// MARK: SearchUseCase
+
 extension SearchUseCasePlatformMock: SearchUseCase {
-  public var searchMovie: (SearchDomain.Request.KeywordAndPage) -> AnyPublisher<SearchDomain.Response.MovieResult, CompositeErrorDomain> {
+  public var searchMovie: (SearchDomain.Request.KeywordAndPage) -> AnyPublisher<
+    SearchDomain.Response.MovieResult,
+    CompositeErrorDomain
+  > {
     { _ in
       Just(searchMoviePage1)
         .delay(for: .seconds(1), scheduler: RunLoop.main)
@@ -40,8 +47,11 @@ extension SearchUseCasePlatformMock: SearchUseCase {
         .eraseToAnyPublisher()
     }
   }
-  
-  public var searchKeyword: (SearchDomain.Request.Keyword) -> AnyPublisher<SearchDomain.Response.KeywordResult, CompositeErrorDomain> {
+
+  public var searchKeyword: (SearchDomain.Request.Keyword) -> AnyPublisher<
+    SearchDomain.Response.KeywordResult,
+    CompositeErrorDomain
+  > {
     { _ in
       Just(searchKeywordPage1)
         .delay(for: .seconds(1.2), scheduler: RunLoop.main)
@@ -49,17 +59,19 @@ extension SearchUseCasePlatformMock: SearchUseCase {
         .eraseToAnyPublisher()
     }
   }
-  
-  public var searchPeople: (SearchDomain.Request.KeywordAndPage) -> AnyPublisher<SearchDomain.Response.PeopleResult, CompositeErrorDomain>  {
+
+  public var searchPeople: (SearchDomain.Request.KeywordAndPage) -> AnyPublisher<
+    SearchDomain.Response.PeopleResult,
+    CompositeErrorDomain
+  > {
     { _ in
       Just(searchPeoplePage1)
         .delay(for: .seconds(1), scheduler: RunLoop.main)
         .setFailureType(to: CompositeErrorDomain.self)
         .eraseToAnyPublisher()
-      
     }
   }
-  
+
 }
 
 extension URL {

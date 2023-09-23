@@ -1,8 +1,11 @@
 import Foundation
 
+// MARK: - CastMock
+
 struct CastMock {
   let useCaseGroup: MovieSideEffectGroup
 }
 
-extension CastMock: CastEnvType {
-}
+// MARK: CastEnvType
+
+extension CastMock: CastEnvType { }

@@ -1,14 +1,15 @@
-import Foundation
-import SwiftUI
-import LinkNavigator
 import Architecture
+import Foundation
+import LinkNavigator
+import SwiftUI
+
+// MARK: - Page3View
 
 struct Page3View {
-  @State private var message: String = ""
+  @State private var message = ""
   let linkNavigator: LinkNavigatorURLEncodedItemProtocol
   let model: DemoLink.QueryItem.Demo3?
-  
-  
+
   public init(
     linkNavigator: LinkNavigatorURLEncodedItemProtocol,
     model: DemoLink.QueryItem.Demo3?)
@@ -18,18 +19,17 @@ struct Page3View {
   }
 }
 
-extension Page3View {
+extension Page3View { }
 
-}
+// MARK: View
 
 extension Page3View: View {
   var body: some View {
-    
     ScrollView {
       VStack(spacing: 30) {
         Text("3")
           .font(.system(size: 80, weight: .ultraLight))
-        
+
         GroupBox {
           VStack(spacing: 10) {
             HStack {
@@ -38,23 +38,23 @@ extension Page3View: View {
             }
             .font(.footnote)
             .foregroundColor(.gray)
-            
+
 //            Text("home -> 1 -> 2 -> 3")
           }
         }
-        
+
         TextField("Type message here", text: $message)
           .textFieldStyle(.roundedBorder)
           .padding(.horizontal)
-        
+
         // MARK: go to next Page with Message
         Button(action: {
           linkNavigator.next(
             linkItem: .init(
               path: DemoLink.Path.page4.rawValue,
               items: DemoLink.QueryItem.Demo4(message: message).self.encoded()), // 여기다가 메시지 넣어서 불러옴
-            isAnimated: true) })
-        {
+            isAnimated: true)
+        }) {
           VStack {
             Text("go to next Page with Message")
             Text("navigator.next(paths: [\"page4\"], items: [\"page4-message\": messageYouTyped], isAnimated: true)")
@@ -62,11 +62,11 @@ extension Page3View: View {
               .foregroundColor(.gray)
           }
         }
-        
+
         // MARK: remove Page 1 and 2
         Button(action: {
-          linkNavigator.remove(pathList: [DemoLink.Path.page1.rawValue, DemoLink.Path.page2.rawValue]) })
-        {
+          linkNavigator.remove(pathList: [DemoLink.Path.page1.rawValue, DemoLink.Path.page2.rawValue])
+        }) {
           VStack {
             Text("remove Page 1 and 2")
               .foregroundColor(.red)
@@ -75,11 +75,11 @@ extension Page3View: View {
               .foregroundColor(.gray)
           }
         }
-        
+
         // MARK: back
         Button(action: {
-          linkNavigator.back(isAnimated: true)})
-        {
+          linkNavigator.back(isAnimated: true)
+        }) {
           VStack {
             Text("back")
             Text("navigator.back(isAnimated: true)")
@@ -87,14 +87,15 @@ extension Page3View: View {
               .foregroundColor(.gray)
           }
         }
-        
+
         // MARK: close (only available in modal)
         Button(action: {
           linkNavigator.close(isAnimated: true) {
             print("modal dismissed")
-            self.linkNavigator.rootReloadLast(items: "", isAnimated: true)  // 애니메이션이 작동 안하는 것 같음
-            print("root reload last") }})
-        {
+            self.linkNavigator.rootReloadLast(items: "", isAnimated: true) // 애니메이션이 작동 안하는 것 같음
+            print("root reload last")
+          }
+        }) {
           VStack {
             Text("close (only available in modal)")
               .foregroundColor(.red)
@@ -103,11 +104,8 @@ extension Page3View: View {
               .foregroundColor(.gray)
           }
         }
-        
       }
       .navigationTitle("Page 3")
     }
   }
 }
-
-

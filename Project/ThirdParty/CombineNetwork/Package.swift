@@ -5,7 +5,7 @@ import PackageDescription
 
 let package = Package(
   name: "CombineNetwork",
-  platforms: [ .iOS(.v15) ],
+  platforms: [.iOS(.v15)],
   products: [
     .library(
       name: "CombineNetwork",
@@ -23,5 +23,4 @@ let package = Package(
     .testTarget(
       name: "CombineNetworkTests",
       dependencies: ["CombineNetwork"]),
-  ]
-)
+  ])

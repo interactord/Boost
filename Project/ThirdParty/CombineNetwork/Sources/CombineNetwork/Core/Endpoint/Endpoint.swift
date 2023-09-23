@@ -1,6 +1,8 @@
 import Foundation
 import URLEncodedForm
 
+// MARK: - Endpoint
+
 public struct Endpoint: Equatable {
 
   let baseURL: String
@@ -9,8 +11,6 @@ public struct Endpoint: Equatable {
   let httpMethod: HTTPMethod
   let header: [String: String]
   let requestData: RequestData
-
-
 
 }
 
@@ -21,8 +21,8 @@ extension Endpoint {
     var request = URLRequest(url: url)
     request.httpMethod = httpMethod.rawValue
 
-    header.forEach {
-      request.setValue($0.value, forHTTPHeaderField: $0.key)
+    for headerItem in header {
+      request.setValue(headerItem.value, forHTTPHeaderField: headerItem.key)
     }
 
     request.httpBody = requestData.rawData

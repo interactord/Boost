@@ -1,6 +1,8 @@
+import Domain
 import Foundation
 import SwiftUI
-import Domain
+
+// MARK: - MovieDetailPage.CrewListComponent
 
 extension MovieDetailPage {
   struct CrewListComponent {
@@ -8,6 +10,7 @@ extension MovieDetailPage {
   }
 }
 
+// MARK: - MovieDetailPage.CrewListComponent + View
 
 extension MovieDetailPage.CrewListComponent: View {
   var body: some View {
@@ -16,20 +19,19 @@ extension MovieDetailPage.CrewListComponent: View {
         Text("Crew")
         Text("See all")
           .foregroundColor(.customGreenColor)
-        
+
         Spacer()
-        
+
         Image(systemName: "chevron.right")
           .resizable()
           .frame(width: 8, height: 10)
       }
-      
+
       ScrollView(.horizontal, showsIndicators: false) {
         LazyHStack {
           ForEach(viewState.profileList, id: \.id) { profile in
-            Button(action: {  }) {
+            Button(action: { }) {
               VStack(alignment: .center) {
-                
                 if !profile.profileImage.isEmpty {
                   Asset.spongeBob.swiftUIImage
                     .resizable()
@@ -37,14 +39,13 @@ extension MovieDetailPage.CrewListComponent: View {
                     .clipShape(RoundedRectangle(cornerRadius: 10))
                     .overlay(
                       RoundedRectangle(cornerRadius: 10)
-                        .stroke(.black, lineWidth: 1)
-                    )
+                        .stroke(.black, lineWidth: 1))
                 } else {
                   RoundedRectangle(cornerRadius: 10)
                     .fill(Color.customBgColor)
                     .frame(width: 70, height: 90)
                 }
-                
+
                 Text(profile.name)
                   .font(.footnote)
                   .foregroundColor(Color(.label))
@@ -64,15 +65,19 @@ extension MovieDetailPage.CrewListComponent: View {
   }
 }
 
+// MARK: - MovieDetailPage.CrewListComponent.ViewState
+
 extension MovieDetailPage.CrewListComponent {
   struct ViewState: Equatable {
     let profileList: [ProfileItem]
-    
+
     init(rawValue: MovieDetailDomain.Response.MovieCreditResult?) {
       profileList = (rawValue?.crewList ?? []).map(ProfileItem.init(rawValue:))
     }
   }
 }
+
+// MARK: - MovieDetailPage.CrewListComponent.ViewState.ProfileItem
 
 extension MovieDetailPage.CrewListComponent.ViewState {
   struct ProfileItem: Equatable, Identifiable, Hashable {
@@ -80,7 +85,7 @@ extension MovieDetailPage.CrewListComponent.ViewState {
     let name: String
     let department: String
     let profileImage: String
-    
+
     init(rawValue: MovieDetailDomain.Response.CrewResultItem) {
       id = rawValue.id
       name = rawValue.name
@@ -88,6 +93,5 @@ extension MovieDetailPage.CrewListComponent.ViewState {
       profileImage = rawValue.profileImage ?? ""
     }
   }
-  
-}
 
+}

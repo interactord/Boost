@@ -1,10 +1,14 @@
 import Foundation
 
+// MARK: - CompositeErrorDomain
+
 public enum CompositeErrorDomain: Error {
   case notInstanceSelf
   case invalidCasting
   case other(Error)
 }
+
+// MARK: CustomDebugStringConvertible
 
 extension CompositeErrorDomain: CustomDebugStringConvertible {
   public var debugDescription: String {
@@ -16,8 +20,10 @@ extension CompositeErrorDomain: CustomDebugStringConvertible {
   }
 }
 
+// MARK: Equatable
+
 extension CompositeErrorDomain: Equatable {
-  public static func ==  (lhs: Self, rhs: Self) -> Bool {
+  public static func == (lhs: Self, rhs: Self) -> Bool {
     lhs.debugDescription == rhs.debugDescription
   }
 }

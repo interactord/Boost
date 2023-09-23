@@ -1,7 +1,9 @@
-import Foundation
-import ComposableArchitecture
 import Architecture
+import ComposableArchitecture
 import Domain
+import Foundation
+
+// MARK: - MovieDetailStore
 
 public struct MovieDetailStore {
   let pageID: String
@@ -12,9 +14,11 @@ public struct MovieDetailStore {
   }
 }
 
+// MARK: MovieDetailStore.State
+
 extension MovieDetailStore {
   public struct State: Equatable {
-    
+
     init() {
       _fetchMovieCard = .init(.init(isLoading: false, value: .init()))
       _fetchMovieReview = .init(.init(isLoading: false, value: .init()))
@@ -22,7 +26,7 @@ extension MovieDetailStore {
       _fetchSimilarMovie = .init(.init(isLoading: false, value: .init()))
       _fetchRecommendedMovie = .init(.init(isLoading: false, value: .init()))
     }
-    
+
     @Heap var fetchMovieCard: FetchState.Data<MovieDetailDomain.Response.MovieCardResult?>
     @Heap var fetchMovieReview: FetchState.Data<MovieDetailDomain.Response.MovieReviewResult?>
     @Heap var fetchMovieCredit: FetchState.Data<MovieDetailDomain.Response.MovieCreditResult?>
@@ -31,26 +35,28 @@ extension MovieDetailStore {
   }
 }
 
-extension MovieDetailStore.State {
-}
+extension MovieDetailStore.State { }
+
+// MARK: - MovieDetailStore.Action
 
 extension MovieDetailStore {
   public enum Action: BindableAction, Equatable {
     case binding(BindingAction<State>)
     case teardown
-    
+
     case getMovieDetail
-    
+
     case fetchMovieCard(Result<MovieDetailDomain.Response.MovieCardResult, CompositeErrorDomain>)
     case fetchMovieReview(Result<MovieDetailDomain.Response.MovieReviewResult, CompositeErrorDomain>)
     case fetchMovieCredit(Result<MovieDetailDomain.Response.MovieCreditResult, CompositeErrorDomain>)
     case fetchSimilarMovie(Result<MovieDetailDomain.Response.SimilarMovieResult, CompositeErrorDomain>)
     case fetchRecommendedMovie(Result<MovieDetailDomain.Response.RecommenededMovieResult, CompositeErrorDomain>)
-    
-    
+
     case throwError(CompositeErrorDomain)
   }
 }
+
+// MARK: - MovieDetailStore.CancelID
 
 extension MovieDetailStore {
   enum CancelID: Equatable, CaseIterable {
@@ -63,6 +69,8 @@ extension MovieDetailStore {
   }
 }
 
+// MARK: - MovieDetailStore + Reducer
+
 extension MovieDetailStore: Reducer {
   public var body: some ReducerOf<Self> {
     BindingReducer()
@@ -70,11 +78,11 @@ extension MovieDetailStore: Reducer {
       switch action {
       case .binding:
         return .none
-        
+
       case .teardown:
         return .concatenate(
           CancelID.allCases.map { .cancel(pageID: pageID, id: $0) })
-        
+
       case .getMovieDetail:
         state.fetchMovieCard.isLoading = false
         state.fetchMovieReview.isLoading = false
@@ -96,10 +104,8 @@ extension MovieDetailStore: Reducer {
             .cancellable(pageID: pageID, id: CancelID.requestSimilarMovie, cancelInFlight: true),
           env.recommendedMovie()
             .map(Action.fetchRecommendedMovie)
-            .cancellable(pageID: pageID, id: CancelID.requestRecommendedMovie, cancelInFlight: true)
-          
-        )
-        
+            .cancellable(pageID: pageID, id: CancelID.requestRecommendedMovie, cancelInFlight: true))
+
       case .fetchMovieCard(let result):
         state.fetchMovieCard.isLoading = false
         switch result {
@@ -109,7 +115,7 @@ extension MovieDetailStore: Reducer {
         case .failure(let error):
           return .run { await $0(.throwError(error)) }
         }
-        
+
       case .fetchMovieReview(let result):
         state.fetchMovieReview.isLoading = false
         switch result {
@@ -119,7 +125,7 @@ extension MovieDetailStore: Reducer {
         case .failure(let error):
           return .run { await $0(.throwError(error)) }
         }
-        
+
       case .fetchMovieCredit(let result):
         state.fetchMovieCredit.isLoading = false
         switch result {
@@ -127,9 +133,9 @@ extension MovieDetailStore: Reducer {
           state.fetchMovieCredit.value = content
           return .none
         case .failure(let error):
-          return .run { await $0(.throwError(error))}
+          return .run { await $0(.throwError(error)) }
         }
-        
+
       case .fetchSimilarMovie(let result):
         state.fetchSimilarMovie.isLoading = false
         switch result {
@@ -137,9 +143,9 @@ extension MovieDetailStore: Reducer {
           state.fetchSimilarMovie.value = content
           return .none
         case .failure(let error):
-          return .run { await $0(.throwError(error))}
+          return .run { await $0(.throwError(error)) }
         }
-        
+
       case .fetchRecommendedMovie(let result):
         state.fetchRecommendedMovie.isLoading = false
         switch result {
@@ -147,13 +153,12 @@ extension MovieDetailStore: Reducer {
           state.fetchRecommendedMovie.value = content
           return .none
         case .failure(let error):
-          return .run { await $0(.throwError(error))}
+          return .run { await $0(.throwError(error)) }
         }
-        
+
       case .throwError(let error):
         print(error)
         return .none
-        
       }
     }
   }

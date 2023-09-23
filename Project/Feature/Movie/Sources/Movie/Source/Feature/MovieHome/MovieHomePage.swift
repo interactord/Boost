@@ -1,18 +1,20 @@
-import Foundation
 import Architecture
-import SwiftUI
 import ComposableArchitecture
 import DesignSystem
+import Foundation
+import SwiftUI
+
+// MARK: - MovieHomePage
 
 struct MovieHomePage {
-  
+
   private let store: StoreOf<MovieHomeStore>
   @ObservedObject private var viewStore: ViewStoreOf<MovieHomeStore>
   @FocusState private var isFocus: Bool?
-  
+
   init(store: StoreOf<MovieHomeStore>) {
     self.store = store
-    self.viewStore = ViewStore(store, observe: { $0 })
+    viewStore = ViewStore(store, observe: { $0 })
   }
 }
 
@@ -20,33 +22,34 @@ extension MovieHomePage {
   private var searchComponentViewState: SearchComponent.ViewState {
     .init(placeHolder: "Serch any movies or person")
   }
-  
+
   private var itemListComponentViewState: ItemListComponent.ViewState {
     .init(rawValue: viewStore.fetchNowPlaying.value.resultList)
   }
-  
+
   private var searchResultMoviesComponentViewState: SearchResultMoviesComponent.ViewState {
     .init(
       fetchSearchMovie: viewStore.fetchSearchMovie.value,
       fetchSearchKeyword: viewStore.fetchSearchKeyword.value)
   }
-  
+
   private var searchResultPeopleComponenetViewState: SearchResultPeopleComponenet.ViewState {
     .init(rawValue: viewStore.fetchSearchPeople.value)
-    
   }
 }
 
 extension MovieHomePage {
   private var isLoading: Bool {
     viewStore.fetchNowPlaying.isLoading
-    || viewStore.fetchSearchMovie.isLoading
-    || viewStore.fetchSearchKeyword.isLoading
+      || viewStore.fetchSearchMovie.isLoading
+      || viewStore.fetchSearchKeyword.isLoading
   }
 }
 
+// MARK: View
+
 extension MovieHomePage: View {
-  
+
   var body: some View {
     VStack {
       // 서치뷰
@@ -59,47 +62,46 @@ extension MovieHomePage: View {
           viewStore.send(.onClearKeyword)
           isFocus = false
         })
-      .padding(.trailing, 16)
-      .padding(.bottom, 8)
-      
+        .padding(.trailing, 16)
+        .padding(.bottom, 8)
+
       Divider()
-      
-        // 아이템 리스트
-        ItemListComponent(
-          viewState: itemListComponentViewState,
-          nextPageAction: { viewStore.send(.getNowPlay)},
-          selectAction: { viewStore.send(.onSelectItem($0)) })
+
+      // 아이템 리스트
+      ItemListComponent(
+        viewState: itemListComponentViewState,
+        nextPageAction: { viewStore.send(.getNowPlay) },
+        selectAction: { viewStore.send(.onSelectItem($0)) })
         .overlay {
-          if (isFocus ?? false)  {
+          if isFocus ?? false {
             VStack {
-              
-                Picker("", selection: viewStore.$searchFocus) {
-                  Text("Movies").tag(MovieHomeStore.State.SearchType.movies)
-                  Text("People").tag(MovieHomeStore.State.SearchType.people)
-                }
-                .pickerStyle(SegmentedPickerStyle())
-                .padding(.trailing, 16)
-                
-                Divider()
-                
-                switch viewStore.searchFocus {
-                case .movies:
-                  // 서치 했을때의 무비 리스트
-                  SearchResultMoviesComponent(
-                    viewState: searchResultMoviesComponentViewState)
-                  
-                case .people:
-                  // 서치 했을때의 사람 리스트
-                  SearchResultPeopleComponenet(
-                    viewState: searchResultPeopleComponenetViewState)
-                }
-              
+              Picker("", selection: viewStore.$searchFocus) {
+                Text("Movies").tag(MovieHomeStore.State.SearchType.movies)
+                Text("People").tag(MovieHomeStore.State.SearchType.people)
+              }
+              .pickerStyle(SegmentedPickerStyle())
+              .padding(.trailing, 16)
+
+              Divider()
+
+              switch viewStore.searchFocus {
+              case .movies:
+                // 서치 했을때의 무비 리스트
+                SearchResultMoviesComponent(
+                  viewState: searchResultMoviesComponentViewState)
+
+              case .people:
+                // 서치 했을때의 사람 리스트
+                SearchResultPeopleComponenet(
+                  viewState: searchResultPeopleComponenetViewState)
+              }
+
               Spacer()
             }
             .background(.white)
-          } 
+          }
         }
-      
+
       Spacer()
     }
     .padding(.leading, 16)

@@ -1,6 +1,8 @@
-import Foundation
 import Domain
+import Foundation
 import SwiftUI
+
+// MARK: - MovieHomePage.ItemListComponent
 
 extension MovieHomePage {
   struct ItemListComponent {
@@ -10,11 +12,13 @@ extension MovieHomePage {
   }
 }
 
+// MARK: - MovieHomePage.ItemListComponent + View
+
 extension MovieHomePage.ItemListComponent: View {
   var body: some View {
     ScrollView {
       LazyVStack {
-        ForEach(viewState.itemList) { item  in
+        ForEach(viewState.itemList) { item in
           ItemComponent(item: item)
             .background(.white)
             .onTapGesture {
@@ -30,17 +34,21 @@ extension MovieHomePage.ItemListComponent: View {
   }
 }
 
+// MARK: - MovieHomePage.ItemListComponent.ViewState
+
 extension MovieHomePage.ItemListComponent {
   struct ViewState: Equatable {
     let itemList: [MovieItem]
     let lastID: Int
-    
+
     init(rawValue: [MovieDomain.MovieList.Response.ResultItem]) {
       itemList = rawValue.map(MovieItem.init(rawValue:))
-      self.lastID = rawValue.last?.id ?? .zero
+      lastID = rawValue.last?.id ?? .zero
     }
   }
 }
+
+// MARK: - MovieHomePage.ItemListComponent.ViewState.MovieItem
 
 extension MovieHomePage.ItemListComponent.ViewState {
   struct MovieItem: Equatable, Identifiable {
@@ -52,24 +60,29 @@ extension MovieHomePage.ItemListComponent.ViewState {
     let rawValue: MovieDomain.MovieList.Response.ResultItem
 
     init(rawValue: MovieDomain.MovieList.Response.ResultItem) {
-      self.id = rawValue.id
-      self.title = rawValue.title
-      self.voteAverage = rawValue.voteAverage
-      self.releaseDate = rawValue.releaseDate
-      self.overView = rawValue.overview
+      id = rawValue.id
+      title = rawValue.title
+      voteAverage = rawValue.voteAverage
+      releaseDate = rawValue.releaseDate
+      overView = rawValue.overview
       self.rawValue = rawValue
     }
-    
+
   }
 }
 
 extension Color {
+
+  // MARK: Public
+
   public static var customYellowColor = Color(red: 0.75, green: 0.6, blue: 0.2)
-  
+
   public static var customGreenColor = Color(red: 0.45, green: 0.64, blue: 0.62)
-  
+
   public static var customBgColor = Color(red: 0.94, green: 0.94, blue: 0.96)
-  
+
+  // MARK: Internal
+
   static func lineColor(_ voteAverage: Double) -> Color {
     if voteAverage >= 7.5 {
       return .green
@@ -81,6 +94,7 @@ extension Color {
   }
 }
 
+// MARK: - MovieHomePage.ItemListComponent.ItemComponent
 
 extension MovieHomePage.ItemListComponent {
   fileprivate struct ItemComponent {
@@ -88,7 +102,9 @@ extension MovieHomePage.ItemListComponent {
   }
 }
 
-extension MovieHomePage.ItemListComponent.ItemComponent : View {
+// MARK: - MovieHomePage.ItemListComponent.ItemComponent + View
+
+extension MovieHomePage.ItemListComponent.ItemComponent: View {
   var body: some View {
     VStack {
       HStack(spacing: 16) {
@@ -98,11 +114,10 @@ extension MovieHomePage.ItemListComponent.ItemComponent : View {
           .clipShape(RoundedRectangle(cornerRadius: 10))
           .overlay(
             RoundedRectangle(cornerRadius: 10)
-              .stroke(.black, lineWidth: 1)
-          )
+              .stroke(.black, lineWidth: 1))
           .shadow(radius: 10)
 
-        VStack (alignment: .leading, spacing: 8){
+        VStack(alignment: .leading, spacing: 8) {
           Text(item.title)
             .font(.headline)
             .fontWeight(.regular)
@@ -116,11 +131,10 @@ extension MovieHomePage.ItemListComponent.ItemComponent : View {
               .rotationEffect(.degrees(-90))
               .frame(width: 40, height: 40)
               .foregroundColor(Color.lineColor(item.voteAverage))
-              .shadow(color:Color.lineColor(item.voteAverage), radius: 5, x: 0, y: 0)
-              .overlay (
+              .shadow(color: Color.lineColor(item.voteAverage), radius: 5, x: 0, y: 0)
+              .overlay(
                 Text("\(Int(item.voteAverage * 10))%")
-                  .font(.system(size: 10))
-              )
+                  .font(.system(size: 10)))
 
             Text(item.releaseDate.formatDate())
               .font(.subheadline)

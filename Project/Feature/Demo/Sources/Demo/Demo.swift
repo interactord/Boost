@@ -1,6 +1,8 @@
 // The Swift Programming Language
 // https://docs.swift.org/swift-book
 
+// MARK: - DemoLink
+
 public enum DemoLink {
   public enum Path: String {
     case home
@@ -11,9 +13,10 @@ public enum DemoLink {
   }
 }
 
+// MARK: DemoLink.QueryItem
+
 extension DemoLink {
-  public enum QueryItem {
-  }
+  public enum QueryItem { }
 }
 
 // API의 Query를 만들때 사용할 것
@@ -21,19 +24,19 @@ extension DemoLink.QueryItem {
   public struct Demo: Equatable, Codable {
 //    let page: Int
     //    let age: Int
-    
+
   }
-  
+
   public struct Demo2: Equatable, Codable {
 //    let page: Int
     //    let age: Int
   }
-  
+
   public struct Demo3: Equatable, Codable {
 //    let page: Int
     //    let age: Int
   }
-  
+
   public struct Demo4: Equatable, Codable {
     let message: String
     //    let age: Int

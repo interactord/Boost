@@ -52,5 +52,3 @@ public struct Heap<T: Equatable>: Equatable {
   private var reference: Reference<T>
 
 }
-
-

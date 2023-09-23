@@ -1,8 +1,8 @@
 import Foundation
 
 extension SearchDomain {
-    public enum Request { }
-    public enum Response { }
+  public enum Request { }
+  public enum Response { }
 }
 
 extension SearchDomain.Request {
@@ -10,7 +10,7 @@ extension SearchDomain.Request {
     public let language: String
     public let query: String
     public let page: Int
-    
+
     public init(language: String, query: String, page: Int) {
       self.language = language
       self.query = query
@@ -21,7 +21,7 @@ extension SearchDomain.Request {
   public struct Keyword: Equatable, Codable {
     public let language: String
     public let query: String
-    
+
     public init(language: String, query: String) {
       self.language = language
       self.query = query
@@ -31,12 +31,9 @@ extension SearchDomain.Request {
 
 extension SearchDomain.Response {
   public struct MovieResult: Equatable, Codable {
-    public let totalPages: Int
-    public let totalResult: Int
-    public let page: Int
-    public let resultList: [MovieResultItem]
-    
-    
+
+    // MARK: Lifecycle
+
     public init(
       totalPages: Int = .zero,
       totalResult: Int = .zero,
@@ -48,7 +45,16 @@ extension SearchDomain.Response {
       self.page = page
       self.resultList = resultList
     }
-    
+
+    // MARK: Public
+
+    public let totalPages: Int
+    public let totalResult: Int
+    public let page: Int
+    public let resultList: [MovieResultItem]
+
+    // MARK: Private
+
     private enum CodingKeys: String, CodingKey {
       case totalPages = "total_pages"
       case totalResult = "total_results"
@@ -56,7 +62,7 @@ extension SearchDomain.Response {
       case resultList = "results"
     }
   }
-  
+
   // MovieResult -> resultList -> MovieResultItem
   public struct MovieResultItem: Equatable, Codable, Identifiable {
     public let id: Int
@@ -65,7 +71,7 @@ extension SearchDomain.Response {
     public let title: String
     public let voteAverage: Double
     public let releaseDate: String
-    
+
     private enum CodingKeys: String, CodingKey {
       case id
       case posterPath = "poster_path"
@@ -75,14 +81,11 @@ extension SearchDomain.Response {
       case releaseDate = "release_date"
     }
   }
-  
+
   public struct KeywordResult: Equatable, Codable {
-    public let totalPages: Int
-    public let totalResult: Int
-    public let page: Int
-    public let resultList: [KeywordResultItem]
-    
-    
+
+    // MARK: Lifecycle
+
     public init(
       totalPages: Int = .zero,
       totalResult: Int = .zero,
@@ -94,7 +97,16 @@ extension SearchDomain.Response {
       self.page = page
       self.resultList = resultList
     }
-    
+
+    // MARK: Public
+
+    public let totalPages: Int
+    public let totalResult: Int
+    public let page: Int
+    public let resultList: [KeywordResultItem]
+
+    // MARK: Private
+
     private enum CodingKeys: String, CodingKey {
       case totalPages = "total_pages"
       case totalResult = "total_results"
@@ -102,24 +114,21 @@ extension SearchDomain.Response {
       case resultList = "results"
     }
   }
-  
+
   public struct KeywordResultItem: Equatable, Codable, Identifiable {
     public let id: Int
     public let name: String
-    
+
     private enum CodingKeys: String, CodingKey {
       case id
       case name
     }
   }
-  
-  
+
   // 여기는 사람
   public struct PeopleResult: Equatable, Codable {
-    public let totalPages: Int
-    public let totalResult: Int
-    public let page: Int
-    public let resultList: [PersonResultItem]
+
+    // MARK: Lifecycle
 
     public init(
       totalPages: Int = .zero,
@@ -132,6 +141,15 @@ extension SearchDomain.Response {
       self.page = page
       self.resultList = resultList
     }
+
+    // MARK: Public
+
+    public let totalPages: Int
+    public let totalResult: Int
+    public let page: Int
+    public let resultList: [PersonResultItem]
+
+    // MARK: Private
 
     private enum CodingKeys: String, CodingKey {
       case totalPages = "total_pages"
@@ -167,4 +185,3 @@ extension SearchDomain.Response {
     }
   }
 }
-

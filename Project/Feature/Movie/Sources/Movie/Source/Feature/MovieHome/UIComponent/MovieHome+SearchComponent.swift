@@ -1,13 +1,15 @@
 import Architecture
+import Combine
 import Foundation
 import SwiftUI
-import Combine
+
+// MARK: - MovieHomePage.SearchComponent
 
 extension MovieHomePage {
   struct SearchComponent {
-    
+
     @StateObject private var textBindingObserver: BindingObserver<String> = .init()
-    
+
     let viewState: ViewState
     let keyword: Binding<String>
     let isFocus: FocusState<Bool?>.Binding
@@ -16,6 +18,8 @@ extension MovieHomePage {
   }
 }
 
+// MARK: - MovieHomePage.SearchComponent + View
+
 extension MovieHomePage.SearchComponent: View {
   var body: some View {
     HStack(spacing: 8) {
@@ -23,14 +27,14 @@ extension MovieHomePage.SearchComponent: View {
         .resizable()
         .frame(width: 16, height: 16)
         .padding(8)
-      
+
       TextField(viewState.placeHolder, text: keyword)
         .textFieldStyle(RoundedBorderTextFieldStyle())
         .focused(isFocus, equals: true)
         .padding(.trailing, 12)
-      
+
       if !keyword.wrappedValue.isEmpty {
-        Button.init(action: {
+        Button(action: {
           keyword.wrappedValue = ""
           isFocus.wrappedValue = .none
         }) {
@@ -51,6 +55,8 @@ extension MovieHomePage.SearchComponent: View {
     { _ in throttleAction() }
   }
 }
+
+// MARK: - MovieHomePage.SearchComponent.ViewState
 
 extension MovieHomePage.SearchComponent {
   struct ViewState: Equatable {

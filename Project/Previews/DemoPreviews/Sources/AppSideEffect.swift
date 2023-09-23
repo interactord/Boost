@@ -1,12 +1,14 @@
-import Foundation
 import Architecture
-import LinkNavigator
 import Demo
+import Foundation
+import LinkNavigator
+
+// MARK: - AppSideEffect
 
 public struct AppSideEffect {
   public init() { }
 }
 
-extension AppSideEffect: DemoSideEffectGroup {
-  
-}
+// MARK: DemoSideEffectGroup
+
+extension AppSideEffect: DemoSideEffectGroup { }

@@ -1,12 +1,14 @@
-import Foundation
-import SwiftUI
-import LinkNavigator
 import Architecture
+import Foundation
+import LinkNavigator
+import SwiftUI
+
+// MARK: - Page2View
 
 public struct Page2View {
   let linkNavigator: LinkNavigatorURLEncodedItemProtocol
   let model: DemoLink.QueryItem.Demo2?
-  
+
   public init(
     linkNavigator: LinkNavigatorURLEncodedItemProtocol,
     model: DemoLink.QueryItem.Demo2?)
@@ -16,13 +18,15 @@ public struct Page2View {
   }
 }
 
+// MARK: View
+
 extension Page2View: View {
   public var body: some View {
     ScrollView {
       VStack(spacing: 30) {
         Text("2")
           .font(.system(size: 80, weight: .ultraLight))
-        
+
         GroupBox {
           VStack(spacing: 10) {
             HStack {
@@ -31,19 +35,19 @@ extension Page2View: View {
             }
             .font(.footnote)
             .foregroundColor(.gray)
-            
+
 //            Text("home -> 1 -> 2")  // path
           }
         }
-        
+
         // MARK: go to next Page
         Button(action: {
           linkNavigator.next(
             linkItem: .init(
               path: DemoLink.Path.page3.rawValue,
               items: DemoLink.QueryItem.Demo3().encoded()),
-            isAnimated: true) })
-        {
+            isAnimated: true)
+        }) {
           VStack {
             Text("go to next Page")
             Text("navigator.next(paths: [\"page3\"], items: [:], isAnimated: true)")
@@ -51,15 +55,15 @@ extension Page2View: View {
               .foregroundColor(.gray)
           }
         }
-        
+
         // MARK: root next
         Button(action: {
           linkNavigator.rootNext(
             linkItem: .init(
               path: DemoLink.Path.page3.rawValue,
               items: DemoLink.QueryItem.Demo3().encoded()),
-            isAnimated: true) })
-        {
+            isAnimated: true)
+        }) {
           VStack {
             Text("**root** next")
             Text("navigator.next(paths: [\"page3\"], items: [:], isAnimated: true)")
@@ -67,11 +71,11 @@ extension Page2View: View {
               .foregroundColor(.gray)
           }
         }
-        
+
         // MARK: remove Page 1
         Button(action: {
-          linkNavigator.remove(pathList: [DemoLink.Path.page1.rawValue]) })
-        {
+          linkNavigator.remove(pathList: [DemoLink.Path.page1.rawValue])
+        }) {
           VStack {
             Text("remove Page 1")
               .foregroundColor(.red)
@@ -80,11 +84,11 @@ extension Page2View: View {
               .foregroundColor(.gray)
           }
         }
-        
+
         // MARK: back
         Button(action: {
-          linkNavigator.back(isAnimated: true) })
-        {
+          linkNavigator.back(isAnimated: true)
+        }) {
           VStack {
             Text("back")
             Text("navigator.back(isAnimated: true)")
@@ -92,10 +96,8 @@ extension Page2View: View {
               .foregroundColor(.gray)
           }
         }
-        
       }
       .navigationTitle("Page 2")
     }
   }
 }
-

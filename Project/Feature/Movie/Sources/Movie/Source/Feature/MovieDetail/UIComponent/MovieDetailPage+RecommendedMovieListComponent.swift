@@ -1,6 +1,8 @@
+import Domain
 import Foundation
 import SwiftUI
-import Domain
+
+// MARK: - MovieDetailPage.RecommendedMovieListComponent
 
 extension MovieDetailPage {
   struct RecommendedMovieListComponent {
@@ -8,8 +10,9 @@ extension MovieDetailPage {
   }
 }
 
-extension MovieDetailPage.RecommendedMovieListComponent {
-}
+extension MovieDetailPage.RecommendedMovieListComponent { }
+
+// MARK: - MovieDetailPage.RecommendedMovieListComponent + View
 
 extension MovieDetailPage.RecommendedMovieListComponent: View {
   var body: some View {
@@ -18,14 +21,14 @@ extension MovieDetailPage.RecommendedMovieListComponent: View {
         Text("Recommended Movies")
         Text("See all")
           .foregroundColor(.customGreenColor)
-        
+
         Spacer()
-        
+
         Image(systemName: "chevron.right")
           .resizable()
           .frame(width: 8, height: 10)
       }
-      
+
       ScrollView(.horizontal, showsIndicators: false) {
         LazyHStack(spacing: 48) {
           ForEach(viewState.itemList, id: \.id) { item in
@@ -37,13 +40,12 @@ extension MovieDetailPage.RecommendedMovieListComponent: View {
                   .clipShape(RoundedRectangle(cornerRadius: 10))
                   .overlay(
                     RoundedRectangle(cornerRadius: 10)
-                      .stroke(.black, lineWidth: 1)
-                  )
+                      .stroke(.black, lineWidth: 1))
                   .shadow(radius: 10)
-                
+
                 Text(item.title)
                   .font(.footnote)
-                
+
                 Circle()
                   .trim(from: 0, to: item.voteAverage / 10)
                   .stroke(
@@ -51,11 +53,10 @@ extension MovieDetailPage.RecommendedMovieListComponent: View {
                   .rotationEffect(.degrees(-90))
                   .frame(width: 40, height: 40)
                   .foregroundColor(Color.lineColor(item.voteAverage))
-                  .shadow(color:Color.lineColor(item.voteAverage), radius: 5, x: 0, y: 0)
-                  .overlay (
+                  .shadow(color: Color.lineColor(item.voteAverage), radius: 5, x: 0, y: 0)
+                  .overlay(
                     Text("\(Int(item.voteAverage * 10))%")
-                      .font(.system(size: 10))
-                  )
+                      .font(.system(size: 10)))
               }
             }
             .foregroundColor(Color(.label))
@@ -64,30 +65,32 @@ extension MovieDetailPage.RecommendedMovieListComponent: View {
           }
         }
       }
-      
     }
     .padding(.vertical)
     .padding(.horizontal, 16)
-    
   }
 }
+
+// MARK: - MovieDetailPage.RecommendedMovieListComponent.ViewState
 
 extension MovieDetailPage.RecommendedMovieListComponent {
   struct ViewState: Equatable {
     let itemList: [RecommendedMovieItem]
-    
+
     init(rawValue: MovieDetailDomain.Response.RecommenededMovieResult?) {
       itemList = (rawValue?.resultList ?? []).map(RecommendedMovieItem.init(rawValue:))
     }
   }
 }
 
+// MARK: - MovieDetailPage.RecommendedMovieListComponent.ViewState.RecommendedMovieItem
+
 extension MovieDetailPage.RecommendedMovieListComponent.ViewState {
   struct RecommendedMovieItem: Equatable, Identifiable {
     let id: Int
     let title: String
     let voteAverage: Double
-    
+
     init(rawValue: MovieDetailDomain.Response.RecommenededMovieResultItem) {
       id = rawValue.id
       title = rawValue.title
@@ -95,4 +98,3 @@ extension MovieDetailPage.RecommendedMovieListComponent.ViewState {
     }
   }
 }
-

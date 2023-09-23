@@ -1,6 +1,6 @@
 import Architecture
-import LinkNavigator
 import Domain
+import LinkNavigator
 
 public protocol MovieSideEffectGroup: DependencyType {
   var configurationDomain: ConfigurationDomain { get }

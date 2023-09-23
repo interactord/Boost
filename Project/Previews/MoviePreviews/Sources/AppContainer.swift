@@ -1,19 +1,25 @@
 import Architecture
+import Domain
 import LinkNavigator
 import Movie
-import Domain
 import Platform
 
+// MARK: - AppContainer
+
 final class AppContainer {
-   init(
+
+  // MARK: Lifecycle
+
+  init(
     dependency: AppSideEffect,
-    navigator: SingleLinkNavigator<String>
-  )
+    navigator: SingleLinkNavigator<String>)
   {
     self.dependency = dependency
     self.navigator = navigator
   }
-  
+
+  // MARK: Internal
+
   let dependency: AppSideEffect
   let navigator: SingleLinkNavigator<String>
 }
@@ -27,9 +33,8 @@ extension AppContainer {
         configurationDomain: configuration),
       searchUseCase: SearchUseCasePlatformMock(
         configurationDomain: configuration),
-    movieDetailUseCase: MovieDetailUseCasePlatformMock(
-      configurationDomain: configuration)
-    )
+      movieDetailUseCase: MovieDetailUseCasePlatformMock(
+        configurationDomain: configuration))
     return .init(
       dependency: dependency,
       navigator: .init(
@@ -39,8 +44,8 @@ extension AppContainer {
 }
 
 extension AppContainer {
-  fileprivate class var configurationLive: ConfigurationDomain {
-     .init(
+  private class var configurationLive: ConfigurationDomain {
+    .init(
       entity: .init(
         baseURL: .init(
           apiURL: "https://api.themoviedb.org/3",
