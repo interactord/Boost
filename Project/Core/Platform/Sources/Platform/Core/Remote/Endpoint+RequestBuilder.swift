@@ -12,7 +12,7 @@ extension Endpoint {
 }
 
 extension String {
-  var component: URLComponents? {
+  fileprivate var component: URLComponents? {
     .init(string: self)
   }
 }
