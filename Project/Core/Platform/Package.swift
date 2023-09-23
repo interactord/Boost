@@ -13,11 +13,13 @@ let package = Package(
   ],
   dependencies: [
     .package(path: "../../ThirdParty/CombineNetwork"),
+    .package(path: "../../Core/Domain"),
   ],
   targets: [
     .target(
       name: "Platform",
       dependencies: [
+        "Domain",
         "CombineNetwork",
       ],
       resources: [
