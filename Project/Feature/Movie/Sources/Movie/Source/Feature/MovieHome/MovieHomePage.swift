@@ -71,7 +71,7 @@ extension MovieHomePage: View {
       ItemListComponent(
         viewState: itemListComponentViewState,
         nextPageAction: { viewStore.send(.getNowPlay) },
-        selectAction: { viewStore.send(.onSelectItem($0)) })
+        selectAction: { viewStore.send(.onSelectMovieItem($0)) })
         .overlay {
           if isFocus ?? false {
             VStack {

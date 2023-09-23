@@ -17,6 +17,8 @@ protocol MovieHomeEnvType {
     -> Effect<Result<SearchDomain.Response.MovieResult, CompositeErrorDomain>> { get }
   var searchPeople: (String)
     -> Effect<Result<SearchDomain.Response.PeopleResult, CompositeErrorDomain>> { get }
+
+  var routeToMovieDetail: (MovieDomain.MovieList.Response.ResultItem) -> Void { get }
 }
 
 extension MovieHomeEnvType {

@@ -1,6 +1,9 @@
+import Architecture
 import ComposableArchitecture
+import Domain
 import Foundation
 import LinkNavigator
+import URLEncodedForm
 
 // MARK: - MovieHomeLive
 
@@ -23,4 +26,14 @@ struct MovieHomeLive {
 
 // MARK: MovieHomeEnvType
 
-extension MovieHomeLive: MovieHomeEnvType { }
+extension MovieHomeLive: MovieHomeEnvType {
+  var routeToMovieDetail: (MovieDomain.MovieList.Response.ResultItem) -> Void {
+    { item in
+      navigator.backOrNext(
+        linkItem: .init(
+          path: Link.Movie.Path.movieDetail.rawValue,
+          items: item.encodeString()),
+        isAnimated: true)
+    }
+  }
+}
