@@ -7,18 +7,10 @@ extension MovieDetailDomain {
 
 extension MovieDetailDomain.Request {
   public struct MovieCard: Equatable, Codable {
-    public let language: String
-    public let appendToResponse: String
-    public let includeImageLanguage: String
+    public let id: Int
 
-    public init(
-      language: String,
-      appendToResponse: String,
-      includeImageLanguage: String)
-    {
-      self.language = language
-      self.appendToResponse = appendToResponse
-      self.includeImageLanguage = includeImageLanguage
+    public init(id: Int) {
+      self.id = id
     }
   }
 
@@ -68,6 +60,7 @@ extension MovieDetailDomain.Response {
 
     public init(
       id: Int = .zero,
+      title: String = "",
       posterPath: String? = "",
       releaseDate: String = "",
       runtime: Int = .zero,
@@ -82,6 +75,7 @@ extension MovieDetailDomain.Response {
 //      backdropBucket: BackdropBucket = BackdropBucket()
     ) {
       self.id = id
+      self.title = title
       self.posterPath = posterPath ?? ""
       self.releaseDate = releaseDate
       self.runtime = runtime
@@ -99,6 +93,7 @@ extension MovieDetailDomain.Response {
     // MARK: Public
 
     public let id: Int
+    public let title: String
     public let posterPath: String?
     public let releaseDate: String
     public let runtime: Int
@@ -115,6 +110,7 @@ extension MovieDetailDomain.Response {
 
     private enum CodingKeys: String, CodingKey {
       case id
+      case title
       case posterPath = "poster_path"
       case releaseDate = "release_date"
       case runtime

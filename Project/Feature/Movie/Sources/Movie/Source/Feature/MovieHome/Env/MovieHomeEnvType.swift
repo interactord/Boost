@@ -29,7 +29,7 @@ extension MovieHomeEnvType {
       .publisher {
         useCaseGroup
           .movieUseCase
-          .nowPlaying(.init(language: dummyLanguage, region: dummyRegion, page: pageNumber))
+          .nowPlaying(.init(locale: Locale.current, page: pageNumber))
           .mapToResult()
           .receive(on: mainQueue)
       }

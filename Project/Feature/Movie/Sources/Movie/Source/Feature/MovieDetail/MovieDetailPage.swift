@@ -180,7 +180,7 @@ extension MovieDetailPage: View {
     .background(Color.customBgColor)
     .animation(.spring(), value: viewStore.state)
     .setRequestFlightView(isLoading: isLoading)
-    .navigationTitle("메갈로돈")
+    .navigationTitle(viewStore.fetchMovieCard.value?.title ?? "")
     .navigationBarTitleDisplayMode(.large)
     .onAppear {
       viewStore.send(.getMovieDetail)
@@ -195,7 +195,7 @@ extension MovieDetailPage: View {
   NavigationView {
     MovieDetailPage(
       store: .init(
-        initialState: MovieDetailStore.State(),
+        initialState: MovieDetailStore.State(movieID: .zero),
         reducer: {
           MovieDetailStore(
             env: MovieDetailEnvMock(

@@ -17,6 +17,8 @@ extension URLSession {
     {
       self.dataTaskPublisher(for: $0)
         .tryMap { data, response in
+          print(response.url?.absoluteString ?? "")
+
           guard let urlResponse = response as? HTTPURLResponse
           else { throw CompositeErrorDomain.invalidCasting }
 

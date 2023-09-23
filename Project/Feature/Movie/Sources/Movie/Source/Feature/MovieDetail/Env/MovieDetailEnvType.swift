@@ -9,7 +9,7 @@ protocol MovieDetailEnvType {
   var mainQueue: AnySchedulerOf<DispatchQueue> { get }
   var useCaseGroup: MovieSideEffectGroup { get }
 
-  var movieCard: ()
+  var movieCard: (Int)
     -> Effect<Result<MovieDetailDomain.Response.MovieCardResult, CompositeErrorDomain>> { get }
 
   var movieReview: ()
@@ -26,14 +26,14 @@ protocol MovieDetailEnvType {
 }
 
 extension MovieDetailEnvType {
-  public var movieCard: ()
+  public var movieCard: (Int)
     -> Effect<Result<MovieDetailDomain.Response.MovieCardResult, CompositeErrorDomain>>
   {
-    {
+    { id in
       .publisher {
         useCaseGroup
           .movieDetailUseCase
-          .movieCard(.init(language: "ko-kr", appendToResponse: "keywords,images", includeImageLanguage: "ko,en,null"))
+          .movieCard(.init(id: id))
           .mapToResult()
           .receive(on: mainQueue)
       }

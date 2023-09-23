@@ -29,11 +29,11 @@ extension AppContainer {
     let configuration = Self.configurationLive
     let dependency = AppSideEffect(
       configurationDomain: configuration,
-      movieUseCase: MovieUseCasePlatformMock(
+      movieUseCase: MovieUseCasePlatform(
         configurationDomain: configuration),
       searchUseCase: SearchUseCasePlatformMock(
         configurationDomain: configuration),
-      movieDetailUseCase: MovieDetailUseCasePlatformMock(
+      movieDetailUseCase: MovieDetailUseCasePlatform(
         configurationDomain: configuration))
     return .init(
       dependency: dependency,

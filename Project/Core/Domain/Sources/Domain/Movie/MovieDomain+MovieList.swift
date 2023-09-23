@@ -13,18 +13,22 @@ extension MovieDomain {
 
 extension MovieDomain.MovieList.Request {
   public struct NowPlay: Equatable {
-    public let language: String
     public let region: String
     public let page: Int
 
-    public init(language: String, region: String, page: Int) {
-      self.language = language
+    public init(region: String, page: Int) {
       self.region = region
+      self.page = page
+    }
+
+    public init(locale: Locale, page: Int) {
+      region = locale.region?.identifier ?? "US"
       self.page = page
     }
   }
 }
 
+//
 extension MovieDomain.MovieList.Response {
   public struct NowPlay: Equatable, Codable {
 
