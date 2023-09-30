@@ -16,6 +16,8 @@ extension Link.Movie {
     case review
     case cast
     case crew
+    case similarMovie
+    case recommendedMovie
   }
 }
 

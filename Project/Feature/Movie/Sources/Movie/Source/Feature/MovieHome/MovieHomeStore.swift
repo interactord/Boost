@@ -101,7 +101,7 @@ extension MovieHomeStore: Reducer {
 
       case .onUpdateKeyword:
         guard !state.keyword.isEmpty else { return .run { await $0(.onClearKeyword) } }
-        return .concatenate(
+        return .merge(
           env.searchKeyword(state.keyword)
             .map(Action.fetchSearchKeyword)
             .cancellable(pageID: pageID, id: CancelID.requestSearchKeyword, cancelInFlight: true),
@@ -117,7 +117,7 @@ extension MovieHomeStore: Reducer {
         state.fetchSearchMovie = .init(isLoading: false, value: .none)
         state.fetchSearchPeople = .init(isLoading: false, value: .none)
         state.searchFocus = .movies
-        return .merge(
+        return .concatenate(
           .cancel(pageID: pageID, id: CancelID.requestSearchKeyword),
           .cancel(pageID: pageID, id: CancelID.requestSearchMovie),
           .cancel(pageID: pageID, id: CancelID.requestSearchPeople))

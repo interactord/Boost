@@ -2,71 +2,53 @@ import Domain
 import Foundation
 import SwiftUI
 
-// MARK: - MovieHomePage.ItemListComponent
+// MARK: - SimilarMoviePage.ItemListComponent
 
-extension MovieHomePage {
+extension SimilarMoviePage {
   struct ItemListComponent {
     let viewState: ViewState
-    let nextPageAction: () -> Void
-    let selectAction: (MovieDomain.MovieList.Response.ResultItem) -> Void
   }
 }
 
-// MARK: - MovieHomePage.ItemListComponent + View
+// MARK: - SimilarMoviePage.ItemListComponent + View
 
-extension MovieHomePage.ItemListComponent: View {
+extension SimilarMoviePage.ItemListComponent: View {
   var body: some View {
     ScrollView {
       LazyVStack {
         ForEach(viewState.itemList) { item in
           ItemComponent(item: item)
             .background(.white)
-            .onTapGesture {
-              selectAction(item.rawValue)
-              print("AAA")
-            }
-            .onAppear {
-              guard viewState.lastID == item.id else { return }
-              nextPageAction()
-            }
         }
       }
     }
-    .onAppear {
-      print("MovieHomePage.ItemListComponent onAppear")
-    }
-    .onDisappear {
-      print("MovieHomePage.ItemListComponent onDisappear")
-    }
   }
 }
 
-// MARK: - MovieHomePage.ItemListComponent.ViewState
+// MARK: - SimilarMoviePage.ItemListComponent.ViewState
 
-extension MovieHomePage.ItemListComponent {
+extension SimilarMoviePage.ItemListComponent {
   struct ViewState: Equatable {
-    let itemList: [MovieItem]
-    let lastID: Int
+    let itemList: [SimilarMovieItem]
 
-    init(rawValue: [MovieDomain.MovieList.Response.ResultItem]) {
-      itemList = rawValue.map(MovieItem.init(rawValue:))
-      lastID = rawValue.last?.id ?? .zero
+    init(rawValue: [MovieDetailDomain.Response.SimilarMovieResultItem]) {
+      itemList = rawValue.map(SimilarMovieItem.init(rawValue:))
     }
   }
 }
 
-// MARK: - MovieHomePage.ItemListComponent.ViewState.MovieItem
+// MARK: - SimilarMoviePage.ItemListComponent.ViewState.SimilarMovieItem
 
-extension MovieHomePage.ItemListComponent.ViewState {
-  struct MovieItem: Equatable, Identifiable {
+extension SimilarMoviePage.ItemListComponent.ViewState {
+  struct SimilarMovieItem: Equatable, Identifiable {
     let id: Int
     let title: String
     let voteAverage: Double
     let releaseDate: String
     let overView: String
-    let rawValue: MovieDomain.MovieList.Response.ResultItem
+    let rawValue: MovieDetailDomain.Response.SimilarMovieResultItem
 
-    init(rawValue: MovieDomain.MovieList.Response.ResultItem) {
+    init(rawValue: MovieDetailDomain.Response.SimilarMovieResultItem) {
       id = rawValue.id
       title = rawValue.title
       voteAverage = rawValue.voteAverage
@@ -77,40 +59,17 @@ extension MovieHomePage.ItemListComponent.ViewState {
   }
 }
 
-extension Color {
+// MARK: - SimilarMoviePage.ItemListComponent.ItemComponent
 
-  // MARK: Public
-
-  public static var customYellowColor = Color(red: 0.75, green: 0.6, blue: 0.2)
-
-  public static var customGreenColor = Color(red: 0.45, green: 0.64, blue: 0.62)
-
-  public static var customBgColor = Color(red: 0.94, green: 0.94, blue: 0.96)
-
-  // MARK: Internal
-
-  static func lineColor(_ voteAverage: Double) -> Color {
-    if voteAverage >= 7.5 {
-      return .green
-    } else if voteAverage >= 5.0 {
-      return .yellow
-    } else {
-      return .red
-    }
-  }
-}
-
-// MARK: - MovieHomePage.ItemListComponent.ItemComponent
-
-extension MovieHomePage.ItemListComponent {
+extension SimilarMoviePage.ItemListComponent {
   fileprivate struct ItemComponent {
-    let item: ViewState.MovieItem
+    let item: ViewState.SimilarMovieItem
   }
 }
 
-// MARK: - MovieHomePage.ItemListComponent.ItemComponent + View
+// MARK: - SimilarMoviePage.ItemListComponent.ItemComponent + View
 
-extension MovieHomePage.ItemListComponent.ItemComponent: View {
+extension SimilarMoviePage.ItemListComponent.ItemComponent: View {
   var body: some View {
     VStack {
       HStack(spacing: 16) {

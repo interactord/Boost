@@ -3,34 +3,35 @@ import ComposableArchitecture
 import Foundation
 import SwiftUI
 
-// MARK: - CrewPage
+// MARK: - ReviewPage
 
-struct CrewPage {
+struct ReviewPage {
 
-  private let store: StoreOf<CrewStore>
-  @ObservedObject private var viewStore: ViewStoreOf<CrewStore>
+  private let store: StoreOf<ReviewStore>
+  @ObservedObject private var viewStore: ViewStoreOf<ReviewStore>
 
-  init(store: StoreOf<CrewStore>) {
+  init(store: StoreOf<ReviewStore>) {
     self.store = store
     viewStore = ViewStore(store, observe: { $0 })
   }
 }
 
-extension CrewPage {
+extension ReviewPage {
   private var itemListComponentViewState: ItemListComponent.ViewState {
-    .init(rawValue: viewStore.fetchMovieCrew.value.crewList)
+    .init(rawValue: viewStore.fetchMovieReview.value.resultList)
   }
 }
 
-extension CrewPage {
+extension ReviewPage {
   private var isLoading: Bool {
-    viewStore.fetchMovieCrew.isLoading
+    viewStore.fetchMovieReview.isLoading
   }
 }
 
 // MARK: View
 
-extension CrewPage: View {
+extension ReviewPage: View {
+
   var body: some View {
     ScrollView {
       VStack {
@@ -43,10 +44,21 @@ extension CrewPage: View {
     }
     .background(Color.customBgColor)
     .onAppear {
-      viewStore.send(.getMovieCrew)
+      viewStore.send(.getMovieReview)
     }
     .onDisappear {
       viewStore.send(.teardown)
     }
   }
+}
+
+#Preview {
+  ReviewPage(store: .init(
+    initialState: ReviewStore.State(movieID: .zero),
+    reducer: {
+      ReviewStore(
+        env: ReviewEnvMock(
+          mainQueue: .main,
+          useCaseGroup: MovieSideEffectGroupMock()))
+    }))
 }

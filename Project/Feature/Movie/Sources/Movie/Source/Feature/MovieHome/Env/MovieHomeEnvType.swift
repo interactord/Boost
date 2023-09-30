@@ -77,7 +77,6 @@ extension MovieHomeEnvType {
       }
     }
   }
-
 }
 
 private let dummyLanguage = "ko-kr"

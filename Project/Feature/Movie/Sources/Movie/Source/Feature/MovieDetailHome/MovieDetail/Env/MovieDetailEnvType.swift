@@ -12,17 +12,25 @@ protocol MovieDetailEnvType {
   var movieCard: (Int)
     -> Effect<Result<MovieDetailDomain.Response.MovieCardResult, CompositeErrorDomain>> { get }
 
-  var movieReview: ()
+  var movieReview: (Int)
     -> Effect<Result<MovieDetailDomain.Response.MovieReviewResult, CompositeErrorDomain>> { get }
 
-  var movieCredit: ()
+  var movieCredit: (Int)
     -> Effect<Result<MovieDetailDomain.Response.MovieCreditResult, CompositeErrorDomain>> { get }
 
-  var similarMovie: ()
+  var similarMovie: (Int)
     -> Effect<Result<MovieDetailDomain.Response.SimilarMovieResult, CompositeErrorDomain>> { get }
 
-  var recommendedMovie: ()
+  var recommendedMovie: (Int)
     -> Effect<Result<MovieDetailDomain.Response.RecommenededMovieResult, CompositeErrorDomain>> { get }
+
+  var routeToReview: (MovieDetailDomain.Response.MovieReviewResult) -> Void { get }
+
+  var routeToCast: (MovieDetailDomain.Response.MovieCreditResult) -> Void { get }
+
+  var routeToCrew: (MovieDetailDomain.Response.MovieCreditResult) -> Void { get }
+
+  var routeToSimilarMovie: (MovieDetailDomain.Response.SimilarMovieResult) -> Void { get }
 }
 
 extension MovieDetailEnvType {
@@ -40,56 +48,56 @@ extension MovieDetailEnvType {
     }
   }
 
-  public var movieReview: ()
+  public var movieReview: (Int)
     -> Effect<Result<MovieDetailDomain.Response.MovieReviewResult, CompositeErrorDomain>>
   {
-    {
+    { id in
       .publisher {
         useCaseGroup
           .movieDetailUseCase
-          .movieReview(.init(language: "en-US"))
+          .movieReview(.init(id: id))
           .mapToResult()
           .receive(on: mainQueue)
       }
     }
   }
 
-  public var movieCredit: ()
+  public var movieCredit: (Int)
     -> Effect<Result<MovieDetailDomain.Response.MovieCreditResult, CompositeErrorDomain>>
   {
-    {
+    { id in
       .publisher {
         useCaseGroup
           .movieDetailUseCase
-          .movieCredit(.init(language: "ko-US"))
+          .movieCredit(.init(id: id))
           .mapToResult()
           .receive(on: mainQueue)
       }
     }
   }
 
-  public var similarMovie: ()
+  public var similarMovie: (Int)
     -> Effect<Result<MovieDetailDomain.Response.SimilarMovieResult, CompositeErrorDomain>>
   {
-    {
+    { id in
       .publisher {
         useCaseGroup
           .movieDetailUseCase
-          .similarMovie(.init(language: "ko-us"))
+          .similarMovie(.init(id: id))
           .mapToResult()
           .receive(on: mainQueue)
       }
     }
   }
 
-  public var recommendedMovie: ()
+  public var recommendedMovie: (Int)
     -> Effect<Result<MovieDetailDomain.Response.RecommenededMovieResult, CompositeErrorDomain>>
   {
-    {
+    { id in
       .publisher {
         useCaseGroup
           .movieDetailUseCase
-          .recommendedMovie(.init(language: "ko-us"))
+          .recommendedMovie(.init(id: id))
           .mapToResult()
           .receive(on: mainQueue)
       }

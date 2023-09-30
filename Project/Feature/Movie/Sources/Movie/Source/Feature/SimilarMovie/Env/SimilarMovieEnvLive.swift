@@ -5,9 +5,9 @@ import Foundation
 import LinkNavigator
 import URLEncodedForm
 
-// MARK: - CrewEnvLive
+// MARK: - SimilarMovieEnvLive
 
-struct CrewEnvLive {
+struct SimilarMovieEnvLive {
 
   let mainQueue: AnySchedulerOf<DispatchQueue>
   let useCaseGroup: MovieSideEffectGroup
@@ -24,6 +24,6 @@ struct CrewEnvLive {
   }
 }
 
-// MARK: CrewEnvType
+// MARK: SimilarMovieEnvType
 
-extension CrewEnvLive: CrewEnvType { }
+extension SimilarMovieEnvLive: SimilarMovieEnvType { }

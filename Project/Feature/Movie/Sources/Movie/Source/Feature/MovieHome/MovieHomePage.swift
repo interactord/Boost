@@ -105,7 +105,7 @@ extension MovieHomePage: View {
       Spacer()
     }
     .padding(.leading, 16)
-    .backgroundStyle(.white)
+    .background(.white)
     .navigationTitle("Now Playing")
     .toolbar {
       ToolbarItem(placement: .navigationBarTrailing) {

@@ -18,6 +18,7 @@ public struct MovieDetailStore {
 
 extension MovieDetailStore {
   public struct State: Equatable {
+    let movieID: Int
 
     init(movieID: Int) {
       self.movieID = movieID
@@ -27,8 +28,6 @@ extension MovieDetailStore {
       _fetchSimilarMovie = .init(.init(isLoading: false, value: .init()))
       _fetchRecommendedMovie = .init(.init(isLoading: false, value: .init()))
     }
-
-    let movieID: Int
 
     @Heap var fetchMovieCard: FetchState.Data<MovieDetailDomain.Response.MovieCardResult?>
     @Heap var fetchMovieReview: FetchState.Data<MovieDetailDomain.Response.MovieReviewResult?>
@@ -48,6 +47,11 @@ extension MovieDetailStore {
     case teardown
 
     case getMovieDetail
+
+    case onSelectReview(MovieDetailDomain.Response.MovieReviewResult)
+    case onSelectCast(MovieDetailDomain.Response.MovieCreditResult)
+    case onSelectCrew(MovieDetailDomain.Response.MovieCreditResult)
+    case onSelectSimilarMovie(MovieDetailDomain.Response.SimilarMovieResult)
 
     case fetchMovieCard(Result<MovieDetailDomain.Response.MovieCardResult, CompositeErrorDomain>)
     case fetchMovieReview(Result<MovieDetailDomain.Response.MovieReviewResult, CompositeErrorDomain>)
@@ -96,18 +100,34 @@ extension MovieDetailStore: Reducer {
           env.movieCard(state.movieID)
             .map(Action.fetchMovieCard)
             .cancellable(pageID: pageID, id: CancelID.requestMovieCard, cancelInFlight: true),
-          env.movieReview()
+          env.movieReview(state.movieID)
             .map(Action.fetchMovieReview)
             .cancellable(pageID: pageID, id: CancelID.requestMovieReview, cancelInFlight: true),
-          env.movieCredit()
+          env.movieCredit(state.movieID)
             .map(Action.fetchMovieCredit)
             .cancellable(pageID: pageID, id: CancelID.requestMovieCredit, cancelInFlight: true),
-          env.similarMovie()
+          env.similarMovie(state.movieID)
             .map(Action.fetchSimilarMovie)
             .cancellable(pageID: pageID, id: CancelID.requestSimilarMovie, cancelInFlight: true),
-          env.recommendedMovie()
+          env.recommendedMovie(state.movieID)
             .map(Action.fetchRecommendedMovie)
             .cancellable(pageID: pageID, id: CancelID.requestRecommendedMovie, cancelInFlight: true))
+
+      case .onSelectReview(let item):
+        env.routeToReview(item)
+        return .none
+
+      case .onSelectCast(let item):
+        env.routeToCast(item)
+        return .none
+
+      case .onSelectCrew(let item):
+        env.routeToCrew(item)
+        return .none
+
+      case .onSelectSimilarMovie(let item):
+        env.routeToSimilarMovie(item)
+        return .none
 
       case .fetchMovieCard(let result):
         state.fetchMovieCard.isLoading = false

@@ -1,10 +1,13 @@
+import Architecture
 import ComposableArchitecture
+import Domain
 import Foundation
 import LinkNavigator
+import URLEncodedForm
 
-// MARK: - MovieDetailEnvLive
+// MARK: - ReviewEnvLive
 
-struct MovieDetailEnvLive {
+struct ReviewEnvLive {
 
   let mainQueue: AnySchedulerOf<DispatchQueue>
   let useCaseGroup: MovieSideEffectGroup
@@ -21,6 +24,6 @@ struct MovieDetailEnvLive {
   }
 }
 
-// MARK: MovieDetailEnvType
+// MARK: ReviewEnvType
 
-extension MovieDetailEnvLive: MovieDetailEnvType { }
+extension ReviewEnvLive: ReviewEnvType { }

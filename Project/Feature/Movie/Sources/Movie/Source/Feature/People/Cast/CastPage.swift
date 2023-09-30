@@ -18,34 +18,13 @@ struct CastPage {
 
 extension CastPage {
   private var itemListComponentViewState: ItemListComponent.ViewState {
-    .init(
-      profileList: [
-        ItemListComponent.ViewState.ProfileItem(
-          name: "Ann Roth",
-          character: "The Woman on the Beanch"),
-        ItemListComponent.ViewState.ProfileItem(
-          name: "Helen Mirren",
-          character: "Narrator (voice)"),
-        ItemListComponent.ViewState.ProfileItem(
-          name: "Will Ferrell",
-          character: "Mattel CEO"),
-        ItemListComponent.ViewState.ProfileItem(
-          name: "Rhea Perlman",
-          character: "Ruth Handler"),
-        ItemListComponent.ViewState.ProfileItem(
-          name: "Ryan Gosling",
-          character: "Ken"),
-        ItemListComponent.ViewState.ProfileItem(
-          name: "Michael Cera",
-          character: "Allan"),
-        ItemListComponent.ViewState.ProfileItem(
-          name: "Rob Brydon",
-          character: "Sugar Daddy Ken"),
-        ItemListComponent.ViewState.ProfileItem(
-          name: "Carlos Jacott",
-          character: "Policeman"),
+    .init(rawValue: viewStore.fetchMovieCast.value.castList)
+  }
+}
 
-      ])
+extension CastPage {
+  private var isLoading: Bool {
+    viewStore.fetchMovieCast.isLoading
   }
 }
 
@@ -63,14 +42,19 @@ extension CastPage: View {
       .padding(.horizontal, 16)
     }
     .background(Color.customBgColor)
+    .onAppear {
+      viewStore.send(.getMovieCast)
+    }
+    .onDisappear {
+      viewStore.send(.teardown)
+    }
   }
 }
 
 #Preview {
-  CastPage(
-    store: .init(
-      initialState: CastStore.State(),
-      reducer: {
-        CastStore(env: CastEnvMock(useCaseGroup: MovieSideEffectGroupMock()))
-      }))
+  CastPage(store: .init(
+    initialState: CastStore.State(movieID: .zero),
+    reducer: {
+      CastStore(env: CastEnvMock(mainQueue: .main, useCaseGroup: MovieSideEffectGroupMock()))
+    }))
 }

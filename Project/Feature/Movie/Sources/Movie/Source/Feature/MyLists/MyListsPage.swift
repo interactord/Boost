@@ -107,6 +107,8 @@ extension MyListsPage: View {
   MyListsPage(store: .init(
     initialState: MyListsStore.State(),
     reducer: {
-      MyListsStore(env: MyListsEnvMock(useCaseGroup: MovieSideEffectGroupMock()))
+      MyListsStore(
+        env: MyListsEnvMock(
+          useCaseGroup: MovieSideEffectGroupMock()))
     }))
 }

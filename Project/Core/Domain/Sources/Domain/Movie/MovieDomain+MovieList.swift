@@ -28,7 +28,6 @@ extension MovieDomain.MovieList.Request {
   }
 }
 
-//
 extension MovieDomain.MovieList.Response {
   public struct NowPlay: Equatable, Codable {
 

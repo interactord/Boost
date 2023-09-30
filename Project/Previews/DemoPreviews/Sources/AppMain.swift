@@ -12,6 +12,7 @@ struct AppMain: App {
       LinkNavigationView(
         linkNavigator: viewModel.linkNavigator,
         item: .init(path: DemoLink.Path.home.rawValue, items: .empty))
+
         .ignoresSafeArea()
     }
   }

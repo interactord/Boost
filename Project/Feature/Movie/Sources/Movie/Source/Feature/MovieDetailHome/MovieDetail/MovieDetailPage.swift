@@ -74,6 +74,8 @@ extension MovieDetailPage {
     viewStore.fetchMovieCard.isLoading
       || viewStore.fetchMovieReview.isLoading
       || viewStore.fetchMovieCredit.isLoading
+      || viewStore.fetchSimilarMovie.isLoading
+      || viewStore.fetchRecommendedMovie.isLoading
   }
 }
 
@@ -88,12 +90,14 @@ extension MovieDetailPage: View {
         // 리스트 버튼들
         ListButtonComponent(viewState: listButtonComponent)
 
-        if movieReviewComponent.totalReviewList != 0 {
+        if movieReviewComponent.rawValue.totalResult != .zero {
           Divider()
             .padding(.leading, 48)
 
           // 리뷰
-          MovieReviewComponent(viewState: movieReviewComponent)
+          MovieReviewComponent(
+            viewState: movieReviewComponent,
+            selectAction: { viewStore.send(.onSelectReview($0)) })
         }
 
         if !movieOverviewComponent.overView.isEmpty {
@@ -118,25 +122,35 @@ extension MovieDetailPage: View {
             KeywordListComponent(viewState: keywordListComponent)
           }
 
-          if !castListComponent.profileList.isEmpty {
+          if !castListComponent.itemList.isEmpty {
             Divider()
               .padding(.leading, 16)
 
             // cast
-            CastListComponent(viewState: castListComponent)
+            CastListComponent(
+              viewState: castListComponent,
+              selectAction: {
+                viewStore.send(.onSelectCast($0))
+              })
           }
 
-          Divider()
-            .padding(.leading, 16)
+          if !directorComponent.director.isEmpty {
+            Divider()
+              .padding(.leading, 16)
 
-          // director
-          DirectorComponent(viewState: directorComponent)
+            // director
+            DirectorComponent(viewState: directorComponent)
+          }
 
-          Divider()
-            .padding(.leading, 16)
+          if !crewListComponent.itemList.isEmpty {
+            Divider()
+              .padding(.leading, 16)
 
-          // crew
-          CrewListComponent(viewState: crewListComponent)
+            // crew
+            CrewListComponent(
+              viewState: crewListComponent,
+              selectAction: { viewStore.send(.onSelectCrew($0)) })
+          }
         }
 
         Group {
@@ -145,7 +159,9 @@ extension MovieDetailPage: View {
             Divider()
               .padding(.leading, 16)
 
-            SimilarMovieListComponent(viewState: similarMovieListComponent)
+            SimilarMovieListComponent(
+              viewState: similarMovieListComponent,
+              selectAction: { viewStore.send(.onSelectSimilarMovie($0)) })
           }
 
           if !recomendedMovieListComponent.itemList.isEmpty {
@@ -178,10 +194,10 @@ extension MovieDetailPage: View {
       .padding(.horizontal, 16)
     } // scrollview
     .background(Color.customBgColor)
+    .navigationTitle(viewStore.fetchMovieCard.value?.title ?? "")
+
     .animation(.spring(), value: viewStore.state)
     .setRequestFlightView(isLoading: isLoading)
-    .navigationTitle(viewStore.fetchMovieCard.value?.title ?? "")
-    .navigationBarTitleDisplayMode(.large)
     .onAppear {
       viewStore.send(.getMovieDetail)
     }
@@ -192,15 +208,13 @@ extension MovieDetailPage: View {
 }
 
 #Preview {
-  NavigationView {
-    MovieDetailPage(
-      store: .init(
-        initialState: MovieDetailStore.State(movieID: .zero),
-        reducer: {
-          MovieDetailStore(
-            env: MovieDetailEnvMock(
-              mainQueue: .main,
-              useCaseGroup: MovieSideEffectGroupMock()))
-        }))
-  }
+  MovieDetailPage(
+    store: .init(
+      initialState: MovieDetailStore.State(movieID: .zero),
+      reducer: {
+        MovieDetailStore(
+          env: MovieDetailEnvMock(
+            mainQueue: .main,
+            useCaseGroup: MovieSideEffectGroupMock()))
+      }))
 }

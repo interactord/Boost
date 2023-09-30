@@ -2,14 +2,14 @@ import ComposableArchitecture
 import Domain
 import Foundation
 
-// MARK: - CastEnvMock
+// MARK: - SimilarMovieEnvMock
 
-struct CastEnvMock {
+struct SimilarMovieEnvMock {
 
   let mainQueue: AnySchedulerOf<DispatchQueue>
   let useCaseGroup: MovieSideEffectGroup
 }
 
-// MARK: CastEnvType
+// MARK: SimilarMovieEnvType
 
-extension CastEnvMock: CastEnvType { }
+extension SimilarMovieEnvMock: SimilarMovieEnvType { }

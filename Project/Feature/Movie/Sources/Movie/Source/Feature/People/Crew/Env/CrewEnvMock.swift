@@ -1,11 +1,14 @@
+import ComposableArchitecture
+import Domain
 import Foundation
 
-// MARK: - CrewMocck
+// MARK: - CrewEnvMocck
 
-struct CrewMocck {
+struct CrewEnvMocck {
+  let mainQueue: AnySchedulerOf<DispatchQueue>
   let useCaseGroup: MovieSideEffectGroup
 }
 
 // MARK: CrewEnvType
 
-extension CrewMocck: CrewEnvType { }
+extension CrewEnvMocck: CrewEnvType { }

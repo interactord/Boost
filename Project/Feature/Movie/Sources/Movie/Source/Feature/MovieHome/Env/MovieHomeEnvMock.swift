@@ -13,6 +13,7 @@ struct MovieHomeEnvMock {
 // MARK: MovieHomeEnvType
 
 extension MovieHomeEnvMock: MovieHomeEnvType {
+
   var routeToMovieDetail: (MovieDomain.MovieList.Response.ResultItem) -> Void {
     { _ in Void() }
   }
