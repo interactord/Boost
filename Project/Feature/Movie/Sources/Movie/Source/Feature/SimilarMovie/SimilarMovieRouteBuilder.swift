@@ -3,9 +3,9 @@ import Domain
 import LinkNavigator
 import URLEncodedForm
 
-struct SimilarMovieRouteBuilder<RootNavigator: LinkNavigatorURLEncodedItemProtocol & LinkNavigatorFindLocationUsable> {
+struct SimilarMovieRouteBuilder<RootNavigator: LinkNavigatorProtocol & LinkNavigatorFindLocationUsable>{
 
-  static func generate() -> RouteBuilderOf<RootNavigator, LinkNavigatorURLEncodedItemProtocol.ItemValue> {
+  static func generate() -> RouteBuilderOf<RootNavigator> {
     let matchPath = Link.Movie.Path.similarMovie.rawValue
 
     return .init(matchPath: matchPath) { navigator, _, dependency -> RouteViewController? in

@@ -3,9 +3,9 @@ import Foundation
 import LinkNavigator
 import URLEncodedForm
 
-struct Page2Router<RootNavigator: LinkNavigatorURLEncodedItemProtocol & LinkNavigatorFindLocationUsable> {
+struct Page2Router<RootNavigator: LinkNavigatorProtocol & LinkNavigatorFindLocationUsable>{
 
-  static func generate() -> RouteBuilderOf<RootNavigator, LinkNavigatorURLEncodedItemProtocol.ItemValue> {
+  static func generate() -> RouteBuilderOf<RootNavigator> {
     let matchPath = DemoLink.Path.page2.rawValue
 
     return .init(matchPath: matchPath) { linkNavigator, items, _ -> WrappingController<Page2View>? in

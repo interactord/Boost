@@ -1,9 +1,9 @@
 import Architecture
 import LinkNavigator
 
-struct MovieHomeRouteBuilder<RootNavigator: LinkNavigatorURLEncodedItemProtocol & LinkNavigatorFindLocationUsable> {
+struct MovieHomeRouteBuilder<RootNavigator: LinkNavigatorProtocol & LinkNavigatorFindLocationUsable>{
 
-  static func generate() -> RouteBuilderOf<RootNavigator, LinkNavigatorURLEncodedItemProtocol.ItemValue> {
+  static func generate() -> RouteBuilderOf<RootNavigator> {
     let matchPath = Link.Movie.Path.home.rawValue
 
     return .init(matchPath: matchPath) { navigator, _, dependency -> RouteViewController? in

@@ -7,11 +7,11 @@ import SwiftUI
 
 struct Page3View {
   @State private var message = ""
-  let linkNavigator: LinkNavigatorURLEncodedItemProtocol
+  let linknavigator: LinkNavigatorProtocol
   let model: DemoLink.QueryItem.Demo3?
 
   public init(
-    linkNavigator: LinkNavigatorURLEncodedItemProtocol,
+    linknavigator: LinkNavigatorProtocol,
     model: DemoLink.QueryItem.Demo3?)
   {
     self.linkNavigator = linkNavigator

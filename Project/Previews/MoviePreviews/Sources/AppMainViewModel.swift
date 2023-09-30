@@ -11,7 +11,7 @@ final class AppMainViewModel: ObservableObject {
 
   let appContainer = AppContainer.build()
 
-  var linkNavigator: SingleLinkNavigator<String> {
+  var linkNavigator: SingleLinkNavigator {
     appContainer.navigator
   }
 }

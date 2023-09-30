@@ -11,12 +11,12 @@ struct RecommendedMovieEnvLive {
 
   let mainQueue: AnySchedulerOf<DispatchQueue>
   let useCaseGroup: MovieSideEffectGroup
-  let navigator: LinkNavigatorURLEncodedItemProtocol
+  let navigator: LinkNavigatorProtocol
 
   init(
     mainQueue: AnySchedulerOf<DispatchQueue> = .main,
     useCaseGroup: MovieSideEffectGroup,
-    navigator: LinkNavigatorURLEncodedItemProtocol)
+    navigator: LinkNavigatorProtocol)
   {
     self.mainQueue = mainQueue
     self.useCaseGroup = useCaseGroup

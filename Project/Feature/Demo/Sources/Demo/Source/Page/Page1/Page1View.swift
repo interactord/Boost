@@ -6,11 +6,11 @@ import SwiftUI
 // MARK: - Page1View
 
 public struct Page1View {
-  let linkNavigator: LinkNavigatorURLEncodedItemProtocol
+  let linknavigator: LinkNavigatorProtocol
   let model: DemoLink.QueryItem.Demo?
 
   public init(
-    linkNavigator: LinkNavigatorURLEncodedItemProtocol,
+    linknavigator: LinkNavigatorProtocol,
     model: DemoLink.QueryItem.Demo?)
   {
     self.linkNavigator = linkNavigator

@@ -6,9 +6,9 @@ import SwiftUI
 // MARK: - HomeView
 
 public struct HomeView {
-  let linkNavigator: LinkNavigatorURLEncodedItemProtocol
+  let linknavigator: LinkNavigatorProtocol
 
-  public init(linkNavigator: LinkNavigatorURLEncodedItemProtocol) {
+  public init(linknavigator: LinkNavigatorProtocol) {
     self.linkNavigator = linkNavigator
   }
 }

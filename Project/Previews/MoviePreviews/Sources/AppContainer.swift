@@ -12,7 +12,7 @@ final class AppContainer {
 
   init(
     dependency: AppSideEffect,
-    navigator: SingleLinkNavigator<String>)
+    navigator: SingleLinkNavigator)
   {
     self.dependency = dependency
     self.navigator = navigator
@@ -21,7 +21,7 @@ final class AppContainer {
   // MARK: Internal
 
   let dependency: AppSideEffect
-  let navigator: SingleLinkNavigator<String>
+  let navigator: SingleLinkNavigator
 }
 
 extension AppContainer {

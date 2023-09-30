@@ -3,9 +3,9 @@ import Domain
 import LinkNavigator
 import URLEncodedForm
 
-struct RecommendedMovieRouteBuilder<RootNavigator: LinkNavigatorURLEncodedItemProtocol & LinkNavigatorFindLocationUsable> {
+struct RecommendedMovieRouteBuilder<RootNavigator: LinkNavigatorProtocol & LinkNavigatorFindLocationUsable>{
 
-  static func generate() -> RouteBuilderOf<RootNavigator, LinkNavigatorURLEncodedItemProtocol.ItemValue> {
+  static func generate() -> RouteBuilderOf<RootNavigator> {
     let matchPath = Link.Movie.Path.recommendedMovie.rawValue
 
     return .init(matchPath: matchPath) { navigator, _, dependency -> RouteViewController? in

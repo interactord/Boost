@@ -3,12 +3,12 @@ import LinkNavigator
 
 // MARK: - DemoRouterBuildGroup
 
-public struct DemoRouterBuildGroup<RootNavigator: LinkNavigatorURLEncodedItemProtocol & LinkNavigatorFindLocationUsable> {
+public struct DemoRouterBuildGroup<RootNavigator: LinkNavigatorProtocol & LinkNavigatorFindLocationUsable>{
   public init() { }
 }
 
 extension DemoRouterBuildGroup {
-  public static var realease: [RouteBuilderOf<RootNavigator, LinkNavigatorURLEncodedItemProtocol.ItemValue>] {
+  public static var realease: [RouteBuilderOf<RootNavigator>] {
     [
       HomeRouter.generate(),
       Page1Router.generate(),

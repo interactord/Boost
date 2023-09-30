@@ -6,11 +6,11 @@ import SwiftUI
 // MARK: - Page4View
 
 struct Page4View {
-  let linkNavigator: LinkNavigatorURLEncodedItemProtocol
+  let linknavigator: LinkNavigatorProtocol
   let model: DemoLink.QueryItem.Demo4?
 
   public init(
-    linkNavigator: LinkNavigatorURLEncodedItemProtocol,
+    linknavigator: LinkNavigatorProtocol,
     model: DemoLink.QueryItem.Demo4?)
   {
     self.linkNavigator = linkNavigator

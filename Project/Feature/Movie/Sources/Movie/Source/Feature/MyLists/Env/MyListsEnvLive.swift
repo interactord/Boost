@@ -6,7 +6,7 @@ import LinkNavigator
 struct MyListsEnvLive {
 
   let useCaseGroup: MovieSideEffectGroup
-  let navigator: LinkNavigatorURLEncodedItemProtocol
+  let navigator: LinkNavigatorProtocol
 }
 
 // MARK: MyListsEnvType
