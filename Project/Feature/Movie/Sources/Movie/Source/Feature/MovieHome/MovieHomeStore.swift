@@ -28,7 +28,7 @@ extension MovieHomeStore {
       _fetchSearchPeople = .init(.init(isLoading: false, value: .init()))
     }
 
-    @Heap var fetchNowPlaying: FetchState.Data<MovieDomain.MovieList.Response.NowPlay>
+    @Heap var fetchNowPlaying: FetchState.Data<MovieHomeStore.State.NowPlayScope>
     @Heap var fetchSearchKeyword: FetchState.Data<SearchDomain.Response.KeywordResult?>
     @Heap var fetchSearchMovie: FetchState.Data<SearchDomain.Response.MovieResult?>
     @Heap var fetchSearchPeople: FetchState.Data<SearchDomain.Response.PeopleResult?>
@@ -41,6 +41,31 @@ extension MovieHomeStore.State {
   public enum SearchType: Int, Equatable {
     case movies
     case people
+  }
+
+  public struct NowPlayScope: Equatable {
+    public let totalPages: Int
+    public let totalResult: Int
+    public let page: Int
+    public let resultList: [ResultItemScope]
+
+    init(
+      totalPages: Int = .zero,
+      totalResult: Int = .zero,
+      page: Int = .zero,
+      resultList: [ResultItemScope] = []) 
+    {
+      self.totalPages = totalPages
+      self.totalResult = totalResult
+      self.page = page
+      self.resultList = resultList
+    }
+  }
+
+  public struct ResultItemScope: Equatable, Identifiable {
+    public let imageURL: String
+    public let item:  MovieDomain.MovieList.Response.ResultItem
+    public var id: Int { item.id }
   }
 }
 
@@ -57,7 +82,7 @@ extension MovieHomeStore {
     case onClearKeyword
     case onSelectMovieItem(MovieDomain.MovieList.Response.ResultItem)
 
-    case fetchNowPlay(Result<MovieDomain.MovieList.Response.NowPlay, CompositeErrorDomain>)
+    case fetchNowPlay(Result<MovieHomeStore.State.NowPlayScope, CompositeErrorDomain>)
     case fetchSearchKeyword(Result<SearchDomain.Response.KeywordResult, CompositeErrorDomain>)
     case fetchSearchMovie(Result<SearchDomain.Response.MovieResult, CompositeErrorDomain>)
     case fetchSearchPeople(Result<SearchDomain.Response.PeopleResult, CompositeErrorDomain>)
@@ -174,7 +199,7 @@ extension MovieHomeStore: Reducer {
   }
 }
 
-extension MovieDomain.MovieList.Response.NowPlay {
+extension MovieHomeStore.State.NowPlayScope {
   fileprivate func merge(target: Self) -> Self {
     .init(
       totalPages: target.totalPages,
@@ -184,7 +209,7 @@ extension MovieDomain.MovieList.Response.NowPlay {
   }
 }
 
-extension [MovieDomain.MovieList.Response.ResultItem] {
+extension [MovieHomeStore.State.ResultItemScope] {
   fileprivate func mergeUnique(target: Self) -> Self {
     target.reduce(self) { curr, next in
       curr + (curr.map(\.id).contains(next.id) ? [] : [next])

@@ -23,7 +23,9 @@ extension MovieHomePage.ItemListComponent: View {
             .background(.white)
             .onTapGesture {
               selectAction(item.rawValue)
-              print("AAA")
+            }
+            .onAppear {
+              print("AAA ", item.imageURL)
             }
             .onAppear {
               guard viewState.lastID == item.id else { return }
@@ -48,7 +50,7 @@ extension MovieHomePage.ItemListComponent {
     let itemList: [MovieItem]
     let lastID: Int
 
-    init(rawValue: [MovieDomain.MovieList.Response.ResultItem]) {
+    init(rawValue: [MovieHomeStore.State.ResultItemScope]) {
       itemList = rawValue.map(MovieItem.init(rawValue:))
       lastID = rawValue.last?.id ?? .zero
     }
@@ -61,18 +63,20 @@ extension MovieHomePage.ItemListComponent.ViewState {
   struct MovieItem: Equatable, Identifiable {
     let id: Int
     let title: String
+    let imageURL: String
     let voteAverage: Double
     let releaseDate: String
     let overView: String
     let rawValue: MovieDomain.MovieList.Response.ResultItem
 
-    init(rawValue: MovieDomain.MovieList.Response.ResultItem) {
+    init(rawValue: MovieHomeStore.State.ResultItemScope) {
       id = rawValue.id
-      title = rawValue.title
-      voteAverage = rawValue.voteAverage
-      releaseDate = rawValue.releaseDate
-      overView = rawValue.overview
-      self.rawValue = rawValue
+      imageURL = rawValue.imageURL + rawValue.item.posterPath
+      title = rawValue.item.title
+      voteAverage = rawValue.item.voteAverage
+      releaseDate = rawValue.item.releaseDate
+      overView = rawValue.item.overview
+      self.rawValue = rawValue.item
     }
   }
 }
@@ -114,9 +118,18 @@ extension MovieHomePage.ItemListComponent.ItemComponent: View {
   var body: some View {
     VStack {
       HStack(spacing: 16) {
-        Asset.spongeBob.swiftUIImage
-          .resizable()
-          .frame(width: 100, height: 140)
+        AsyncImage(
+          url: .init(string: item.imageURL),
+          content: { image in
+            image
+              .resizable()
+              .aspectRatio(contentMode: .fit)
+          }, placeholder: {
+            Rectangle()
+              .fill(.gray)
+              .frame(width: 90)
+          })
+          .frame(height: 140)
           .clipShape(RoundedRectangle(cornerRadius: 10))
           .overlay(
             RoundedRectangle(cornerRadius: 10)

@@ -32,7 +32,7 @@ extension MovieHomeEnvLive: MovieHomeEnvType {
       navigator.backOrNext(
         linkItem: .init(
           path: Link.Movie.Path.movieDetail.rawValue,
-          items: item.encodeString()),
+          items: item.encoded()),
         isAnimated: true)
     }
   }

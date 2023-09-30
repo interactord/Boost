@@ -38,7 +38,7 @@ extension ConfigurationDomain.Entity {
     case original
 
     public func make(imageURL: String) -> String {
-      var extenstionPath: String {
+      var extensionPath: String {
         switch self {
         case .small: return "w154"
         case .medium: return "w500"
@@ -46,7 +46,7 @@ extension ConfigurationDomain.Entity {
         case .original: return "original"
         }
       }
-      return [imageURL, extenstionPath].joined(separator: "/")
+      return [imageURL, extensionPath].joined(separator: "/")
     }
   }
 }

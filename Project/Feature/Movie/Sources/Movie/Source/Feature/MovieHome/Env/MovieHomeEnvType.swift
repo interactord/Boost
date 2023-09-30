@@ -10,7 +10,7 @@ protocol MovieHomeEnvType {
   var useCaseGroup: MovieSideEffectGroup { get }
 
   var nowPlaying: (Int)
-    -> Effect<Result<MovieDomain.MovieList.Response.NowPlay, CompositeErrorDomain>> { get }
+    -> Effect<Result<MovieHomeStore.State.NowPlayScope, CompositeErrorDomain>> { get }
   var searchKeyword: (String)
     -> Effect<Result<SearchDomain.Response.KeywordResult, CompositeErrorDomain>> { get }
   var searchMovie: (String)
@@ -23,13 +23,16 @@ protocol MovieHomeEnvType {
 
 extension MovieHomeEnvType {
   public var nowPlaying: (Int)
-    -> Effect<Result<MovieDomain.MovieList.Response.NowPlay, CompositeErrorDomain>>
+    -> Effect<Result<MovieHomeStore.State.NowPlayScope, CompositeErrorDomain>>
   {
     { pageNumber in
       .publisher {
         useCaseGroup
           .movieUseCase
           .nowPlaying(.init(locale: Locale.current, page: pageNumber))
+          .map{ $0.serialized(
+            imageURL: useCaseGroup.configurationDomain.entity.baseURL.imageSizeURL(.medium)
+          )}
           .mapToResult()
           .receive(on: mainQueue)
       }
@@ -81,3 +84,16 @@ extension MovieHomeEnvType {
 
 private let dummyLanguage = "ko-kr"
 private let dummyRegion = "ko"
+
+
+extension MovieDomain.MovieList.Response.NowPlay {
+  func serialized(imageURL: String) -> MovieHomeStore.State.NowPlayScope {
+    .init(
+      totalPages: totalPages,
+      totalResult: totalResult,
+      page: page,
+      resultList: resultList.map {
+        .init(imageURL: imageURL, item: $0)
+      })
+  }
+}

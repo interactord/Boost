@@ -50,6 +50,6 @@ extension AppContainer {
         baseURL: .init(
           apiURL: "https://api.themoviedb.org/3",
           apiToken: "1d9b898a212ea52e283351e521e17871",
-          imageURL: "https://image.tmdb.org/t/p/")))
+          imageURL: "https://image.tmdb.org/t/p")))
   }
 }
