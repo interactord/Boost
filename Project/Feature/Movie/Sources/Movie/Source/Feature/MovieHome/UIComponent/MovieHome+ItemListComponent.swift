@@ -25,9 +25,6 @@ extension MovieHomePage.ItemListComponent: View {
               selectAction(item.rawValue)
             }
             .onAppear {
-              print("AAA ", item.imageURL)
-            }
-            .onAppear {
               guard viewState.lastID == item.id else { return }
               nextPageAction()
             }

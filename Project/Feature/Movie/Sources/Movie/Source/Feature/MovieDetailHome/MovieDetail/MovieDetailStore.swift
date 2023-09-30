@@ -29,11 +29,24 @@ extension MovieDetailStore {
       _fetchRecommendedMovie = .init(.init(isLoading: false, value: .init()))
     }
 
-    @Heap var fetchMovieCard: FetchState.Data<MovieDetailDomain.Response.MovieCardResult?>
-    @Heap var fetchMovieReview: FetchState.Data<MovieDetailDomain.Response.MovieReviewResult?>
-    @Heap var fetchMovieCredit: FetchState.Data<MovieDetailDomain.Response.MovieCreditResult?>
-    @Heap var fetchSimilarMovie: FetchState.Data<MovieDetailDomain.Response.SimilarMovieResult?>
-    @Heap var fetchRecommendedMovie: FetchState.Data<MovieDetailDomain.Response.RecommenededMovieResult?>
+    @Heap var fetchMovieCard: FetchState.Data<MovieCardResultScope>
+    @Heap var fetchMovieReview: FetchState.Data<MovieDetailDomain.Response.MovieReviewResult>
+    @Heap var fetchMovieCredit: FetchState.Data<MovieDetailDomain.Response.MovieCreditResult>
+    @Heap var fetchSimilarMovie: FetchState.Data<MovieDetailDomain.Response.SimilarMovieResult>
+    @Heap var fetchRecommendedMovie: FetchState.Data<MovieDetailDomain.Response.RecommenededMovieResult>
+  }
+
+  public struct MovieCardResultScope: Equatable {
+    let imageURL: String
+    let item: MovieDetailDomain.Response.MovieCardResult
+
+    init(
+      imageURL: String = "",
+      item: MovieDetailDomain.Response.MovieCardResult = .init())
+    {
+      self.imageURL = imageURL
+      self.item = item
+    }
   }
 }
 
@@ -53,7 +66,7 @@ extension MovieDetailStore {
     case onSelectCrew(MovieDetailDomain.Response.MovieCreditResult)
     case onSelectSimilarMovie(MovieDetailDomain.Response.SimilarMovieResult)
 
-    case fetchMovieCard(Result<MovieDetailDomain.Response.MovieCardResult, CompositeErrorDomain>)
+    case fetchMovieCard(Result<MovieCardResultScope, CompositeErrorDomain>)
     case fetchMovieReview(Result<MovieDetailDomain.Response.MovieReviewResult, CompositeErrorDomain>)
     case fetchMovieCredit(Result<MovieDetailDomain.Response.MovieCreditResult, CompositeErrorDomain>)
     case fetchSimilarMovie(Result<MovieDetailDomain.Response.SimilarMovieResult, CompositeErrorDomain>)

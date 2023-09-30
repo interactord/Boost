@@ -10,7 +10,7 @@ protocol MovieDetailEnvType {
   var useCaseGroup: MovieSideEffectGroup { get }
 
   var movieCard: (Int)
-    -> Effect<Result<MovieDetailDomain.Response.MovieCardResult, CompositeErrorDomain>> { get }
+    -> Effect<Result<MovieDetailStore.MovieCardResultScope, CompositeErrorDomain>> { get }
 
   var movieReview: (Int)
     -> Effect<Result<MovieDetailDomain.Response.MovieReviewResult, CompositeErrorDomain>> { get }
@@ -35,13 +35,16 @@ protocol MovieDetailEnvType {
 
 extension MovieDetailEnvType {
   public var movieCard: (Int)
-    -> Effect<Result<MovieDetailDomain.Response.MovieCardResult, CompositeErrorDomain>>
+    -> Effect<Result<MovieDetailStore.MovieCardResultScope, CompositeErrorDomain>>
   {
     { id in
       .publisher {
         useCaseGroup
           .movieDetailUseCase
           .movieCard(.init(id: id))
+          .map { $0.serialized(
+            imageURL: useCaseGroup.configurationDomain.entity.baseURL.imageSizeURL(.medium)
+          )}
           .mapToResult()
           .receive(on: mainQueue)
       }
@@ -104,4 +107,10 @@ extension MovieDetailEnvType {
     }
   }
 
+}
+
+extension MovieDetailDomain.Response.MovieCardResult {
+  fileprivate func serialized(imageURL: String) -> MovieDetailStore.MovieCardResultScope {
+    .init(imageURL: imageURL, item: self)
+  }
 }
